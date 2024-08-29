@@ -18,7 +18,7 @@ main:
     url: /tableau/    
         
   - title: "D3.js"
-    url: /year-archive/
+    url: /d3js/
     
   - title: "CV / Resume"
     url: /cv/
