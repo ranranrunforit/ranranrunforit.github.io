@@ -9,7 +9,7 @@ main:
     url: /projects/
 
   - title: "Python"
-    url: /talks/ 
+    url: /python/ 
 
   - title: "R"
     url: /publications/   
