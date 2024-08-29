@@ -209,7 +209,7 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
+  tableau:
     output: true
     permalink: /:collection/:path/
   rshiny:
@@ -243,10 +243,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
+  # _tableau
   - scope:
       path: ""
-      type: teaching
+      type: tableau
     values:
       layout: single
       author_profile: true
