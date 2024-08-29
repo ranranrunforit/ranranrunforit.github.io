@@ -212,7 +212,7 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
-  publications:
+  rshiny:
     output: true
     permalink: /:collection/:path/
   projects:
@@ -252,10 +252,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _publications
+  # _rshiny
   - scope:
       path: ""
-      type: publications
+      type: rshiny
     values:
       layout: single
       author_profile: true
