@@ -19,7 +19,8 @@ Education
 
 Work experience
 ======
-* Software Engineer <hr> NCS <hr> Beijing, China <hr> September 2019 – December 2022
+* Software Engineer, NCS
+* Beijing, China, September 2019 – December 2022
   * Use C#, .NET 4.0, Entity Framework, and SQLite to develop desktop software, ICP Expert, that feature user-friendly worksheet interfaces, easy-to-operate method development, and preset methods to simplify chemical analysis.
   * Program AI based algorithms to help reduce speculation in method development and automate troubleshooting.
   * Deploy a steel sample detector that is capable of processing steel sample images with glare or shadows by using Keras Segmentation models in Python and achieving a pixel accuracy of 99.8%.
@@ -28,25 +29,29 @@ Work experience
   * Act as the primary liaison between client and technical team with key project management tasks such as responding to client feature requests, providing training for new functionalities and understanding client business needs.
 Technology Used: C#, Python, SQLite, Visual Studio, C#, .NET Framework, .NET Core, NHibernate/Entity Framework
 
-* Data Engineer : Awesense Inc. : Vancouver, Canada : September 2018 – July 2019
+* Data Engineer, Awesense Inc.
+* Vancouver, Canada, September 2018 – July 2019
   * Automated efficient, robust, and scalable big data processing solutions for utilities data.
   * Designed, optimized, and troubleshoot distributed processing infrastructure using Spark and Scala.
   * Developed statistical and computing methods to analyze data at the PB level. Revamped ETL processes to integrate unstructured data from multiple sources.
 Technology Used: Python, SQL, Scala, Spark, Zeppelin, Google Geocode API, Google Place API, Google BigQuery, ETL
 
-* ASP.NET/SQL Developer : Maritime Travel : Halifax, Canada : September 2017 – January 2018
+* ASP.NET/SQL Developer, Maritime Travel
+* Halifax, Canada, September 2017 – January 2018
   * Developed full-stack web app using MVC ASP.NET, C# and MySQL in a test-driven development setting.
   * Improved and optimized workflow by implementing an infrastructure for the platform.
   * Implemented integration with Campaigns Monitor by creating a tool that extracts JSON data from system-wide search database and provides data to the company website.
 Technology Used: ASP .NET, C#, Visual Basic, MySQL, Express.js, Node.js, AWS, C, Visual Studio, SQL, SAS, MongoDB, JSON
  
-* Software Developer - Data : Densitas Inc : Halifax, Canada : December 2016 – April 2017
+* Software Developer - Data, Densitas Inc
+* Halifax, Canada, December 2016 – April 2017
   * Launched a breast density application to correct for rater bias on a continuous scale using Python, TensorFlow and implemented machine learning models such as SVM and Random Forest.
   * Created a Data Mining models to analyze and classify electronic mammogram data using R and R Studio.
   * Prototyped and implemented a new feature that allows users to match approximate strings between multiple DB.
 Technology Used: Python, R, R studio, TensorFlow, SVM, Random Forest, PANDAS, SQL, NumPy, Sklearn, Deep Learning
 
-* IT Developer : Government of Nova Scotia : Halifax, Canada : May 2016 – August 2016
+* IT Developer, Government of Nova Scotia
+* Halifax, Canada, May 2016 – August 2016
   * Implemented a VB .NET web application that allows users to post, search and download data.
   * Developed an Express.js user interface that is responsive to 60+ different user setting.
 Technology Used: VB .NET, Express.js, Node.js, Microsoft Azure
