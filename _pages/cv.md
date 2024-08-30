@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "CV / Resume"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -11,9 +11,10 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* MCS in Data Science, University of Illinois Urbana-Champaign, 2025 (expected)
+* BCS in Computer Science with Co-operative Education program, Dalhousie University, 2018
+  * Specialization of Data Science
+  * Specialization of Artificial Intelligence and Intelligent Systems
 
 Work experience
 ======
