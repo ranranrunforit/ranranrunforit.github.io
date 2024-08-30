@@ -8,13 +8,10 @@ redirect_from:
 
 ## My Passion as Coder
 
->"There are a lot of negative things in the world, there’s a lot of terrible things that are happening all over the world all the time."
-
->"There are lots of problems that needs to get solved. Lots of things are miserable and can get you down."
-
->"But that life can not just be about solving one miserable problem after another, that can’t be the only thing." 
-
->"There needs be things that inspire you that make you glad to be to wake up in the morning and be a part of humanity."
+>"There are a lot of negative things in the world, there’s a lot of terrible things that are happening all over the world all the time.
+>There are lots of problems that needs to get solved. Lots of things are miserable and can get you down.
+>But that life can not just be about solving one miserable problem after another, that can’t be the only thing. 
+>There needs be things that inspire you that make you glad to be to wake up in the morning and be a part of humanity."
 
 ## Some things about me
 
