@@ -19,7 +19,7 @@ Education
 
 Work experience
 ======
-* Software Engineer <br> NCS <br> Beijing, China <br> September 2019 – December 2022
+* Software Engineer <hr> NCS <hr> Beijing, China <hr> September 2019 – December 2022
   * Use C#, .NET 4.0, Entity Framework, and SQLite to develop desktop software, ICP Expert, that feature user-friendly worksheet interfaces, easy-to-operate method development, and preset methods to simplify chemical analysis.
   * Program AI based algorithms to help reduce speculation in method development and automate troubleshooting.
   * Deploy a steel sample detector that is capable of processing steel sample images with glare or shadows by using Keras Segmentation models in Python and achieving a pixel accuracy of 99.8%.
