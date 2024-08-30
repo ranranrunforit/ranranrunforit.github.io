@@ -11,27 +11,45 @@ redirect_from:
 
 Education
 ======
-* MCS in Data Science, University of Illinois Urbana-Champaign, 2025 (expected)
-* BCS in Computer Science with Co-operative Education program, Dalhousie University, 2018
+* M.C.S. in Data Science, University of Illinois Urbana-Champaign, 2025 (expected)
+* B.C.S. in Computer Science with Co-operative Education program, Dalhousie University, 2018
   * Specialization of Data Science
   * Specialization of Artificial Intelligence and Intelligent Systems
+  * Teaching Assistant For Discrete Math & Network Computing
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Software Engineer | NCS | Beijing, China | September 2019 – December 2022
+  * Use C#, .NET 4.0, Entity Framework, and SQLite to develop desktop software, ICP Expert, that feature user-friendly worksheet interfaces, easy-to-operate method development, and preset methods to simplify chemical analysis.
+  * Program AI based algorithms to help reduce speculation in method development and automate troubleshooting.
+  * Deploy a steel sample detector that is capable of processing steel sample images with glare or shadows by using Keras Segmentation models in Python and achieving a pixel accuracy of 99.8%.
+  * Implement and test a C# testing software for Electric Circuits and Optical Room that sends and responds data to CAN-bus Device Driver.
+  * Architect, design, and test a system that connects between the client software and the spark-optical emission spectrometer software used C#, .Net Framework.
+  * Act as the primary liaison between client and technical team with key project management tasks such as responding to client feature requests, providing training for new functionalities and understanding client business needs.
+Technology Used: C#, Python, SQLite, Visual Studio, C#, .NET Framework, .NET Core, NHibernate/Entity Framework
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Data Engineer | Awesense Inc. | Vancouver, Canada | September 2018 – July 2019
+  * Automated efficient, robust, and scalable big data processing solutions for utilities data.
+  * Designed, optimized, and troubleshoot distributed processing infrastructure using Spark and Scala.
+  * Developed statistical and computing methods to analyze data at the PB level. Revamped ETL processes to integrate unstructured data from multiple sources.
+Technology Used: Python, SQL, Scala, Spark, Zeppelin, Google Geocode API, Google Place API, Google BigQuery, ETL
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* ASP.NET/SQL Developer | Maritime Travel | Halifax, Canada | September 2017 – January 2018
+  * Developed full-stack web app using MVC ASP.NET, C# and MySQL in a test-driven development setting.
+  * Improved and optimized workflow by implementing an infrastructure for the platform.
+  * Implemented integration with Campaigns Monitor by creating a tool that extracts JSON data from system-wide search database and provides data to the company website.
+Technology Used: ASP .NET, C#, Visual Basic, MySQL, Express.js, Node.js, AWS, C, Visual Studio, SQL, SAS, MongoDB, JSON
+ 
+* Software Developer - Data | Densitas Inc | Halifax, Canada | December 2016 – April 2017
+  * Launched a breast density application to correct for rater bias on a continuous scale using Python, TensorFlow and implemented machine learning models such as SVM and Random Forest.
+  * Created a Data Mining models to analyze and classify electronic mammogram data using R and R Studio.
+  * Prototyped and implemented a new feature that allows users to match approximate strings between multiple DB.
+Technology Used: Python, R, R studio, TensorFlow, SVM, Random Forest, PANDAS, SQL, NumPy, Sklearn, Deep Learning
+
+* IT Developer | Government of Nova Scotia | Halifax, Canada | May 2016 – August 2016
+  * Implemented a VB .NET web application that allows users to post, search and download data.
+  * Developed an Express.js user interface that is responsive to 60+ different user setting.
+Technology Used: VB .NET, Express.js, Node.js, Microsoft Azure
   
 Skills
 ======
@@ -42,21 +60,21 @@ Skills
   * Sub-skill 2.3
 * Skill 3
 
-Publications
+Projects
 ======
-  <ul>{% for post in site.publications reversed %}
+  <ul>{% for post in site.projects reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+Python
 ======
-  <ul>{% for post in site.talks reversed %}
+  <ul>{% for post in site.python reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
   
-Teaching
+R shiny
 ======
-  <ul>{% for post in site.teaching reversed %}
+  <ul>{% for post in site.rshiny reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
