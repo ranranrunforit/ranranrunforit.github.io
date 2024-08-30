@@ -53,12 +53,9 @@ Technology Used: VB .NET, Express.js, Node.js, Microsoft Azure
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming languages: Python, C#, R, MATLAB, SQL, Bash, etc.;
+* AI/ML framework: PyTorch, Tensorflow, Hugging Face, CUDA, Keras, Sklearn, etc.;
+* Cloud computing: AWS S3, EC2, Lambda, API Gateway, Step Functions, EKS, CloudFormation, CloudWatch, DynamoDB, etc.; GCP, BigQuery; Docker containers, etc.;
 
 Projects
 ======
