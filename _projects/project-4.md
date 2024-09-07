@@ -1,6 +1,6 @@
 ---
 title: "Faculty Analytics: Find the Faculty you want to connect!"
-excerpt: "Connection App using Python Dash, Neo4j, MySQL and MongoDB.<br/><img src='/images/Faculty Analytics.png'>"
+excerpt: "Connection App using Python Dash, Flask, Neo4j, MySQL and MongoDB.<br/><img src='/images/Faculty Analytics.png'>"
 collection: projects
 ---
 
@@ -68,6 +68,6 @@ The application involves 8 independent widgets using the Dash. The widgets could
 
 
 **Keywords**: Neo4j, MySQL, MongoDB  
-**Packages**: dash, flask, neo4j, pandas, sqlalchemy, pymongo, plotly, flask, pymysql, certifi, geopy, dash-bootstrap-components
+**Packages**: Dash, Flask, Neo4j, pandas, sqlalchemy, pymongo, plotly, flask, pymysql, certifi, geopy, dash-bootstrap-components
 
 
