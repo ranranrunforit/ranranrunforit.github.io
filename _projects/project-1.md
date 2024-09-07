@@ -1,6 +1,6 @@
 ---
 title: "Visualized: 18 Years of Wildfires in America"
-excerpt: "Short description of project item number 1<br/><img src='/images/D3.png'>"
+excerpt: "The narrative visualization aims to convey the impact of human activity on the increasing severity of wildfires that burned more than 25,000 acres in the United States from 2000 to 2018. <br/><img src='/images/D3.png'>"
 collection: projects
 ---
 
