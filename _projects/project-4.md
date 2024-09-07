@@ -14,6 +14,17 @@ The objectives of the application are to provide users with the ability to searc
 **[Faculty Analytics Demo](https://mediaspace.illinois.edu/media/t/1_uhjjx6f1)**
 
 
+**Implementation**
+
+The application has integrated Dash and dash-bootstrap-components for the frontend, which includes features such as maps, line graphs, dropdowns, sunburst charts and data tables. 
+
+On the backend, the Dash app serves as the main application server based on Flask app. The "dbs" module contains all Python files related to database utilities, while "widgets" contains all Python files related to 8 widgets. 
+
+Regarding the database, "neo4j_util.py" is used to connect to Neo4j database, "mongodb_util.py" to connect to MongoDB database, and "MySQL_util.py" to connect to MySQL database. 
+
+The application utilizes several libraries including dash, neo4j, pandas, sqlalchemy, pymongo, plotly, flask, pymysql, certifi, geopy, and dash-bootstrap-components to achieve its functionality. RESTful API based on Flask app was used to wrap around Dash, with several routes registered to support restful API calls. 
+
+
 **The design of the application**
 
 The application involves 8 independent widgets using the Dash. The widgets could divided into two categories: querying and updating backend databases. The querying widgets include show citation trends, sunburst chart, a college on US map, display faculty, search publication by keyword, and search publication by faculty. The updating widgets include add faculty and delete a faculty.
@@ -33,16 +44,6 @@ The application involves 8 independent widgets using the Dash. The widgets could
 -	The Add Faculty widget used Neo4j database to query and add new faculty node and university node, creating a relationship edge between these new nodes. A callback function was used to show success/fail query information in the model.
 
 -	The Delete Faculty widget used Neo4j database to query and delete the relationship edge between faculty node and university node, then delete the faculty node. A callback function was used to show success/fail query information in the model.
-
-**Implementation**
-
-The application has integrated Dash and dash-bootstrap-components for the frontend, which includes features such as maps, line graphs, dropdowns, sunburst charts and data tables. 
-
-On the backend, the Dash app serves as the main application server based on Flask app. The "dbs" module contains all Python files related to database utilities, while "widgets" contains all Python files related to 8 widgets. 
-
-Regarding the database, "neo4j_util.py" is used to connect to Neo4j database, "mongodb_util.py" to connect to MongoDB database, and "MySQL_util.py" to connect to MySQL database. 
-
-The application utilizes several libraries including dash, neo4j, pandas, sqlalchemy, pymongo, plotly, flask, pymysql, certifi, geopy, and dash-bootstrap-components to achieve its functionality. RESTful API based on Flask app was used to wrap around Dash, with several routes registered to support restful API calls. 
 
 
 **The Usage**
@@ -64,7 +65,6 @@ The application utilizes several libraries including dash, neo4j, pandas, sqlalc
 -	The "Delete Faculty" widget allows users to delete a faculty from a university by entering their name and the university name. If a faculty information is deleted, a model will show the success information. 
 
 -	Users can access raw college and faculty information at http://127.0.0.1:8050/college_and_faculty or view faculty and keyword data at http://127.0.0.1:8050/faculty_and_keyword.
-
 
 
 **Keywords**: Neo4j, MySQL, MongoDB  
