@@ -5,7 +5,8 @@ collection: projects
 ---
 
 
-**[Covid-19 Cases Tableau Dashboard (Live Preview)](https://public.tableau.com/app/profile/chaoran.zhou/viz/Covid19BookFinalVersion/Dashboard1)**
+**[Covid-19 Cases Tableau Dashboard (Live Preview)](https://public.tableau.com/app/profile/chaoran.zhou/viz/Covid19BookFinalVersion/Dashboard1)**  
+_Please change the display layout to the desktop layout for better visualization of the workbook._
 
 ### What is one question that the dashboard can answer by utilizing two or more simultaneously displayed charts?
 
