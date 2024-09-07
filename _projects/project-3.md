@@ -1,24 +1,20 @@
 ---
-title: "Covid-19 Cases Tableau Dashboard"
+title: "Tableau Dashboard on Covid-19 Cases"
 excerpt: "Where were the hotspots during COVID-19 (between Jan 22, 2020 to Apr 29, 2022)?<br/><img src='/images/Tableau.png'>"
 collection: projects
 ---
 
 
-**[Covid-19 Dashboard Workbook (Live Preview)](https://public.tableau.com/app/profile/chaoran.zhou/viz/Covid19BookFinalVersion/Dashboard1)**  
+**[Covid-19 Hotspots Dashboard Workbook (Live Preview)](https://public.tableau.com/app/profile/chaoran.zhou/viz/Covid19BookFinalVersion/Dashboard1)**  
 _Please change the display layout to the desktop layout for better visualization of the workbook._
 
-### What is one question that the dashboard can answer by utilizing two or more simultaneously displayed charts?
-
-The dashboard can provide answers to the question "Where were the hotspots during COVID-19 (between Jan 22, 2020 to Apr 29, 2022)?"
-
-### What is the answer?
-
-The answer to this question depends on the dimension being looked at. By filtering on different dates, states, and counties, the dashboard can reveal hotspots based on total and new case metrics. 
+The dashboard can answer the question, "Where were the hotspots during COVID-19 (between Jan 22, 2020, to Apr 29, 2022)?" by analyzing data across various dimensions such as dates, states, and counties. The dashboard can reveal hotspots based on total and new case metrics. 
 
 For example, by filtering the date to January 22, 2020, and selecting the total case metrics while leaving the state and county fields to all, it can be observed that California had the highest total number of positive cases at 1,770,021,359 and the highest total number of deaths at 24,262,380 on that date. By examining the new case metrics for the same date and location, it is evident that California also had the most new positive cases at 6,107,883 and the most new deaths at 59,863. This indicates that on January 22, 2020, the state of California was a hotspot for Covid-19. Similar analysis can be done at the county level, for example, Los Angeles county in California stood out as a hotspot on the same date.
 
-### How do these two charts indicate the answer?
+### Visual Representation of Data
+
+<img src="/images/Tableau Layout.png" width="450em">
 
 The two charts indicate the answers through side-by-side proportional symbol maps of cases and side-by-side bar graphs for cases by state/county. 
 
@@ -27,41 +23,14 @@ The combination of two charts provides a comprehensive view of the hotspots. The
 By comparing values on the map and the bar chart, users can visually identify the hotspots on the specified date.
 
 
-### Display a screenshot of your dashboard answering that question by showing two or more simultaneously displayed charts. 
-
-
-<img src="/images/Tableau Usage.png" width="450em">
-
-
-### How does the layout of these charts promote visual understanding of the data across multiple charts? 
+### Enhancing Dashboard Layout
 
 The layout of the charts promotes visual understanding through consistent color consistency, alignment, and dynamic tooltips. The color consistency, with blue on the left side and purple on the right side for all three charts, allows for easy comparison. The alignment ensures that the left side always represents people's positive case count data, while the right side always represents people's death count data. Additionally, the dynamic tooltips provide detailed information when users hover over specific data points with the same color scheme and alignment. 
 
 The dashboard layout adheres to Ben Schneiderman's mantra of "Overview first. Then, zoom and filter. And then provide details only on demand," enabling users to comprehend the data across multiple charts effectively. The side-by-side bar and line graphs offer an overview of historical data, while the side-by-side map and the side-by-side bar graph for cross-filtering(the second and third chart in the dashboard)facilitate zooming and filtering. All three graphs provide details on demand.
 
-<img src="/images/Tableau Layout.png" width="450em">
 
-### Indicate which chart is the "first" chart. 
-
-The "first" chart of the cross-filtering(in the dashborad is the second chart) is a side-by-side proportional symbol maps of cases. This chart type was chosen to effectively display the geographical distribution of cases. 
-
-The chart's axes are generated using Tableau's (generated)Latitude field along the y-axis, and (generated)Longitude fields with the number of different case types represented along the x-axis. 
-
-The circle marks on the map correspond to the logarithm of the case type count (e.g., positive case count or death count) for the selected start date and other filter values. The color scheme for the maps aligns with the dashboard's consistent color scheme, with blue representing positive case counts and purple representing death counts.
-
-
-### Indicate which chart is the "second" chart. 
-
-The "second" chart of the cross-filtering(in the dashborad is the third chart) is a side-by-side bar graph illustrating cases by state or county (depending on the user's selection for the state filter). This chart type was chosen to effectively compare case counts between different states or counties. 
-
-The axes are created using the state and/or county (depending on user selection) along the y-axis, and the values of case types (positive case count/death count) along the x-axis. 
-
-The bars are sorted in descending order based on the number of cases, making it easy to compare the case counts across different states/counties. 
-
-Similar to the first chart, the color scheme for the bar graphs aligns with the dashboard's consistent color scheme, with blue representing positive case counts and purple representing death counts, ensuring consistency and ease of interpretation for the user.
-
-
-### How does your dashboard provide details on demand?
+### Details on Demand
 
 The dashboard provides details on demand for all three charts. 
 
@@ -72,10 +41,33 @@ For the map in the dashboard, hovering over the data points displays the state a
 In the bar chart, when hovering over the data points, it shows the county and states, case type, and case value for that data point.
 
 
-### How does your dashboard support cross-filtering between these two charts?
+### Cross-Filtering
+
+<img src="/images/Tableau Usage.png" width="450em">
 
 The dashboard supports cross-filtering between the second and third charts by using the data from the user-selected start date. This allows users to select on the map based on the proportional symbol and check the highlighting sorted values in the bar chart after selecting multiple values, providing a clearer understanding of their selection.
 
 Users can zoom in on the map and further filter by using rectangular selection or by pressing ctrl and selecting multiple values. Hovering over the data points in the map reveals the value and state (and/or county) and the bar chart of both case counts embedded in the tooltip, providing detailed information on demand. The bar graph below the map has sorted bars of both case counts, displaying the grand total of both sides' data on the top.
 
 Both the second and third charts help users to zoom and filter, and if they are interested, they can also get detailed information on demand.
+
+#### The "first" chart. 
+
+The "first" chart of the cross-filtering(in the dashborad is the second chart) is a side-by-side proportional symbol maps of cases. This chart type was chosen to effectively display the geographical distribution of cases. 
+
+The chart's axes are generated using Tableau's (generated)Latitude field along the y-axis, and (generated)Longitude fields with the number of different case types represented along the x-axis. 
+
+The circle marks on the map correspond to the logarithm of the case type count (e.g., positive case count or death count) for the selected start date and other filter values. The color scheme for the maps aligns with the dashboard's consistent color scheme, with blue representing positive case counts and purple representing death counts.
+
+
+#### The "second" chart. 
+
+The "second" chart of the cross-filtering(in the dashborad is the third chart) is a side-by-side bar graph illustrating cases by state or county (depending on the user's selection for the state filter). This chart type was chosen to effectively compare case counts between different states or counties. 
+
+The axes are created using the state and/or county (depending on user selection) along the y-axis, and the values of case types (positive case count/death count) along the x-axis. 
+
+The bars are sorted in descending order based on the number of cases, making it easy to compare the case counts across different states/counties. 
+
+Similar to the first chart, the color scheme for the bar graphs aligns with the dashboard's consistent color scheme, with blue representing positive case counts and purple representing death counts, ensuring consistency and ease of interpretation for the user.
+
+
