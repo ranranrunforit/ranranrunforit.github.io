@@ -8,15 +8,13 @@ collection: projects
 **[Covid-19 Hotspots Dashboard Workbook (Live Preview)](https://public.tableau.com/app/profile/chaoran.zhou/viz/Covid19BookFinalVersion/Dashboard1)**  
 _Please change the display layout to the desktop layout for better visualization of the workbook._
 
-The dashboard can answer the question, "Where were the hotspots during COVID-19 (between Jan 22, 2020, to Apr 29, 2022)?" by analyzing data across various dimensions such as dates, states, and counties. The dashboard can reveal hotspots based on total and new case metrics. 
-
-For example, by filtering the date to January 22, 2020, and selecting the total case metrics while leaving the state and county fields to all, it can be observed that California had the highest total number of positive cases at 1,770,021,359 and the highest total number of deaths at 24,262,380 on that date. By examining the new case metrics for the same date and location, it is evident that California also had the most new positive cases at 6,107,883 and the most new deaths at 59,863. This indicates that on January 22, 2020, the state of California was a hotspot for Covid-19. Similar analysis can be done at the county level, for example, Los Angeles county in California stood out as a hotspot on the same date.
+The dashboard can answer the question, "Where were the hotspots during COVID-19 (between Jan 22, 2020, to Apr 29, 2022)?" by analyzing data across various dimensions such as dates, states, and counties. The dashboard can reveal hotspots based on total and new case metrics. For example, by filtering the date to January 22, 2020, and selecting the total case metrics while leaving the state and county fields to all, it can be observed that California had the highest total number of positive cases at 1,770,021,359 and the highest total number of deaths at 24,262,380 on that date. By examining the new case metrics for the same date and location, it is evident that California also had the most new positive cases at 6,107,883 and the most new deaths at 59,863. This indicates that on January 22, 2020, the state of California was a hotspot for Covid-19. Similar analysis can be done at the county level, for example, Los Angeles county in California stood out as a hotspot on the same date.
 
 ### Visual Representation of Data
 
-<img src="/images/Tableau Layout.png" width="450em">
-
 The two charts indicate the answers through side-by-side proportional symbol maps of cases and side-by-side bar graphs for cases by state/county. 
+
+<img src="/images/Tableau Layout.png" width="450em">
 
 The combination of two charts provides a comprehensive view of the hotspots. The side-by-side proportional symbol maps show geographic areas with different values, allowing users to select multiple states/counties for further investigation. The side-by-side bar graphs then highlight the sorted detail metrics for the selected states/counties, enabling a comparison of positive case counts and death counts.
 
