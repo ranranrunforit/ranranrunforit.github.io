@@ -11,7 +11,7 @@ The intended users of this application are professors who need research interest
 The objectives of the application are to provide users with the ability to search for professors and access information about their research interests, publication history, and citation numbers. Additionally, users have the ability to add new professors to their university and remove professors who have left.
 
 
-**[Demo](https://mediaspace.illinois.edu/media/t/1_uhjjx6f1)**
+**[Faculty Analytics Demo](https://mediaspace.illinois.edu/media/t/1_uhjjx6f1)**
 
 
 -	The "Citations number trend on a line chart" widget allows users to select a keyword, faculty name, and year range to visualize the citation number of publications related to the keyword from the professor. 
@@ -32,7 +32,7 @@ The objectives of the application are to provide users with the ability to searc
 
 -	Users can access raw college and faculty information at http://127.0.0.1:8050/college_and_faculty or view faculty and keyword data at http://127.0.0.1:8050/faculty_and_keyword.
 
-
 **Keywords**: Neo4j, MySQL, MongoDB  
-**Packages**: dash, neo4j, pandas, sqlalchemy, pymongo, plotly, flask, pymysql, certifi, geopy, dash-bootstrap-components, flask
+**Packages**: dash, flask, neo4j, pandas, sqlalchemy, pymongo, plotly, flask, pymysql, certifi, geopy, dash-bootstrap-components
+
 
