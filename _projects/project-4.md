@@ -33,7 +33,6 @@ The objectives of the application are to provide users with the ability to searc
 -	Users can access raw college and faculty information at http://127.0.0.1:8050/college_and_faculty or view faculty and keyword data at http://127.0.0.1:8050/faculty_and_keyword.
 
 
-**Keywords**: Neo4j, MySQL, MongoDB
-
+**Keywords**: Neo4j, MySQL, MongoDB 
 **Packages**: dash, neo4j, pandas, sqlalchemy, pymongo, plotly, flask, pymysql, certifi, geopy, dash-bootstrap-components, flask
 
