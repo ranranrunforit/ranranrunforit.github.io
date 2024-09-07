@@ -26,6 +26,8 @@ The combination of two charts provides a comprehensive view of the hotspots. The
 By comparing values on the map and the bar chart, users can visually identify the hotspots on the specified date.
 
 
+### Display a screenshot of your dashboard answering that question by showing two or more simultaneously displayed charts. Make sure the screenshot contains the entire contents of both charts, as demonstated in the example image of the problem specification.
+
 <img src="/images/Tableau Usage.png" width="450em">
 
 
