@@ -8,7 +8,9 @@ collection: projects
 **[Covid-19 Hotspots Dashboard Workbook (Live Preview)](https://public.tableau.com/app/profile/chaoran.zhou/viz/Covid19BookFinalVersion/Dashboard1)**  
 _Please change the display layout to the desktop layout for better visualization of the workbook._
 
-The dashboard can answer the question, "Where were the hotspots during COVID-19 (between Jan 22, 2020, to Apr 29, 2022)?" by analyzing data across various dimensions such as dates, states, and counties. The dashboard can reveal hotspots based on total and new case metrics. For example, by filtering the date to January 22, 2020, and selecting the total case metrics while leaving the state and county fields to all, it can be observed that California had the highest total number of positive cases at 1,770,021,359 and the highest total number of deaths at 24,262,380 on that date. By examining the new case metrics for the same date and location, it is evident that California also had the most new positive cases at 6,107,883 and the most new deaths at 59,863. This indicates that on January 22, 2020, the state of California was a hotspot for Covid-19. Similar analysis can be done at the county level, for example, Los Angeles county in California stood out as a hotspot on the same date.
+The dashboard can answer the question, "Where were the hotspots during COVID-19 (between Jan 22, 2020, to Apr 29, 2022)?" by analyzing data across various dimensions such as dates, states, and counties. The dashboard can reveal hotspots based on total and new case metrics. 
+
+For example, by filtering the date to January 22, 2020, and selecting the total case metrics while leaving the state and county fields to all, it can be observed that California had the highest total number of positive cases at 1,770,021,359 and the highest total number of deaths at 24,262,380 on that date. By examining the new case metrics for the same date and location, it is evident that California also had the most new positive cases at 6,107,883 and the most new deaths at 59,863. This indicates that on January 22, 2020, the state of California was a hotspot for Covid-19. Similar analysis can be done at the county level, for example, Los Angeles county in California stood out as a hotspot on the same date.
 
 ### Visual Representation of Data
 
@@ -48,24 +50,5 @@ The dashboard supports cross-filtering between the second and third charts by us
 Users can zoom in on the map and further filter by using rectangular selection or by pressing ctrl and selecting multiple values. Hovering over the data points in the map reveals the value and state (and/or county) and the bar chart of both case counts embedded in the tooltip, providing detailed information on demand. The bar graph below the map has sorted bars of both case counts, displaying the grand total of both sides' data on the top.
 
 Both the second and third charts help users to zoom and filter, and if they are interested, they can also get detailed information on demand.
-
-### The "first" chart. 
-
-The "first" chart of the cross-filtering(in the dashborad is the second chart) is a side-by-side proportional symbol maps of cases. This chart type was chosen to effectively display the geographical distribution of cases. 
-
-The chart's axes are generated using Tableau's (generated)Latitude field along the y-axis, and (generated)Longitude fields with the number of different case types represented along the x-axis. 
-
-The circle marks on the map correspond to the logarithm of the case type count (e.g., positive case count or death count) for the selected start date and other filter values. The color scheme for the maps aligns with the dashboard's consistent color scheme, with blue representing positive case counts and purple representing death counts.
-
-
-### The "second" chart. 
-
-The "second" chart of the cross-filtering(in the dashborad is the third chart) is a side-by-side bar graph illustrating cases by state or county (depending on the user's selection for the state filter). This chart type was chosen to effectively compare case counts between different states or counties. 
-
-The axes are created using the state and/or county (depending on user selection) along the y-axis, and the values of case types (positive case count/death count) along the x-axis. 
-
-The bars are sorted in descending order based on the number of cases, making it easy to compare the case counts across different states/counties. 
-
-Similar to the first chart, the color scheme for the bar graphs aligns with the dashboard's consistent color scheme, with blue representing positive case counts and purple representing death counts, ensuring consistency and ease of interpretation for the user.
 
 
