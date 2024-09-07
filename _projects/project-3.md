@@ -27,26 +27,38 @@ The combination of two charts provides a comprehensive view of the hotspots. The
 By comparing values on the map and the bar chart, users can visually identify the hotspots on the specified date.
 
 
-### Display a screenshot of your dashboard answering that question by showing two or more simultaneously displayed charts. Make sure the screenshot contains the entire contents of both charts, as demonstated in the example image of the problem specification.
+### Display a screenshot of your dashboard answering that question by showing two or more simultaneously displayed charts. 
+
 
 <img src="/images/Tableau Usage.png" width="450em">
 
 
-### How does the layout of these charts promote visual understanding of the data across multiple charts? Make sure your explanation describes color consistentcy, alignment and any other ways the layout improves visual understanding.
+### How does the layout of these charts promote visual understanding of the data across multiple charts? 
 
 The layout of the charts promotes visual understanding through consistent color consistency, alignment, and dynamic tooltips. The color consistency, with blue on the left side and purple on the right side for all three charts, allows for easy comparison. The alignment ensures that the left side always represents people's positive case count data, while the right side always represents people's death count data. Additionally, the dynamic tooltips provide detailed information when users hover over specific data points with the same color scheme and alignment. 
 
 The dashboard layout adheres to Ben Schneiderman's mantra of "Overview first. Then, zoom and filter. And then provide details only on demand," enabling users to comprehend the data across multiple charts effectively. The side-by-side bar and line graphs offer an overview of historical data, while the side-by-side map and the side-by-side bar graph for cross-filtering(the second and third chart in the dashboard)facilitate zooming and filtering. All three graphs provide details on demand.
 
+<img src="/images/Tableau Layout.png" width="450em">
 
-### Indicate which chart is the "first" chart. Then justify the choice of this chart type, its axes and marks based on the data variables it shows.
+### Indicate which chart is the "first" chart. 
 
-The "first" chart of the cross-filtering(in the dashborad is the second chart) is a side-by-side proportional symbol maps of cases. This chart type was chosen to effectively display the geographical distribution of cases. The chart's axes are generated using Tableau's (generated)Latitude field along the y-axis, and (generated)Longitude fields with the number of different case types represented along the x-axis. The circle marks on the map correspond to the logarithm of the case type count (e.g., positive case count or death count) for the selected start date and other filter values. The color scheme for the maps aligns with the dashboard's consistent color scheme, with blue representing positive case counts and purple representing death counts.
+The "first" chart of the cross-filtering(in the dashborad is the second chart) is a side-by-side proportional symbol maps of cases. This chart type was chosen to effectively display the geographical distribution of cases. 
+
+The chart's axes are generated using Tableau's (generated)Latitude field along the y-axis, and (generated)Longitude fields with the number of different case types represented along the x-axis. 
+
+The circle marks on the map correspond to the logarithm of the case type count (e.g., positive case count or death count) for the selected start date and other filter values. The color scheme for the maps aligns with the dashboard's consistent color scheme, with blue representing positive case counts and purple representing death counts.
 
 
-### Indicate which chart is the "second" chart. Then justify the choice of this chart type, its axes and marks based on the data variables it shows.
+### Indicate which chart is the "second" chart. 
 
-The "second" chart of the cross-filtering(in the dashborad is the third chart) is a side-by-side bar graph illustrating cases by state or county (depending on the user's selection for the state filter). This chart type was chosen to effectively compare case counts between different states or counties. The axes are created using the state and/or county (depending on user selection) along the y-axis, and the values of case types (positive case count/death count) along the x-axis. The bars are sorted in descending order based on the number of cases, making it easy to compare the case counts across different states/counties. Similar to the first chart, the color scheme for the bar graphs aligns with the dashboard's consistent color scheme, with blue representing positive case counts and purple representing death counts, ensuring consistency and ease of interpretation for the user.
+The "second" chart of the cross-filtering(in the dashborad is the third chart) is a side-by-side bar graph illustrating cases by state or county (depending on the user's selection for the state filter). This chart type was chosen to effectively compare case counts between different states or counties. 
+
+The axes are created using the state and/or county (depending on user selection) along the y-axis, and the values of case types (positive case count/death count) along the x-axis. 
+
+The bars are sorted in descending order based on the number of cases, making it easy to compare the case counts across different states/counties. 
+
+Similar to the first chart, the color scheme for the bar graphs aligns with the dashboard's consistent color scheme, with blue representing positive case counts and purple representing death counts, ensuring consistency and ease of interpretation for the user.
 
 
 ### How does your dashboard provide details on demand?
