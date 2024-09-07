@@ -43,15 +43,15 @@ In the bar chart, when hovering over the data points, it shows the county and st
 
 ### Cross-Filtering
 
-<img src="/images/Tableau Usage.png" width="450em">
-
 The dashboard supports cross-filtering between the second and third charts by using the data from the user-selected start date. This allows users to select on the map based on the proportional symbol and check the highlighting sorted values in the bar chart after selecting multiple values, providing a clearer understanding of their selection.
+
+<img src="/images/Tableau Usage.png" width="450em">
 
 Users can zoom in on the map and further filter by using rectangular selection or by pressing ctrl and selecting multiple values. Hovering over the data points in the map reveals the value and state (and/or county) and the bar chart of both case counts embedded in the tooltip, providing detailed information on demand. The bar graph below the map has sorted bars of both case counts, displaying the grand total of both sides' data on the top.
 
 Both the second and third charts help users to zoom and filter, and if they are interested, they can also get detailed information on demand.
 
-#### The "first" chart. 
+### The "first" chart. 
 
 The "first" chart of the cross-filtering(in the dashborad is the second chart) is a side-by-side proportional symbol maps of cases. This chart type was chosen to effectively display the geographical distribution of cases. 
 
@@ -60,7 +60,7 @@ The chart's axes are generated using Tableau's (generated)Latitude field along t
 The circle marks on the map correspond to the logarithm of the case type count (e.g., positive case count or death count) for the selected start date and other filter values. The color scheme for the maps aligns with the dashboard's consistent color scheme, with blue representing positive case counts and purple representing death counts.
 
 
-#### The "second" chart. 
+### The "second" chart. 
 
 The "second" chart of the cross-filtering(in the dashborad is the third chart) is a side-by-side bar graph illustrating cases by state or county (depending on the user's selection for the state filter). This chart type was chosen to effectively compare case counts between different states or counties. 
 
