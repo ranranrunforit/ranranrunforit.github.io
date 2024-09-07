@@ -1,7 +1,7 @@
 ---
-title: "Project item number 1"
+title: "Visualized: 18 Years of Wildfires in America"
 excerpt: "Short description of project item number 1<br/><img src='/images/D3.png'>"
 collection: projects
 ---
 
-This is an item in your projects. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+The narrative visualization consists of three distinct scenes, each utilizing a consistent template. The scenes are ordered to create a coherent storyline that aligns with user exploration.
