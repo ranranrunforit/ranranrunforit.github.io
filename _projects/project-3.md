@@ -1,11 +1,8 @@
 ---
-title: "Where were the hotspots during COVID-19 (between Jan 22, 2020 to Apr 29, 2022)?"
-excerpt: "Tableau Dashboard provided answers to the question.<br/><img src='/images/Tableau.png'>"
+title: "Covid-19 Cases Tableau Dashboard"
+excerpt: "Where were the hotspots during COVID-19 (between Jan 22, 2020 to Apr 29, 2022)?<br/><img src='/images/Tableau.png'>"
 collection: projects
 ---
-
-
-# Covid 19 Cases Tableau Dashboard
 
 
 **[Covid-19 Cases Tableau Dashboard (Live Preview)](https://public.tableau.com/app/profile/chaoran.zhou/viz/Covid19BookFinalVersion/Dashboard1)**
