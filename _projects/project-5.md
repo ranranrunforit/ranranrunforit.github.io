@@ -1,6 +1,6 @@
 ---
 title: "Reproducibility Project for Graph Attention Networks"
-excerpt: "Graph Attention Networks using Python.<br/><img src='/images/Faculty Analytics.png'>"
+excerpt: "Graph Attention Networks using Python.<br/><img src='/images/GAT.png'>"
 collection: projects
 ---
 
