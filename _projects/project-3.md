@@ -14,12 +14,15 @@ The dashboard can provide answers to the question "Where were the hotspots durin
 ### What is the answer?
 
 The answer to this question depends on the dimension being looked at. By filtering on different dates, states, and counties, the dashboard can reveal hotspots based on total and new case metrics. 
+
 For example, by filtering the date to January 22, 2020, and selecting the total case metrics while leaving the state and county fields to all, it can be observed that California had the highest total number of positive cases at 1,770,021,359 and the highest total number of deaths at 24,262,380 on that date. By examining the new case metrics for the same date and location, it is evident that California also had the most new positive cases at 6,107,883 and the most new deaths at 59,863. This indicates that on January 22, 2020, the state of California was a hotspot for Covid-19. Similar analysis can be done at the county level, for example, Los Angeles county in California stood out as a hotspot on the same date.
 
 ### How do these two charts indicate the answer?
 
 The two charts indicate the answers through side-by-side proportional symbol maps of cases and side-by-side bar graphs for cases by state/county. 
+
 The combination of two charts provides a comprehensive view of the hotspots. The side-by-side proportional symbol maps show geographic areas with different values, allowing users to select multiple states/counties for further investigation. The side-by-side bar graphs then highlight the sorted detail metrics for the selected states/counties, enabling a comparison of positive case counts and death counts.
+
 By comparing values on the map and the bar chart, users can visually identify the hotspots on the specified date.
 
 
