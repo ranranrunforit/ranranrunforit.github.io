@@ -2,6 +2,11 @@
 title: "Tableau Dashboard on Covid-19 Cases"
 excerpt: "Where were the hotspots during COVID-19 (between Jan 22, 2020 to Apr 29, 2022)?<br/><img src='/images/Tableau.png'>"
 collection: projects
+date: 2024-06-15
+tags:
+  - Tableau
+  - Cross-Filtering
+  - Details on Demand
 ---
 
 
