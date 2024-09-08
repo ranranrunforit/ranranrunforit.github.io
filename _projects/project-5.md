@@ -2,6 +2,14 @@
 title: "Reproducibility Project for Graph Attention Networks"
 excerpt: "Graph Attention Networks using Python PyTorch.<br/><img src='/images/GAT.png'>"
 collection: projects
+date: 2024-05-06
+tags:
+  - PyTorch
+  - PyTorch Geometric
+  - NumPy
+  - scikit-learn
+  - Ipython
+  - matplotlib
 ---
 
 The publication: *[P. VelickoviÊ, G. Cucurull, A. Casanova, A. Romero, P. Lio, and Y. Bengio, “Graph attention networks,” arXiv preprint arXiv:1710.10903, 2017.](https://doi.org/10.48550/arXiv.1710.10903)*  
