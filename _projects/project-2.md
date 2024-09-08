@@ -4,8 +4,9 @@ excerpt: "Movie Recommendation Based on Genres or IBCF Using R Shiny App.<br/><i
 collection: projects
 date: 2023-12-08
 tags:
-  - Advanced Bayesian 
-  - Sociology
+  - IBCF
+  - Cosine Similarity  
+  - R shiny
 ---
 
 - System I: Movie Recommendation Based on Genres
