@@ -2,6 +2,10 @@
 title: "Movie Recommender App"
 excerpt: "Movie Recommendation Based on Genres or IBCF Using R Shiny App.<br/><img src='/images/Shiny.png'>"
 collection: projects
+date: 2023-12-06
+tags:
+  - Advanced Bayesian 
+  - Sociology
 ---
 
 - System I: Movie Recommendation Based on Genres
