@@ -1,6 +1,6 @@
 ---
 title: "Movie Recommender App"
-excerpt: "Movie Recommendation Based on Genres or IBCF Using R Shiny App.<br/><img src='/images/Shiny.png'>"
+excerpt: "Movie Recommendation Based on Genres or IBCF using R Shiny App.<br/><img src='/images/Shiny.png'>"
 collection: projects
 date: 2023-12-08
 tags:
