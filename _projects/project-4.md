@@ -2,6 +2,13 @@
 title: "Faculty Analytics: Find the Faculty you want to connect!"
 excerpt: "Connection App using Python Dash, Flask, Neo4j, MySQL and MongoDB.<br/><img src='/images/Faculty Analytics.png'>"
 collection: projects
+date: 2023-04-24
+tags:
+  - Neo4j
+  - MySQL
+  - MongoDB
+  - Dash
+  - Flask
 ---
 
 The application scenarios involve users who are interested in connecting with a professor due to shared research interests, as well as professors who are seeking a university to join. 
