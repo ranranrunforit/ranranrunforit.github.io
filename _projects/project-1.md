@@ -4,8 +4,8 @@ date: 2024-08-06
 excerpt: "The Narrative Visualization in D3.js. <br/><img src='/images/D3.png'>"
 collection: projects
 tags:
-  - Advanced Bayesian 
-  - Sociology
+  - D3.js 
+  - Narrative Visualization
 ---
 
 The narrative visualization aims to convey the impact of human activity on the increasing severity of wildfires that burned more than 25,000 acres in the United States from 2000 to 2018. By analyzing the [Spatial Wildfire Occurence Data for The United States](https://www.fs.usda.gov/rds/archive/Catalog/RDS-2013-0009.5) provided by the US Forest Service, the goal is to investigate whether the worsening of these large-scale wildfires is primarily driven by human-caused ignitions.
