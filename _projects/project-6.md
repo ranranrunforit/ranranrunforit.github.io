@@ -4,7 +4,8 @@ excerpt: "Illustrate the factors influencing statistical power in linear regress
 collection: projects
 date: 2023-06-07
 tags:
-  - R scales
+  - R
+  - scales
   - linear regression
   - power analysis
 ---
