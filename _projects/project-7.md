@@ -17,7 +17,7 @@ tags:
 - Compare the effectiveness of L1-norm penalty (Lasso), L2-norm penalty (Ridge), and Elastic Net regularization methods for linear regression.
 - Apply data pre-processing techniques such as one-hot encoding and Winsorization.
 
-**[Predict the housing prices in Ames](http://htmlpreview.github.io/?https://github.com/ranranrunforit/Statistical-Projects/blob/main/Housing%20Prediction/Housing-Data-Report.html)**
+**[Predict the housing prices in Ames (Live Preview)](http://htmlpreview.github.io/?https://github.com/ranranrunforit/Statistical-Projects/blob/main/Housing%20Prediction/Housing-Data-Report.html)**
 
 
 **Keywords**: regularization, Elastic Net, Gradient Boosting Machine (GBM)  
