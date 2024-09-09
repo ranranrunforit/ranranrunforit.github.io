@@ -4,7 +4,8 @@ excerpt: "Develop linear regression and tree-based models for housing price pred
 collection: projects
 date: 2023-09-14
 tags:
-  - R glmnet
+  - R
+  - glmnet
   - xgboost
   - caret
   - randomForest
