@@ -1,6 +1,6 @@
 ---
-title: "Tableau Dashboard on Covid-19 Cases"
-excerpt: "Where were the hotspots during COVID-19 (between Jan 22, 2020 to Apr 29, 2022)?<br/><img src='/images/Tableau.png'>"
+title: ""Where were the hotspots during COVID-19?"
+excerpt: "Tableau Dashboard on Covid-19 Cases<br/><img src='/images/Tableau.png'>"
 collection: projects
 date: 2024-06-15
 tags:
@@ -14,7 +14,7 @@ The dashboard can answer the question, "Where were the hotspots during COVID-19 
 
 For example, by filtering the date to January 22, 2020, and selecting the total case metrics while leaving the state and county fields to all, it can be observed that California had the highest total number of positive cases at 1,770,021,359 and the highest total number of deaths at 24,262,380 on that date. By examining the new case metrics for the same date and location, it is evident that California also had the most new positive cases at 6,107,883 and the most new deaths at 59,863. This indicates that on January 22, 2020, the state of California was a hotspot for Covid-19. Similar analysis can be done at the county level, for example, Los Angeles county in California stood out as a hotspot on the same date.
 
-**[Covid-19 Hotspots Dashboard Workbook (Live Preview)](https://public.tableau.com/app/profile/chaoran.zhou/viz/Covid19BookFinalVersion/Dashboard1)**  
+**[Covid-19 Hotspots Tableau Workbook (Live Preview)](https://public.tableau.com/app/profile/chaoran.zhou/viz/Covid19BookFinalVersion/Dashboard1)**  
 _Please change the display layout to the desktop layout for better visualization of the workbook._
 
 
