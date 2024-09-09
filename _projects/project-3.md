@@ -1,6 +1,6 @@
 ---
-title: ""Where were the hotspots during COVID-19?"
-excerpt: "Tableau Dashboard on Covid-19 Cases<br/><img src='/images/Tableau.png'>"
+title: "Where were the hotspots during COVID-19?"
+excerpt: "Tableau Dashboard on Covid-19 Cases. <br/><img src='/images/Tableau.png'>"
 collection: projects
 date: 2024-06-15
 tags:
