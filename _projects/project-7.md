@@ -13,7 +13,7 @@ tags:
   - randomForest
   - regularization
   - Elastic Net
-  - Gradient Boosting Machine (GBM)
+  - Gradient Boosting Machine
 ---
 
 - Develop linear regression and tree-based models for housing price prediction.
