@@ -3,6 +3,7 @@ title: "Reproducibility Project for Graph Attention Networks"
 excerpt: "Graph Attention Networks using Python PyTorch.<br/><img src='/images/GAT.png'>"
 collection: projects
 date: 2024-05-06
+description: "Graph Attention Networks using Python PyTorch."
 tags:
   - PyTorch
   - PyTorch Geometric
