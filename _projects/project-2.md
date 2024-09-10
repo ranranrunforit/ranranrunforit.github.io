@@ -8,7 +8,8 @@ description: "Movie Recommendation Based on Genres or IBCF using R Shiny App."
 tags:
   - IBCF
   - Cosine Similarity  
-  - R shiny
+  - R
+  - Shiny App
 ---
 
 - System I: Movie Recommendation Based on Genres
