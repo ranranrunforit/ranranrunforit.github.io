@@ -9,6 +9,10 @@ redirect_from:
 
 {% include base_path %}
 
+Hire Me
+======
+&nbsp; <i class="fa fa-file-download"></i> &nbsp; **[Download Resume]({{ site.url }}/files/Chaoran Zhou Resume.pdf)**
+
 Education
 ======
 * M.C.S. in Data Science, University of Illinois Urbana-Champaign, 2025 (expected)
@@ -99,8 +103,3 @@ R shiny
   {% endfor %}</ul>
 
 -->
-
-Hire Me
-======
-
-&nbsp; <i class="fa fa-file-download"></i> &nbsp; **[Download Resume]({{ site.url }}/files/Chaoran Zhou Resume.pdf)**
