@@ -74,13 +74,15 @@ author:
   zhihu            : # URL
 
 # Publication Category - The following the list of publication categories and their headings
-publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
+project_category:
+  pythons:
+    title: 'Python'
+  rshinys:
+    title: 'R / R Shiny App'    
+  tableaus:
+    title: 'Tableau'
+  D3js:
+    title: 'D3.js'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
