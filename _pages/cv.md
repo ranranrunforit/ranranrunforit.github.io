@@ -77,4 +77,4 @@ R shiny
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* [Download Resume]({{ site.url }}/files/Chaoran Zhou Resume.pdf)
