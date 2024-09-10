@@ -100,7 +100,7 @@ R shiny
   {% endfor %}</ul>
 
 -->
-<br/><br/>
+<br/>
 
 Hire Me
 ======
