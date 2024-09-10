@@ -77,4 +77,4 @@ R shiny
   
 Service and leadership
 ======
-* [Download Resume]({{ site.url }}/files/Chaoran Zhou Resume.pdf)
+*  **[Download Resume]({{ site.url }}/files/Chaoran Zhou Resume.pdf)**
