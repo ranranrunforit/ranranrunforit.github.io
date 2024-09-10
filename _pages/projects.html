@@ -28,7 +28,7 @@ author_profile: true
 {% if site.project_category %}
   {% for category in site.project_category  %}
     {% assign title_shown = false %}
-    <!-- {% capture written_year %}'None'{% endcapture %} -->
+    {% capture written_year %}'None'{% endcapture %}
     {% for post in site.projects reversed %}
       {% if post.category != category[0] %}
         {% continue %}
@@ -36,13 +36,12 @@ author_profile: true
       {% unless title_shown %}
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
-        <!--  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
           {% if year != written_year %}
           <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
           {% capture written_year %}{{ year }}{% endcapture %}
-        {% endif %} -->
+        {% endif %}
       {% endunless %}
-          {% capture written_year %}'None'{% endcapture %}
           {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
           {% if year != written_year %}
           <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
