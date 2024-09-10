@@ -12,6 +12,7 @@ tags:
   - scikit-learn
   - Ipython
   - matplotlib
+  - Python
 ---
 
 The publication: *[P. VelickoviÊ, G. Cucurull, A. Casanova, A. Romero, P. Lio, and Y. Bengio, “Graph attention networks,” arXiv preprint arXiv:1710.10903, 2017.](https://doi.org/10.48550/arXiv.1710.10903)*  
