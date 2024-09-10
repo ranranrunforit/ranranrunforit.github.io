@@ -81,7 +81,7 @@ project_category:
     title: 'R / R Shiny App'    
   tableaus:
     title: 'Tableau'
-  D3js:
+  d3js:
     title: 'D3.js'
 
 # Site Settings
