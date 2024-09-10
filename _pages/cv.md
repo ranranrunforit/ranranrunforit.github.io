@@ -75,6 +75,6 @@ R shiny
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+Hire Me
 ======
-*  **[Download Resume]({{ site.url }}/files/Chaoran Zhou Resume.pdf)**
+**[Download Resume]({{ site.url }}/files/Chaoran Zhou Resume.pdf)**
