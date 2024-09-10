@@ -3,6 +3,7 @@ title: "Predict the housing prices in Ames"
 excerpt: "Develop linear regression and tree-based models for housing price prediction using R.<br/><img src='/images/house.png'>"
 collection: projects
 date: 2023-09-14
+description: "Develop linear regression and tree-based models for housing price prediction using R."
 tags:
   - R
   - glmnet
