@@ -7,7 +7,14 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- {% capture written_year %}'None'{% endcapture %}
+<!-- Orginial
+{% for post in site.projects %}
+  {% include archive-single.html %}
+{% endfor %}  -->
+
+
+<!-- Sort it by year
+{% capture written_year %}'None'{% endcapture %}
 {% for post in site.projects reversed %}
 {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
   {% if year != written_year %}
@@ -17,11 +24,11 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %} -->
 
-<!-- New style rendering if publication categories are defined -->
+<!-- Sort it by project categories then year -->
 {% if site.project_category %}
   {% for category in site.project_category  %}
     {% assign title_shown = false %}
-    {% capture written_year %}'None'{% endcapture %}
+    <!-- {% capture written_year %}'None'{% endcapture %} -->
     {% for post in site.projects reversed %}
       {% if post.category != category[0] %}
         {% continue %}
@@ -35,6 +42,7 @@ author_profile: true
           {% capture written_year %}{{ year }}{% endcapture %}
         {% endif %} -->
       {% endunless %}
+          {% capture written_year %}'None'{% endcapture %}
           {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
           {% if year != written_year %}
           <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
