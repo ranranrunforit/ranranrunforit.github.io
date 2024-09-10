@@ -77,4 +77,5 @@ R shiny
   
 Hire Me
 ======
-**[Download Resume]({{ site.url }}/files/Chaoran Zhou Resume.pdf)**
+
+<i class="fas fa-file-download"></i> **[Download Resume]({{ site.url }}/files/Chaoran Zhou Resume.pdf)**
