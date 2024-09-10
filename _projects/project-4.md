@@ -3,6 +3,7 @@ title: "Faculty Analytics: Find the Faculty you want to connect!"
 excerpt: "Connection App using Python Dash, Flask, Neo4j, MySQL and MongoDB.<br/><img src='/images/Faculty Analytics.png'>"
 collection: projects
 date: 2023-04-24
+description: "Connection App using Python Dash, Flask, Neo4j, MySQL and MongoDB."
 tags:
   - Neo4j
   - MySQL
