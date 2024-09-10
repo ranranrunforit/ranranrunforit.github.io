@@ -59,10 +59,33 @@ Skills
 
 Projects
 ======
+  <ul>{% if site.project_category %}
+  {% for category in site.project_category  %}
+    {% assign title_shown = false %}
+    {% for post in site.projects reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single-talk-cv.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.projects reversed %}
+    {% include archive-single-talk-cv.html %}
+  {% endfor %}
+{% endif %}</ul>
+
+<!---
+Projects
+======
   <ul>{% for post in site.projects reversed %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
-  
+
 Python
 ======
   <ul>{% for post in site.python reversed %}
@@ -74,7 +97,9 @@ R shiny
   <ul>{% for post in site.rshiny reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
+-->
+
 Hire Me
 ======
 
