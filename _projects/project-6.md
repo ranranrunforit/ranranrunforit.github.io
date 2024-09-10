@@ -3,6 +3,7 @@ title: "Simulation Study"
 excerpt: "Illustrate the factors influencing statistical power in linear regression using R.<br/><img src='/images/Sim.png'>"
 collection: projects
 date: 2023-06-07
+description: "Illustrate the factors influencing statistical power in linear regression using R."
 tags:
   - R
   - scales
