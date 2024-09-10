@@ -9,6 +9,7 @@ tags:
   - Neo4j
   - MySQL
   - MongoDB
+  - Python
   - Dash
   - Flask
 ---
