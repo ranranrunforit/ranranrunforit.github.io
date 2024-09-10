@@ -3,6 +3,7 @@ title: "Visualized: 18 Years of Wildfires in America"
 date: 2024-08-06
 excerpt: "The Narrative Visualization in D3.js. <br/><img src='/images/D3.png'>"
 collection: projects
+category: d3js
 description: "The Narrative Visualization in D3.js."
 tags:
   - D3.js 
