@@ -3,6 +3,7 @@ title: "Movie Review Sentiment Analysis"
 excerpt: "Construct vocabulary using 'bag-of-words' and 'n-gram' strategies using R. <br/><img src='/images/movie.png'>"
 collection: projects
 date: 2023-11-29
+description: "Construct vocabulary using 'bag-of-words' and 'n-gram' strategies using R."
 tags:
   - R 
   - text2vec
