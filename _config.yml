@@ -223,20 +223,7 @@ collections:
   python:
     output: true
     permalink: /:collection/:path/
-    
-#  tableau:
-#    output: true
-#    permalink: /:collection/:path/
-#  rshiny:
-#    output: true
-#    permalink: /:collection/:path/
-#  projects:
-#    output: true
-#    permalink: /:collection/:path/
-#  python:
-#    output: true
-#    permalink: /:collection/:path/
-
+ 
 
 # These settings control how pages and collections are included in the site
 defaults:
