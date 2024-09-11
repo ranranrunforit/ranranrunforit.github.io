@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Chaoran's Portfolio Website"
+title                    : "Chaoran's Portfolio"
 title_separator          : "-"
 name                     : &name "Chaoran Zhou"
 description              : &description "personal description"
@@ -211,15 +211,28 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
+  tableau:
+    output: true
+    permalink: /:collection/:path/
+  rshiny:
+    output: true
+    permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  python:
+    output: true
+    permalink: /:collection/:path/
+    
 #  tableau:
 #    output: true
 #    permalink: /:collection/:path/
 #  rshiny:
 #    output: true
 #    permalink: /:collection/:path/
-  projects:
-    output: true
-    permalink: /:collection/:path/
+#  projects:
+#    output: true
+#    permalink: /:collection/:path/
 #  python:
 #    output: true
 #    permalink: /:collection/:path/
@@ -246,23 +259,23 @@ defaults:
       layout: single
       author_profile: true
   # _tableau
-#  - scope:
-#      path: ""
-#      type: tableau
-#    values:
-#      layout: single
-#      author_profile: true
-#      share: true
-#      comments: true
+  - scope:
+      path: ""
+      type: tableau
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   # _rshiny
-#  - scope:
-#      path: ""
-#      type: rshiny
-#    values:
-#      layout: single
-#      author_profile: true
-#      share: true
-#      comments: true
+  - scope:
+      path: ""
+      type: rshiny
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   # _projects
   - scope:
       path: ""
@@ -274,13 +287,13 @@ defaults:
       share: true
       comment: true
   # _python
-#  - scope:
-#      path: ""
-#      type: python
-#    values:
-#      layout: talk
-#      author_profile: true
-#      share: true
+  - scope:
+      path: ""
+      type: python
+    values:
+      layout: talk
+      author_profile: true
+      share: true
 
 
 # Sass/SCSS
