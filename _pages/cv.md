@@ -54,7 +54,9 @@ Technology Used: VB .NET, Express.js, Node.js, Microsoft Azure
   
 Skills
 ======
-* Programming languages: Python, C#, R, MATLAB, SQL, Bash, etc.;
+* Programming languages: C#, Python, SQL, R, MATLAB, Java, SQL, Bash, etc.;
+* Proficient in Python packages: PyTorch, Numpy, Pandas, Matplotlib, PyHealth, Keras, Sklearn, Tensorflow, Flask, Django, etc.;
+* Proficient in R packages: tidyverse, lubridate, glmnet, readr, dplyr, xgboost, caret, randomForest, text2vec, slam, pROC, ggplot2,  shiny, recommenderlab, etc.;
 * AI/ML framework: PyTorch, Tensorflow, Hugging Face, CUDA, Keras, Sklearn, etc.;
 * Cloud computing: AWS S3, EC2, Lambda, API Gateway, Step Functions, EKS, CloudFormation, CloudWatch, DynamoDB, etc.; GCP, BigQuery; Docker containers, etc.;
 * Software development tools: IntelliJ, Jenkins, Git, etc.
