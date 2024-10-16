@@ -24,5 +24,5 @@ tags:
 
 **[ Baby auto-pilot / Dashboard for PiCarX (Video)](https://youtu.be/xW_e4IPZ7Xk)**
 
-**Keywords**: IoT, advanced mapping, self-driving, obstacle detection    
+**Keywords**: Internet of Things, advanced mapping, self-driving, obstacle detection    
 **Packages**: Python, SLAM, A-STAR, Electron js, Flask
