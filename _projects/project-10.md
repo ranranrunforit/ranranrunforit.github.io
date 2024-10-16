@@ -1,6 +1,6 @@
 ---
 title: "Baby Driver in Python"
-excerpt: "A collection of Internet of Things projects that I have completed. <br/><img src='/images/movie.png'>"
+excerpt: "A collection of Internet of Things projects that I have completed. <br/><img src='/images/PiCarX.png'>"
 collection: projects
 date: 2024-10-16
 category: python
@@ -22,7 +22,7 @@ tags:
 
 - Baby auto-pilot software in python for a Raspberry-pi powered car. Includes advanced mapping features, self-driving, obstacle detection and avoidance
 
-**[Baby auto-pilot for PiCarX (Video)](https://youtu.be/xW_e4IPZ7Xk)**
+**[ Baby auto-pilot / Dashboard for PiCarX (Video)](https://youtu.be/xW_e4IPZ7Xk)**
 
 **Keywords**: IoT, advanced mapping, self-driving, obstacle detection
 **Packages**: Python, SLAM, A-STAR, Electron js, Flask
