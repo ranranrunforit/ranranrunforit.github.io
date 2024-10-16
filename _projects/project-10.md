@@ -22,7 +22,7 @@ tags:
 
 - Baby auto-pilot software in python for a Raspberry-pi powered car. Includes advanced mapping features, self-driving, obstacle detection and avoidance
 
-**[ Baby auto-pilot / Dashboard for PiCarX (Video)](https://youtu.be/OiLRXp2DdbU)**
+**[ Baby auto-pilot / Dashboard for PiCarX (Demo Video)](https://youtu.be/OiLRXp2DdbU)**
 
 **Keywords**: Internet of Things(IoT), advanced mapping, self-driving, obstacle detection    
 **Packages**: Python, SLAM, A-STAR, Electron js, Flask
