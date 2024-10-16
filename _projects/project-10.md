@@ -3,7 +3,7 @@ title: "Baby Driver in Python"
 excerpt: "A collection of Internet of Things projects that I have completed. <br/><img src='/images/PiCarX.png'>"
 collection: projects
 date: 2024-10-16
-category: python
+category: pythons
 description: "A collection of Internet of Things projects that I have completed."
 tags:
   - IoT
