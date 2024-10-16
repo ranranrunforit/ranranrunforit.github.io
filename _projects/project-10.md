@@ -1,10 +1,10 @@
 ---
 title: "Baby Driver in Python"
-excerpt: "A collection of Internet of Things projects that I have completed. <br/><img src='/images/PiCarX.png'>"
+excerpt: "A collection of Internet of Things projects. <br/><img src='/images/PiCarX.png'>"
 collection: projects
 category: pythons
 date: 2024-10-16
-description: "A collection of Internet of Things projects that I have completed."
+description: "A collection of Internet of Things projects."
 tags:
   - IoT
   - advanced mapping
@@ -24,5 +24,5 @@ tags:
 
 **[ Baby auto-pilot / Dashboard for PiCarX (Video)](https://youtu.be/xW_e4IPZ7Xk)**
 
-**Keywords**: IoT, advanced mapping, self-driving, obstacle detection
+**Keywords**: IoT, advanced mapping, self-driving, obstacle detection  
 **Packages**: Python, SLAM, A-STAR, Electron js, Flask
