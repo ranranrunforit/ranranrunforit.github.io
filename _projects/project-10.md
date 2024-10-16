@@ -6,7 +6,7 @@ category: pythons
 date: 2024-10-16
 description: "A collection of Internet of Things projects."
 tags:
-  - IoT
+  - Internet of Things
   - advanced mapping
   - self-driving
   - obstacle detection
