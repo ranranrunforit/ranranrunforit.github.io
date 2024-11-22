@@ -2,7 +2,7 @@
 title: "TinyLLaMa"
 excerpt: "Implemented LLaMa model loading and training. <br/><img src='/images/Llama.png'>"
 collection: projects
-date: 2024-09-26
+date: 2024-11-22
 category: python
 description: "Implemented LLaMa model loading and training."
 tags:
