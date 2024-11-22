@@ -3,7 +3,7 @@ title: "TinyLLaMa"
 excerpt: "Implemented LLaMa model loading and training. <br/><img src='/images/Llama.png'>"
 date: 2024-11-22
 collection: projects
-category: d3js
+category: python
 description: "Implemented LLaMa model loading and training."
 tags:
   - LLM
