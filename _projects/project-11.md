@@ -32,16 +32,16 @@ This project focuses on implementing the Llama2 model, which utilizes a modified
    - A projection layer for predicting token IDs.
    - A generation function that employs temperature sampling for text continuation without nucleus/top-k sampling.
 
-### Implementation Tasks:
-The project includes several components marked with `#todo`, which require implementation:
+### Implemented Tasks:
+The project includes several components:
 - Attention mechanism.
 - RMS normalization.
 - Forward pass for the Llama model.
 - Generation function.
-- Rotary positional embeddings.
+- Rotary positional embeddings (RoPE).
 - AdamW optimizer with decoupled weight decay.
 
-### Additional Components:
+### Partical Components:
 - **LlamaSentClassifier**: A class for encoding sentences and classifying them using the Llama2 model.
 - **Optimizer**: Implementation of the AdamW optimizer with specific adaptations for weight decay and bias correction.
 
