@@ -2,7 +2,7 @@
 title: "TinyLLaMa"
 excerpt: "Implemented LLaMa model loading and training. <br/><img src='/images/Llama.png'>"
 collection: projects
-date: 2024-11-21
+date: 2024-11-22
 category: python
 description: "Implemented LLaMa model loading and training."
 tags:
@@ -37,15 +37,11 @@ The project includes several components:
 - Attention mechanism.
 - RMS normalization.
 - Forward pass for the Llama model.
-- Generation function.
 - Rotary positional embeddings (RoPE).
 - AdamW optimizer with decoupled weight decay.
 
-### Partical Components:
-- **LlamaSentClassifier**: A class for encoding sentences and classifying them using the Llama2 model.
-- **Optimizer**: Implementation of the AdamW optimizer with specific adaptations for weight decay and bias correction.
 
 **[Build-my-own LLaMa (Live Preview)](https://github.com/ranranrunforit/tinyllama/blob/main/tinyLlama.ipynb)**
 
-**Keywords**: LLM, LlaMa, Attention, RMSNorm, RoPE, Adam
-**Packages**: Python, PyTorch, tqdm
+**Keywords**: LLM, LlaMa, Attention, RMSNorm, RoPE, Adam  
+**Packages**: Python, PyTorch, tqdm  
