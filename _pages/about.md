@@ -20,7 +20,7 @@ redirect_from:
 >"I love working with people who are iterating quickly, making mistakes, learning from those mistakes, and trying again and again."
 
 >"I resonate with people who are trying and failing.
->Failure and willingness to look stupid—these are essential ingredients."
+>Failure and willingness to look stupid—these are essential ingredients in people."
 
 I love learning new things, therefore I had worked on large set of fields. I love creating new things and find solutions to real life problems. I am passionate to solve problems using novel ideas and iterate quickly on my ideas to optimize it for scalability.
 
