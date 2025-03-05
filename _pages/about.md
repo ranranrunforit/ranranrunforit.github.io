@@ -16,7 +16,9 @@ redirect_from:
 ## Some things about me
 
 >"I believe there’s a tradeoff between looking smart and being right."
+
 >"I love working with people who are iterating quickly, making mistakes, learning from those mistakes, and trying again and again."
+
 >"I resonate with people who are trying and failing.
 >Failure and willingness to look stupid—these are essential ingredients."
 
