@@ -15,6 +15,11 @@ redirect_from:
 
 ## Some things about me
 
+>"I believe there’s a tradeoff between looking smart and being right.
+>I love working with people who are iterating quickly, making mistakes, learning from those mistakes, and trying again and again.
+>I resonate with people who are trying and failing.
+>Failure and willingness to look stupid—these are essential ingredients in any people."
+
 I love learning new things, therefore I had worked on large set of fields. I love creating new things and find solutions to real life problems. I am passionate to solve problems using novel ideas and iterate quickly on my ideas to optimize it for scalability.
 
 I also improve myself everyday, optimizing my work flow in every step of my life. I like things clean and organized.
