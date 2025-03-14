@@ -1,10 +1,10 @@
 ---
 title: "Gemini Search"
-excerpt: "A Perplexity-style search engine powered by Google's Gemini 2.0 Flash Thinking Experimental model with grounding through Google Search. Get AI-powered answers to your questions with real-time web sources and citations. <br/><img src='/images/Demo.gif'>"
+excerpt: "A Perplexity-style search engine powered by Google's Gemini 2.0 Flash Thinking Experimental model with grounding through Google Search.<br/><img src='/images/Demo.gif'>"
 collection: projects
 date: 2025-02-14
 category: pythons
-description: "A Perplexity-style search engine powered by Google's Gemini 2.0 Flash Thinking Experimental model with grounding through Google Search. Get AI-powered answers to your questions with real-time web sources and citations."
+description: "A Perplexity-style search engine powered by Google's Gemini 2.0 Flash Thinking Experimental model with grounding through Google Search."
 tags:
   - React
   - Vite
