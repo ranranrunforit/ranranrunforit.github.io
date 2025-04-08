@@ -1,5 +1,5 @@
 ---
-title: "End-to-End RAG System"
+title: "RAG Pipeline"
 excerpt: "An End-to-End Retrieval Augmented Generation (RAG) System for Answering Questions. <br/><img src='/images/RAG.png'>"
 collection: projects
 date: 2025-04-08
