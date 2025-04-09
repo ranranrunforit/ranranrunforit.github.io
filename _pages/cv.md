@@ -12,8 +12,8 @@ redirect_from:
 
 Education
 ======
-* M.C.S. in Data Science, University of Illinois Urbana-Champaign, 2025 (expected)
-* B.C.S. in Computer Science with Co-operative Education program, Dalhousie University, 2018
+* M.C.S. in Data Science, University of Illinois Urbana-Champaign, May 2025
+* B.C.S. in Computer Science with Co-operative Education program, Dalhousie University, August 2018
   * Specialization of Data Science
   * Specialization of Artificial Intelligence and Intelligent Systems
   * Teaching Assistant For Discrete Math & Network Computing
