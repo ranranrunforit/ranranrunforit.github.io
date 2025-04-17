@@ -21,7 +21,7 @@ repository               : "ranranrunforit/ranranrunforit.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "cat.jpg"
+  avatar           : "cat_shot.jpg"
   name             : "Chaoran Zhou"
   pronouns         : # example: "she/her"  
   bio              : "From Software Engineer to Data Scientist"
