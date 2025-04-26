@@ -18,7 +18,14 @@ Education
   * Specialization of Artificial Intelligence and Intelligent Systems
   * Teaching Assistant For Discrete Math & Network Computing
 
-Work experience
+
+Certifications
+======
+* AI Agents Fundamentals and Completion, Hugging Face, April 2025
+Credential ID ranranrunforit
+
+
+Work Experience
 ======
 * Software Engineer, NCS; Beijing, China, September 2019 – December 2022
   * Use C#, .NET 4.0, Entity Framework, and SQLite to develop desktop software, ICP Expert, that feature user-friendly worksheet interfaces, easy-to-operate method development, and preset methods to simplify chemical analysis.
