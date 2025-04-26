@@ -22,7 +22,7 @@ Education
 Certifications
 ======
 * AI Agents Fundamentals and Completion, Hugging Face, April 2025
-Credential ID ranranrunforit
+  * Credential ID: ranranrunforit
 
 
 Work Experience
