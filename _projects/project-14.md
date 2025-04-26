@@ -24,5 +24,5 @@ tags:
 Rank 26 on Student Scores Leaderboard 
 At 5:17:54 PM April 26th, 2025
 
- ![image]('/images/Rank.png')
+ ![image](/images/Rank.png)
 
