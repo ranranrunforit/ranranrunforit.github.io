@@ -23,6 +23,7 @@ Certifications
 ======
 * AI Agents Fundamentals and Completion, Hugging Face, April 2025
   * Credential ID: ranranrunforit
+  * Credential URL: [link]([(https://huggingface.co/datasets/agents-course/certificates/resolve/main/certificates/ranranrunforit/2025-04-24.png))
 
 
 Work Experience
