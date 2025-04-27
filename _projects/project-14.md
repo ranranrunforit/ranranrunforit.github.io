@@ -21,7 +21,7 @@ tags:
 
 **[GAIA Agent (Live Preview)](https://github.com/ranranrunforit/GAIA-Agent/tree/main)**
 
-Ranked #26 on the Hugging Face Student Scores Leaderboard :sweat_smile:
+Ranked #26 on the Hugging Face Student Scores Leaderboard 😅
 
 At 5:17:54 PM April 26th, 2025
 
