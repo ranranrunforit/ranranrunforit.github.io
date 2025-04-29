@@ -23,10 +23,10 @@ Certifications
 ======
 * AI Agents Course - Certificate of Excellence, Hugging Face, April 2025
   * Credential ID: ranranrunforit
-  * Credential URL: [Link](https://cdn-uploads.huggingface.co/production/uploads/noauth/4T9eSX_msUj5-J8St-zm0.webp)
+  * Credential PDF: [Link]({{ site.url }}/files/AI Agent Certificate.pdf)
 * Deep Reinforcement Learning Course - Certificate of Excellence, Hugging Face, April 2025
   * Credential ID: ranranrunforit
-  * Credential URL: [link](https://huggingface.co/datasets/agents-course/certificates/resolve/main/certificates/ranranrunforit/2025-04-24.png)
+  * Credential PDF: [Link]({{ site.url }}/files/Deep Reinforcement Learning Certificate.pdf)
 
 
 Work Experience
