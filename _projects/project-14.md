@@ -27,3 +27,7 @@ At 5:17:54 PM April 26th, 2025
 
  ![image](/images/Rank.png)
 
+
+and got my Certificate of AI Agents from Hugging Face 😂
+ 
+ ![image2](/images/congrats.png)
