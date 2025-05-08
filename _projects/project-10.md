@@ -18,9 +18,11 @@ tags:
 ---
 
 
-- Electron UI to control PiCar, and show real-time data from PiCarX
+- Developed an Electron-based UI and Node.js backend to visualize real-time metrics，control a Raspberry Pi-powered PiCarX robot car with live demo video.
 
-- Baby auto-pilot software in python for a Raspberry-pi powered car. Includes advanced mapping features, self-driving, obstacle detection and avoidance
+- Implemented baby auto-pilot software in Python, enabling self-driving capabilities with advanced mapping, obstacle detection, and avoidance.
+
+- Integrated SLAM and A-STAR algorithms for efficient path planning and navigation.
 
 **[ Baby auto-pilot / Dashboard for PiCarX (Demo Video)](https://youtu.be/OiLRXp2DdbU)**
 
