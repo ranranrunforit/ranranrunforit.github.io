@@ -86,21 +86,21 @@ Here’s an overview of what’s available:
 
 Let’s explore some of these pipelines in more detail!
 
-#### Zero-shot classification
+### Zero-shot classification
 
 We’ll start by tackling a more challenging task where we need to classify texts that haven’t been labelled. This is a common scenario in real-world projects because annotating text is usually time-consuming and requires domain expertise. For this use case, the zero-shot-classification pipeline is very powerful: it allows you to specify which labels to use for the classification, so you don’t have to rely on the labels of the pretrained model. You’ve already seen how the model can classify a sentence as positive or negative using those two labels — but it can also classify the text using any other set of labels you like.
 
 This pipeline is called zero-shot because you don’t need to fine-tune the model on your data to use it. It can directly return probability scores for any list of labels you want!
 
 
-#### Text generation
+### Text generation
 
 Now let’s see how to use a pipeline to generate some text. The main idea here is that you provide a prompt and the model will auto-complete it by generating the remaining text. This is similar to the predictive text feature that is found on many phones. Text generation involves randomness, so it’s normal if you don’t get the same results as shown below.
 
 You can control how many different sequences are generated with the argument num_return_sequences and the total length of the output text with the argument max_length.
 
 
-#### Using any model from the Hub in a pipeline
+### Using any model from the Hub in a pipeline
 
 The previous examples used the default model for the task at hand, but you can also choose a particular model from the Hub to use in a pipeline for a specific task — say, text generation. Go to the Model Hub and click on the corresponding tag on the left to display only the supported models for that task. You should get to a page like this one.
 
@@ -110,19 +110,19 @@ You can refine your search for a model by clicking on the language tags, and pic
 
 Once you select a model by clicking on it, you’ll see that there is a widget enabling you to try it directly online. This way you can quickly test the model’s capabilities before downloading it.
 
-#### Inference Providers
+### Inference Providers
 
 All the models can be tested directly through your browser using the Inference Providers, which is available on the Hugging Face website. You can play with the model directly on this page by inputting custom text and watching the model process the input data.
 
 Inference Providers that powers the widget is also available as a paid product, which comes in handy if you need it for your workflows. See the pricing page for more details.
 
-#### Mask filling
+### Mask filling
 
 The next pipeline you’ll try is fill-mask. The idea of this task is to fill in the blanks in a given text:
 
 The top_k argument controls how many possibilities you want to be displayed. Note that here the model fills in the special <mask> word, which is often referred to as a mask token. Other mask-filling models might have different mask tokens, so it’s always good to verify the proper mask word when exploring other models. One way to check it is by looking at the mask word used in the widget.
 
-#### Named entity recognition
+### Named entity recognition
 
 Named entity recognition (NER) is a task where the model has to find which parts of the input text correspond to entities such as persons, locations, or organizations. Let’s look at an example:
 
@@ -130,19 +130,19 @@ Here the model correctly identified that Sylvain is a person (PER), Hugging Face
 
 We pass the option grouped_entities=True in the pipeline creation function to tell the pipeline to regroup together the parts of the sentence that correspond to the same entity: here the model correctly grouped “Hugging” and “Face” as a single organization, even though the name consists of multiple words. In fact, as we will see in the next chapter, the preprocessing even splits some words into smaller parts. For instance, Sylvain is split into four pieces: S, ##yl, ##va, and ##in. In the post-processing step, the pipeline successfully regrouped those pieces.
 
-#### Question answering
+### Question answering
 
 The question-answering pipeline answers questions using information from a given context:
 
 Note that this pipeline works by extracting information from the provided context; it does not generate the answer.
 
-#### Summarization
+### Summarization
 
 Summarization is the task of reducing a text into a shorter text while keeping all (or most) of the important aspects referenced in the text. Here’s an example:
 
 Like with text generation, you can specify a max_length or a min_length for the result.
 
-#### Translation
+### Translation
 
 For translation, you can use a default model if you provide a language pair in the task name (such as "translation_en_to_fr"), but the easiest way is to pick the model you want to use on the Model Hub. Here we’ll try translating from French to English:
 
@@ -152,6 +152,8 @@ For translation, you can use a default model if you provide a language pair in t
 Beyond text, Transformer models can also work with images and audio. Here are a few examples:
 
 #### Image classification
+
+#### Automatic speech recognition
 
 ### Combining data from multiple sources
 
