@@ -58,6 +58,12 @@ However, LLMs also have important limitations:
 
 In this section, we will look at what Transformer models can do and use our first tool from the 🤗 Transformers library: the `pipeline()` function.
 
+### Available pipelines for different modalities
+
+The `pipeline()` function supports multiple modalities, allowing you to work with text, images, audio, and even multimodal tasks. In this course we’ll focus on text tasks, but it’s useful to understand the transformer architecture’s potential, so we’ll briefly outline it.
+
+Here’s an overview of what’s available:
+
 **Text pipelines**
 - **text-generation**: Generate text from a prompt
 - **text-classification**: Classify text into predefined categories
