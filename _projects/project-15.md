@@ -151,9 +151,9 @@ For translation, you can use a default model if you provide a language pair in t
 
 Beyond text, Transformer models can also work with images and audio. Here are a few examples:
 
-#### Image classification
+### Image classification
 
-#### Automatic speech recognition
+### Automatic speech recognition
 
 ### Combining data from multiple sources
 
