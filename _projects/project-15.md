@@ -52,8 +52,6 @@ However, LLMs also have important limitations:
 - **Context windows**: They have limited context windows (though this is improving)
 - **Computational resources**: They require significant computational resources
 
-
-
 ## Transformers, what can they do?
 
 In this section, we will look at what Transformer models can do and use our first tool from the 🤗 Transformers library: the `pipeline()` function.
@@ -530,7 +528,7 @@ One of the most significant challenges in LLM inference is managing context leng
 
 Recent models like Qwen2.5-1M offer impressive 1M token context windows, but this comes at the cost of significantly slower inference times. The key is finding the right balance for your specific use case.
 
-The KV Cache Optimization
+#### The KV Cache Optimization
 
 To address these challenges, one of the most powerful optimizations is KV (Key-Value) caching. This technique significantly improves inference speed by storing and reusing intermediate calculations. This optimization:
 
