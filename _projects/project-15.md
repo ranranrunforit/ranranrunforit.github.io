@@ -245,7 +245,12 @@ A key feature of Transformer models is that they are built with special layers c
  ![attention_layer](/images/attention_layer.png)
 
 
+## How 🤗 Transformers solve tasks
+
+Before diving into specific architectural variants, it’s helpful to understand that most tasks follow a similar pattern: input data is processed through a model, and the output is interpreted for a specific task. The differences lie in how the data is prepared, what model architecture variant is used, and how the output is processed.
+
 ## How language models work
+
 Language models work by being trained to predict the probability of a word given the context of surrounding words. This gives them a foundational understanding of language that can generalize to other tasks.
 
 There are two main approaches for training a transformer model:
