@@ -249,7 +249,7 @@ A key feature of Transformer models is that they are built with special layers c
 
 Before diving into specific architectural variants, it’s helpful to understand that most tasks follow a similar pattern: input data is processed through a model, and the output is interpreted for a specific task. The differences lie in how the data is prepared, what model architecture variant is used, and how the output is processed.
 
-## How language models work
+### How language models work
 
 Language models work by being trained to predict the probability of a word given the context of surrounding words. This gives them a foundational understanding of language that can generalize to other tasks.
 
@@ -267,6 +267,12 @@ In the Transformers library, language models generally fall into three architect
 - **Decoder-only models** (like GPT, Llama): These models process text from left to right and are particularly good at text generation tasks. They can complete sentences, write essays, or even generate code based on a prompt.
 
 - **Encoder-decoder models** (like T5, BART): These models combine both approaches, using an encoder to understand the input and a decoder to generate output. They excel at sequence-to-sequence tasks like translation, summarization, and question answering.
+
+![transformers_architecture](/images/transformers_architecture.png)
+
+As we covered in the previous section, language models are typically pretrained on large amounts of text data in a self-supervised manner (without human annotations), then fine-tuned on specific tasks. This approach, known as transfer learning, allows these models to adapt to many different NLP tasks with relatively small amounts of task-specific data.
+
+In the following sections, we’ll explore specific model architectures and how they’re applied to various tasks across speech, vision, and text domains.
 
 Understanding which part of the Transformer architecture (encoder, decoder, or both) is best suited for a particular NLP task is key to choosing the right model. Generally, tasks requiring bidirectional context use encoders, tasks generating text use decoders, and tasks converting one sequence to another use encoder-decoders.
 
