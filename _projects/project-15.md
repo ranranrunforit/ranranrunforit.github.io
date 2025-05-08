@@ -171,11 +171,11 @@ For example, you could build a system that:
 
 ## How do Transformers work?
 
-- **GPT**-like (also called *auto-regressive* Transformer models)
+- GPT-like (also called *auto-regressive* Transformer models)
 
-- **BERT**-like (also called *auto-encoding* Transformer models)
+- BERT-like (also called *auto-encoding* Transformer models)
 
-- **T5**-like (also called *sequence-to-sequence* Transformer models)
+- T5-like (also called *sequence-to-sequence* Transformer models)
 
 ## Transformers are language models
 
