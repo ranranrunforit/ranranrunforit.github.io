@@ -599,3 +599,9 @@ Throughout the chapter, you’ve seen how these models can be applied to real-wo
 - Using the Hugging Face Hub to find and use pre-trained models
 - Leveraging the Inference API to test models directly in your browser
 - Understanding which models are best suited for specific tasks
+
+# Acknowledgements
+
+This overview was created with the help of deep and manual research, drawing inspiration and information from the excellent resource:
+
+[HuggingFace🤗 LLM Course](https://huggingface.co/learn/llm-course/chapter1/3?fw=pt)
