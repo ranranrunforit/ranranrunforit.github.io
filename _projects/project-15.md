@@ -226,6 +226,7 @@ This process will also achieve better results than training from scratch (unless
 The model is primarily composed of two blocks:
 
 **Encoder (left)**: The encoder receives an input and builds a representation of it (its features). This means that the model is optimized to acquire understanding from the input.
+
 **Decoder (right)**: The decoder uses the encoder’s representation (features) along with other inputs to generate a target sequence. This means that the model is optimized for generating outputs.
 
 Architecture of a Transformers models
