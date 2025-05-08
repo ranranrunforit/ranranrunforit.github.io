@@ -1,5 +1,5 @@
 ---
-title: "LLM interview prepare Cheatsheet"
+title: "Interview Preparation LLM Cheatsheet"
 excerpt: "Notes from HuggingFace🤗 LLM course. <br/><img src='/images/LLM.png'>"
 collection: projects
 date: 2025-05-08
