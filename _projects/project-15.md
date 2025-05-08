@@ -677,7 +677,7 @@ We explored what NLP is and how Large Language Models have transformed the field
 
 ### Transformer capabilities
 
-You saw how the pipeline() function from 🤗 Transformers makes it easy to use pre-trained models for various tasks:
+You saw how the `pipeline()` function from 🤗 Transformers makes it easy to use pre-trained models for various tasks:
 
 - Text classification, token classification, and question answering
 - Text generation and summarization
