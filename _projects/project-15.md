@@ -453,7 +453,7 @@ Sequence-to-sequence models are best suited for tasks revolving around generatin
 
 As we saw in How 🤗 Transformers solve tasks, encoder-decoder models like BART and T5 combine the strengths of both architectures. The encoder provides deep bidirectional understanding of the input, while the decoder generates appropriate output text. This makes them perfect for tasks that transform one sequence into another, like translation or summarization.
 
-#### Practical applications
+### Practical applications
 
 Sequence-to-sequence models excel at tasks that require transforming one form of text into another while preserving meaning. Some practical applications include:
 
