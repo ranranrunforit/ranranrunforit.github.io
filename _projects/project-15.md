@@ -229,7 +229,6 @@ The model is primarily composed of two blocks:
 
 **Decoder (right)**: The decoder uses the encoder’s representation (features) along with other inputs to generate a target sequence. This means that the model is optimized for generating outputs.
 
-
  ![Encoder-Decoder](/images/Encoder-Decoder.png)
 
 Each of these parts can be used independently, depending on the task:
@@ -242,6 +241,8 @@ Each of these parts can be used independently, depending on the task:
 ## Attention layers
 
 A key feature of Transformer models is that they are built with special layers called attention layers. This layer will tell the model to pay specific attention to certain words in the sentence you passed it (and more or less ignore the others) when dealing with the representation of each word.
+
+ ![attention_layer](/images/attention_layer.png)
 
 
 ## How language models work
