@@ -198,6 +198,8 @@ Another example is *masked language modeling*, in which the model predicts a mas
 
 *Pretraining* is the act of training a model from scratch: the weights are randomly initialized, and the training starts without any prior knowledge.
 
+![Pretraining](/images/Pretraining.png)
+
 The pretraining of a language model is costly in both time and money.
 This pretraining is usually done on very large amounts of data. Therefore, it requires a very large corpus of data, and training can take up to several weeks.
 
@@ -210,6 +212,8 @@ This pretraining is usually done on very large amounts of data. Therefore, it re
 - For the same reason, the amount of time and resources needed to get good results are much lower.
 
 For example, one could leverage a pretrained model trained on the English language and then fine-tune it on an arXiv corpus, resulting in a science/research-based model. The fine-tuning will only require a limited amount of data: the knowledge the pretrained model has acquired is “transferred,” hence the term transfer learning.
+
+![Fine-Tuning](/images/Fine-Tuning.png)
 
 The fine-tuning of a language model is cheaper than pretraining in both time and money.
 Fine-tuning a model therefore has lower time, data, financial, and environmental costs. It is also quicker and easier to iterate over different fine-tuning schemes, as the training is less constraining than a full pretraining.
