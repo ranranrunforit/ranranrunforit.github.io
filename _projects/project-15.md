@@ -229,7 +229,9 @@ The model is primarily composed of two blocks:
 
 **Decoder (right)**: The decoder uses the encoder’s representation (features) along with other inputs to generate a target sequence. This means that the model is optimized for generating outputs.
 
-Architecture of a Transformers models
+
+ ![Encoder-Decoder](/images/Encoder-Decoder.png)
+
 Each of these parts can be used independently, depending on the task:
 
 - **Encoder-only models**: Good for tasks that require understanding of the input, such as sentence classification and named entity recognition.
