@@ -187,11 +187,11 @@ This type of model develops a statistical understanding of the language it has b
 
 An example of a task is predicting the next word in a sentence having read the n previous words. This is called *causal language modeling* because the output depends on the past and present inputs, but not the future ones.
 
-![image]('/images/maskedlanguagemodeling.png')
+![casual](/images/casuallanguagemodeling.png)
 
 Another example is *masked language modeling*, in which the model predicts a masked word in the sentence.
 
-![image]('/images/casuallanguagemodeling.png')
+![masked](/images/maskedlanguagemodeling.png)
 
 
 ## Transfer Learning
