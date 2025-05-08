@@ -186,10 +186,10 @@ All the Transformer models mentioned above (GPT, BERT, T5, etc.) have been train
 This type of model develops a statistical understanding of the language it has been trained on, but it’s less useful for specific practical tasks. Because of this, the general pretrained model then goes through a process called *transfer learning* or *fine-tuning*. During this process, the model is fine-tuned in a supervised way — that is, using human-annotated labels — on a given task.
 
 An example of a task is predicting the next word in a sentence having read the n previous words. This is called *causal language modeling* because the output depends on the past and present inputs, but not the future ones.
- ![masked]('/images/maskedlanguagemodeling.png')
+ ![masked]('https://github.com/ranranrunforit/ranranrunforit.github.io/blob/main/images/maskedlanguagemodeling.png')
 
 Another example is *masked language modeling*, in which the model predicts a masked word in the sentence.
- ![casual]('/images/casuallanguagemodeling.png')
+ ![casual]('https://github.com/ranranrunforit/ranranrunforit.github.io/blob/main/images/casuallanguagemodeling.png')
 
 
 ## Transfer Learning
