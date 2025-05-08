@@ -115,146 +115,35 @@ Inference Providers that powers the widget is also available as a paid product, 
 #### Mask filling
 The next pipeline you’ll try is fill-mask. The idea of this task is to fill in the blanks in a given text:
 
-Copied
-from transformers import pipeline
-
-unmasker = pipeline("fill-mask")
-unmasker("This course will teach you all about <mask> models.", top_k=2)
-Copied
-[{'sequence': 'This course will teach you all about mathematical models.',
-  'score': 0.19619831442832947,
-  'token': 30412,
-  'token_str': ' mathematical'},
- {'sequence': 'This course will teach you all about computational models.',
-  'score': 0.04052725434303284,
-  'token': 38163,
-  'token_str': ' computational'}]
 The top_k argument controls how many possibilities you want to be displayed. Note that here the model fills in the special <mask> word, which is often referred to as a mask token. Other mask-filling models might have different mask tokens, so it’s always good to verify the proper mask word when exploring other models. One way to check it is by looking at the mask word used in the widget.
 
-✏️ Try it out! Search for the bert-base-cased model on the Hub and identify its mask word in the Inference API widget. What does this model predict for the sentence in our pipeline example above?
-
-Named entity recognition
+#### Named entity recognition
 Named entity recognition (NER) is a task where the model has to find which parts of the input text correspond to entities such as persons, locations, or organizations. Let’s look at an example:
 
-Copied
-from transformers import pipeline
-
-ner = pipeline("ner", grouped_entities=True)
-ner("My name is Sylvain and I work at Hugging Face in Brooklyn.")
-Copied
-[{'entity_group': 'PER', 'score': 0.99816, 'word': 'Sylvain', 'start': 11, 'end': 18}, 
- {'entity_group': 'ORG', 'score': 0.97960, 'word': 'Hugging Face', 'start': 33, 'end': 45}, 
- {'entity_group': 'LOC', 'score': 0.99321, 'word': 'Brooklyn', 'start': 49, 'end': 57}
-]
 Here the model correctly identified that Sylvain is a person (PER), Hugging Face an organization (ORG), and Brooklyn a location (LOC).
 
 We pass the option grouped_entities=True in the pipeline creation function to tell the pipeline to regroup together the parts of the sentence that correspond to the same entity: here the model correctly grouped “Hugging” and “Face” as a single organization, even though the name consists of multiple words. In fact, as we will see in the next chapter, the preprocessing even splits some words into smaller parts. For instance, Sylvain is split into four pieces: S, ##yl, ##va, and ##in. In the post-processing step, the pipeline successfully regrouped those pieces.
 
-✏️ Try it out! Search the Model Hub for a model able to do part-of-speech tagging (usually abbreviated as POS) in English. What does this model predict for the sentence in the example above?
-
-Question answering
+#### Question answering
 The question-answering pipeline answers questions using information from a given context:
 
-Copied
-from transformers import pipeline
-
-question_answerer = pipeline("question-answering")
-question_answerer(
-    question="Where do I work?",
-    context="My name is Sylvain and I work at Hugging Face in Brooklyn",
-)
-Copied
-{'score': 0.6385916471481323, 'start': 33, 'end': 45, 'answer': 'Hugging Face'}
 Note that this pipeline works by extracting information from the provided context; it does not generate the answer.
 
-Summarization
+#### Summarization
 Summarization is the task of reducing a text into a shorter text while keeping all (or most) of the important aspects referenced in the text. Here’s an example:
 
-Copied
-from transformers import pipeline
-
-summarizer = pipeline("summarization")
-summarizer(
-    """
-    America has changed dramatically during recent years. Not only has the number of 
-    graduates in traditional engineering disciplines such as mechanical, civil, 
-    electrical, chemical, and aeronautical engineering declined, but in most of 
-    the premier American universities engineering curricula now concentrate on 
-    and encourage largely the study of engineering science. As a result, there 
-    are declining offerings in engineering subjects dealing with infrastructure, 
-    the environment, and related issues, and greater concentration on high 
-    technology subjects, largely supporting increasingly complex scientific 
-    developments. While the latter is important, it should not be at the expense 
-    of more traditional engineering.
-
-    Rapidly developing economies such as China and India, as well as other 
-    industrial countries in Europe and Asia, continue to encourage and advance 
-    the teaching of engineering. Both China and India, respectively, graduate 
-    six and eight times as many traditional engineers as does the United States. 
-    Other industrial countries at minimum maintain their output, while America 
-    suffers an increasingly serious decline in the number of engineering graduates 
-    and a lack of well-educated engineers.
-"""
-)
-Copied
-[{'summary_text': ' America has changed dramatically during recent years . The '
-                  'number of engineering graduates in the U.S. has declined in '
-                  'traditional engineering disciplines such as mechanical, civil '
-                  ', electrical, chemical, and aeronautical engineering . Rapidly '
-                  'developing economies such as China and India, as well as other '
-                  'industrial countries in Europe and Asia, continue to encourage '
-                  'and advance engineering .'}]
 Like with text generation, you can specify a max_length or a min_length for the result.
 
-Translation
+#### Translation
 For translation, you can use a default model if you provide a language pair in the task name (such as "translation_en_to_fr"), but the easiest way is to pick the model you want to use on the Model Hub. Here we’ll try translating from French to English:
 
-Copied
-from transformers import pipeline
 
-translator = pipeline("translation", model="Helsinki-NLP/opus-mt-fr-en")
-translator("Ce cours est produit par Hugging Face.")
-Copied
-[{'translation_text': 'This course is produced by Hugging Face.'}]
-Like with text generation and summarization, you can specify a max_length or a min_length for the result.
 
-✏️ Try it out! Search for translation models in other languages and try to translate the previous sentence into a few different languages.
-
-Image and audio pipelines
+#### Image and audio pipelines
 Beyond text, Transformer models can also work with images and audio. Here are a few examples:
 
 Image classification
-Copied
-from transformers import pipeline
 
-image_classifier = pipeline(
-    task="image-classification", model="google/vit-base-patch16-224"
-)
-result = image_classifier(
-    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/pipeline-cat-chonk.jpeg"
-)
-print(result)
-Copied
-[{'label': 'lynx, catamount', 'score': 0.43350091576576233},
- {'label': 'cougar, puma, catamount, mountain lion, painter, panther, Felis concolor',
-  'score': 0.034796204417943954},
- {'label': 'snow leopard, ounce, Panthera uncia',
-  'score': 0.03240183740854263},
- {'label': 'Egyptian cat', 'score': 0.02394474856555462},
- {'label': 'tiger cat', 'score': 0.02288915030658245}]
-Automatic speech recognition
-Copied
-from transformers import pipeline
-
-transcriber = pipeline(
-    task="automatic-speech-recognition", model="openai/whisper-large-v3"
-)
-result = transcriber(
-    "https://huggingface.co/datasets/Narsil/asr_dummy/resolve/main/mlk.flac"
-)
-print(result)
-Copied
-{'text': ' I have a dream that one day this nation will rise up and live out the true meaning of its creed.'}
 Combining data from multiple sources
 One powerful application of Transformer models is their ability to combine and process data from multiple sources. This is especially useful when you need to:
 
