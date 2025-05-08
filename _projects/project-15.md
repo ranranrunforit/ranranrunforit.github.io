@@ -517,7 +517,7 @@ Using those attention matrices with less parameters then allows the model to hav
 
 ### Axial positional encodings
 Reformer uses axial positional encodings: in traditional transformer models, the positional encoding E is a matrix of size l by d, l being the sequence length and d the dimension of the hidden state. If you have very long texts, this matrix can be huge and take way too much space on the GPU. To alleviate that, axial positional encodings consist of factorizing that big matrix E in two smaller matrices E1 and E2, with dimensions l1 × d1 and l2 × d2, such that
-l1 × l2 = l and d1 + d2 = d (with the product for the lengths, this ends up being way smaller). The embedding for time step j in E is obtained by concatenating the embeddings for timestep j%l1 in E1 and j//l1 in E2.
+l1 × l2 = l and d1 + d2 = d (with the product for the lengths, this ends up being way smaller). The embedding for time step j in E is obtained by concatenating the embeddings for timestep j % l1 in E1 and j // l1 in E2.
 
 ## The Role of Attention
 The attention mechanism is what gives LLMs their ability to understand context and generate coherent responses. When predicting the next word, not every word in a sentence carries equal weight - for example, in the sentence “The capital of France is …”, the words “France” and “capital” are crucial for determining that “Paris” should come next. This ability to focus on relevant information is what we call attention.
