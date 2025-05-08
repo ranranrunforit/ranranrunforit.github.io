@@ -120,7 +120,7 @@ You can control how many different sequences are generated with the argument num
 
 The previous examples used the default model for the task at hand, but you can also choose a particular model from the Hub to use in a pipeline for a specific task — say, text generation. Go to the Model Hub and click on the corresponding tag on the left to display only the supported models for that task. You should get to a page like this one.
 
-Let’s try the HuggingFaceTB/SmolLM2-360M model! Here’s how to load it in the same pipeline as before:
+Let’s try the `HuggingFaceTB/SmolLM2-360M` model! Here’s how to load it in the same pipeline as before:
 
 You can refine your search for a model by clicking on the language tags, and pick a model that will generate text in another language. The Model Hub even contains checkpoints for multilingual models that support several languages.
 
