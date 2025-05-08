@@ -379,9 +379,15 @@ The main change ViT introduced was in how images are fed to a Transformer:
 
 ## Transformer Architectures
 
+In the previous sections, we introduced the general Transformer architecture and explored how these models can solve various tasks. Now, let’s take a closer look at the three main architectural variants of Transformer models and understand when to use each one. Then, we looked at how those architectures are applied to different language tasks.
+
+In this section, we’re going to dive deeper into the three main architectural variants of Transformer models and understand when to use each one.
+
+Remember that most Transformer models use one of three architectures: encoder-only, decoder-only, or encoder-decoder (sequence-to-sequence). Understanding these differences will help you choose the right model for your specific task.
+
 ### Encoder models
 
-Encoder models use only the encoder of a Transformer model. At each stage, the attention layers can access all the words in the initial sentence. These models are often characterized as having “bi-directional” attention, and are often called auto-encoding models.
+Encoder models use only the encoder of a Transformer model. At each stage, the attention layers can access all the words in the initial sentence. These models are often characterized as having “bi-directional” attention, and are often called *auto-encoding* models.
 
 The pretraining of these models usually revolves around somehow corrupting a given sentence (for instance, by masking random words in it) and tasking the model with finding or reconstructing the initial sentence.
 
@@ -412,13 +418,13 @@ Representatives of this family of models include:
 - Google’s Gemma Series
 - DeepSeek’s V3
 
-## Modern Large Language Models (LLMs)
+### Modern Large Language Models (LLMs)
 Most modern Large Language Models (LLMs) use the decoder-only architecture. These models have grown dramatically in size and capabilities over the past few years, with some of the largest models containing hundreds of billions of parameters.
 
 Modern LLMs are typically trained in two phases:
 
-1. Pretraining: The model learns to predict the next token on vast amounts of text data
-2. Instruction tuning: The model is fine-tuned to follow instructions and generate helpful responses
+1. **Pretraining**: The model learns to predict the next token on vast amounts of text data
+2. **Instruction tuning**: The model is fine-tuned to follow instructions and generate helpful responses
 
 This approach has led to models that can understand and generate human-like text across a wide range of topics and tasks.
 
