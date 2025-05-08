@@ -556,7 +556,9 @@ Now that we understand the basic components, let’s dive into how LLMs actually
 The prefill phase is like the preparation stage in cooking - it’s where all the initial ingredients are processed and made ready. This phase involves three key steps:
 
 - **Tokenization**: Converting the input text into tokens (think of these as the basic building blocks the model understands)
+
 - **Embedding Conversion**: Transforming these tokens into numerical representations that capture their meaning
+
 - **Initial Processing**: Running these embeddings through the model’s neural networks to create a rich understanding of the context
 
 This phase is computationally intensive because it needs to process all input tokens at once. Think of it as reading and understanding an entire paragraph before starting to write a response.
@@ -572,10 +574,10 @@ The decode phase involves several key steps that happen for each new token:
 4. **Continuation Check**: Deciding whether to continue or stop generation
 This phase is memory-intensive because the model needs to keep track of all previously generated tokens and their relationships.
 
-### Sampling Strategies
+## Sampling Strategies
 Now that we understand how the model generates text, let’s explore the various ways we can control this generation process. Just like a writer might choose between being more creative or more precise, we can adjust how the model makes its token selections.
 
-#### Understanding Token Selection: From Probabilities to Token Choices
+### Understanding Token Selection: From Probabilities to Token Choices
 
 When the model needs to choose the next token, it starts with raw probabilities (called logits) for every word in its vocabulary. But how do we turn these probabilities into actual choices? Let’s break down the process:
 
@@ -585,7 +587,7 @@ When the model needs to choose the next token, it starts with raw probabilities 
 4. **Top-k Filtering**: An alternative approach where we only consider the k most likely next words
 
 
-#### Managing Repetition: Keeping Output Fresh
+### Managing Repetition: Keeping Output Fresh
 
 One common challenge with LLMs is their tendency to repeat themselves - much like a speaker who keeps returning to the same points. To address this, we use two types of penalties:
 
@@ -594,7 +596,7 @@ One common challenge with LLMs is their tendency to repeat themselves - much lik
 
 These penalties are applied early in the token selection process, adjusting the raw probabilities before other sampling strategies are applied. Think of them as gentle nudges encouraging the model to explore new vocabulary.
 
-#### Controlling Generation Length: Setting Boundaries
+### Controlling Generation Length: Setting Boundaries
 Just as a good story needs proper pacing and length, we need ways to control how much text our LLM generates. This is crucial for practical applications - whether we’re generating a tweet-length response or a full blog post.
 
 We can control generation length in several ways:
@@ -605,7 +607,7 @@ We can control generation length in several ways:
 
 For example, if we want to generate a single paragraph, we might set a maximum of 100 tokens and use “\n\n” as a stop sequence. This ensures our output stays focused and appropriately sized for its purpose.
 
-#### Beam Search: Looking Ahead for Better Coherence
+## Beam Search: Looking Ahead for Better Coherence
 
 While the strategies we’ve discussed so far make decisions one token at a time, beam search takes a more holistic approach. Instead of committing to a single choice at each step, it explores multiple possible paths simultaneously - like a chess player thinking several moves ahead.
 
@@ -620,11 +622,11 @@ Here’s how it works:
 
 This approach often produces more coherent and grammatically correct text, though it requires more computational resources than simpler methods.
 
-### Practical Challenges and Optimization
+## Practical Challenges and Optimization
 
 As we wrap up our exploration of LLM inference, let’s look at the practical challenges you’ll face when deploying these models, and how to measure and optimize their performance.
 
-#### Key Performance Metrics
+### Key Performance Metrics
 When working with LLMs, four critical metrics will shape your implementation decisions:
 
 1. **Time to First Token (TTFT)**: How quickly can you get the first response? This is crucial for user experience and is primarily affected by the prefill phase.
@@ -632,7 +634,7 @@ When working with LLMs, four critical metrics will shape your implementation dec
 3. **Throughput**: How many requests can you handle simultaneously? This affects scaling and cost efficiency.
 4. **VRAM Usage**: How much GPU memory do you need? This often becomes the primary constraint in real-world applications.
 
-#### The Context Length Challenge
+### The Context Length Challenge
 One of the most significant challenges in LLM inference is managing context length effectively. Longer contexts provide more information but come with substantial costs:
 
 - **Memory Usage**: Grows quadratically with context length
@@ -641,7 +643,7 @@ One of the most significant challenges in LLM inference is managing context leng
 
 Recent models like Qwen2.5-1M offer impressive 1M token context windows, but this comes at the cost of significantly slower inference times. The key is finding the right balance for your specific use case.
 
-#### The KV Cache Optimization
+### The KV Cache Optimization
 
 To address these challenges, one of the most powerful optimizations is KV (Key-Value) caching. This technique significantly improves inference speed by storing and reusing intermediate calculations. This optimization:
 
