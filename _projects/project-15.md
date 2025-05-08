@@ -31,6 +31,7 @@ The following is a list of common NLP tasks, with some examples of each:
 - **Extracting an answer from a text**: Given a question and a context, extracting the answer to the question based on the information provided in the context
 - **Generating a new sentence from an input text**: Translating a text into another language, summarizing a text
 
+NLP isn’t limited to written text though. It also tackles complex challenges in speech recognition and computer vision, such as generating a transcript of an audio sample or a description of an image.
 
 **A large language model (LLM)** is an AI model trained on massive amounts of text data that can understand and generate human-like text, recognize patterns in language, and perform a wide variety of language tasks without task-specific training. They represent a significant advancement in the field of natural language processing (NLP).
 
