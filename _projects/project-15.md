@@ -555,9 +555,9 @@ Now that we understand the basic components, let’s dive into how LLMs actually
 ### The Prefill Phase
 The prefill phase is like the preparation stage in cooking - it’s where all the initial ingredients are processed and made ready. This phase involves three key steps:
 
-**Tokenization**: Converting the input text into tokens (think of these as the basic building blocks the model understands)
-**Embedding Conversion**: Transforming these tokens into numerical representations that capture their meaning
-**Initial Processing**: Running these embeddings through the model’s neural networks to create a rich understanding of the context
+- **Tokenization**: Converting the input text into tokens (think of these as the basic building blocks the model understands)
+- **Embedding Conversion**: Transforming these tokens into numerical representations that capture their meaning
+- **Initial Processing**: Running these embeddings through the model’s neural networks to create a rich understanding of the context
 
 This phase is computationally intensive because it needs to process all input tokens at once. Think of it as reading and understanding an entire paragraph before starting to write a response.
 
