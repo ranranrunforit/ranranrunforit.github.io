@@ -1,0 +1,600 @@
+---
+title: "LLM interview prepare Cheatsheet"
+excerpt: "Notes from HuggingFace🤗 LLM course. <br/><img src='/images/LLM.png'>"
+collection: projects
+date: 2025-05-08
+category: pythons
+description: "Notes from HuggingFace🤗 LLM course."
+tags:
+  - LLM
+  - Transformers 
+  - Attention
+---
+
+
+# Natural Language Processing and Large Language Models
+
+## What’s the difference?
+
+**NLP (Natural Language Processing)** is the broader field focused on enabling computers to understand, interpret, and generate human language. NLP encompasses many techniques and tasks such as sentiment analysis, named entity recognition, and machine translation.
+
+**LLMs (Large Language Models)** are a powerful subset of NLP models characterized by their massive size, extensive training data, and ability to perform a wide range of language tasks with minimal task-specific training. Models like the Llama, GPT, or Claude series are examples of LLMs that have revolutionized what’s possible in NLP.
+
+
+**NLP** is a field of linguistics and machine learning focused on understanding everything related to human language. The aim of NLP tasks is not only to understand single words individually, but to be able to understand the context of those words.
+
+The following is a list of common NLP tasks, with some examples of each:
+
+- **Classifying whole sentences**: Getting the sentiment of a review, detecting if an email is spam, determining if a sentence is grammatically correct or whether two sentences are logically related or not
+- **Classifying each word in a sentence**: Identifying the grammatical components of a sentence (noun, verb, adjective), or the named entities (person, location, organization)
+- **Generating text content**: Completing a prompt with auto-generated text, filling in the blanks in a text with masked words
+- **Extracting an answer from a text**: Given a question and a context, extracting the answer to the question based on the information provided in the context
+- **Generating a new sentence from an input text**: Translating a text into another language, summarizing a text
+
+
+**A large language model (LLM)** is an AI model trained on massive amounts of text data that can understand and generate human-like text, recognize patterns in language, and perform a wide variety of language tasks without task-specific training. They represent a significant advancement in the field of natural language processing (NLP).
+
+LLMs are characterized by:
+
+- **Scale**: They contain millions, billions, or even hundreds of billions of parameters
+- **General capabilities**: They can perform multiple tasks without task-specific training
+- **In-context learning**: They can learn from examples provided in the prompt
+- **Emergent abilities**: As these models grow in size, they demonstrate capabilities that weren’t explicitly programmed or anticipated
+
+The advent of LLMs has shifted the paradigm from building specialized models for specific NLP tasks to using a single, large model that can be prompted or fine-tuned to address a wide range of language tasks. This has made sophisticated language processing more accessible while also introducing new challenges in areas like efficiency, ethics, and deployment.
+
+However, LLMs also have important limitations:
+
+- **Hallucinations**: They can generate incorrect information confidently
+- **Lack of true understanding**: They lack true understanding of the world and operate purely on statistical patterns
+- **Bias**: They may reproduce biases present in their training data or inputs.
+- **Context windows**: They have limited context windows (though this is improving)
+- **Computational resources**: They require significant computational resources
+
+
+
+## Transformers, what can they do?
+
+In this section, we will look at what Transformer models can do and use our first tool from the 🤗 Transformers library: the `pipeline()` function.
+
+**Text pipelines**
+- **text-generation**: Generate text from a prompt
+- **text-classification**: Classify text into predefined categories
+- **summarization**: Create a shorter version of a text while preserving key information
+- **translation**: Translate text from one language to another
+- **zero-shot-classification**: Classify text without prior training on specific labels
+- **feature-extraction**: Extract vector representations of text
+
+**Image pipelines**
+- **image-to-text**: Generate text descriptions of images
+- **image-classification**: Identify objects in an image
+- **object-detection**: Locate and identify objects in images
+
+**Audio pipelines**
+- **automatic-speech-recognition**: Convert speech to text
+- **audio-classification**: Classify audio into categories
+- **text-to-speech**: Convert text to spoken audio
+
+**Multimodal pipelines**
+- **image-text-to-text**: Respond to an image based on a text prompt
+
+
+
+## How do Transformers work?
+
+- **GPT**-like (also called *auto-regressive* Transformer models)
+
+- **BERT**-like (also called *auto-encoding* Transformer models)
+
+- **T5**-like (also called *sequence-to-sequence* Transformer models)
+
+## Transformers are language models
+
+All the Transformer models mentioned above (GPT, BERT, T5, etc.) have been trained as language models. This means they have been trained on large amounts of raw text in a self-supervised fashion.
+
+*Self-supervised learning* is a type of training in which the objective is automatically computed from the inputs of the model. That means that humans are not needed to label the data!
+
+This type of model develops a statistical understanding of the language it has been trained on, but it’s less useful for specific practical tasks. Because of this, the general pretrained model then goes through a process called *transfer learning* or *fine-tuning*. During this process, the model is fine-tuned in a supervised way — that is, using human-annotated labels — on a given task.
+
+
+An example of a task is predicting the next word in a sentence having read the n previous words. This is called *causal language modeling* because the output depends on the past and present inputs, but not the future ones.
+
+
+Another example is *masked language modeling*, in which the model predicts a masked word in the sentence.
+
+## Transfer Learning
+
+*Pretraining* is the act of training a model from scratch: the weights are randomly initialized, and the training starts without any prior knowledge.
+
+The pretraining of a language model is costly in both time and money.
+This pretraining is usually done on very large amounts of data. Therefore, it requires a very large corpus of data, and training can take up to several weeks.
+
+*Fine-tuning*, on the other hand, is the training done **after** a model has been pretrained. To perform fine-tuning, you first acquire a pretrained language model, then perform additional training with a dataset specific to your task. Wait — why not simply train the model for your final use case from the start (**scratch**)? There are a couple of reasons:
+
+- The pretrained model was already trained on a dataset that has some similarities with the fine-tuning dataset. The fine-tuning process is thus able to take advantage of knowledge acquired by the initial model during pretraining (for instance, with NLP problems, the pretrained model will have some kind of statistical understanding of the language you are using for your task).
+
+- Since the pretrained model was already trained on lots of data, the fine-tuning requires way less data to get decent results.
+
+- For the same reason, the amount of time and resources needed to get good results are much lower.
+
+For example, one could leverage a pretrained model trained on the English language and then fine-tune it on an arXiv corpus, resulting in a science/research-based model. The fine-tuning will only require a limited amount of data: the knowledge the pretrained model has acquired is “transferred,” hence the term transfer learning.
+
+The fine-tuning of a language model is cheaper than pretraining in both time and money.
+Fine-tuning a model therefore has lower time, data, financial, and environmental costs. It is also quicker and easier to iterate over different fine-tuning schemes, as the training is less constraining than a full pretraining.
+
+This process will also achieve better results than training from scratch (unless you have lots of data), which is why you should always try to leverage a pretrained model — one as close as possible to the task you have at hand — and fine-tune it.
+
+
+## General Transformer architecture
+
+The model is primarily composed of two blocks:
+
+**Encoder (left)**: The encoder receives an input and builds a representation of it (its features). This means that the model is optimized to acquire understanding from the input.
+**Decoder (right)**: The decoder uses the encoder’s representation (features) along with other inputs to generate a target sequence. This means that the model is optimized for generating outputs.
+
+Architecture of a Transformers models
+Each of these parts can be used independently, depending on the task:
+
+- **Encoder-only models**: Good for tasks that require understanding of the input, such as sentence classification and named entity recognition.
+- **Decoder-only models**: Good for generative tasks such as text generation.
+- **Encoder-decoder models** or **sequence-to-sequence models**: Good for generative tasks that require an input, such as translation or summarization.
+
+
+## Attention layers
+
+A key feature of Transformer models is that they are built with special layers called attention layers. This layer will tell the model to pay specific attention to certain words in the sentence you passed it (and more or less ignore the others) when dealing with the representation of each word.
+
+
+## How language models work
+Language models work by being trained to predict the probability of a word given the context of surrounding words. This gives them a foundational understanding of language that can generalize to other tasks.
+
+There are two main approaches for training a transformer model:
+
+- **Masked language modeling (MLM)**: Used by encoder models like BERT, this approach randomly masks some tokens in the input and trains the model to predict the original tokens based on the surrounding context. This allows the model to learn bidirectional context (looking at words both before and after the masked word).
+
+- **Causal language modeling (CLM)**: Used by decoder models like GPT, this approach predicts the next token based on all previous tokens in the sequence. The model can only use context from the left (previous tokens) to predict the next token.
+
+## Types of language models
+In the Transformers library, language models generally fall into three architectural categories:
+
+- **Encoder-only models** (like BERT): These models use a bidirectional approach to understand context from both directions. They’re best suited for tasks that require deep understanding of text, such as classification, named entity recognition, and question answering.
+
+- **Decoder-only models** (like GPT, Llama): These models process text from left to right and are particularly good at text generation tasks. They can complete sentences, write essays, or even generate code based on a prompt.
+
+- **Encoder-decoder models** (like T5, BART): These models combine both approaches, using an encoder to understand the input and a decoder to generate output. They excel at sequence-to-sequence tasks like translation, summarization, and question answering.
+
+Understanding which part of the Transformer architecture (encoder, decoder, or both) is best suited for a particular NLP task is key to choosing the right model. Generally, tasks requiring bidirectional context use encoders, tasks generating text use decoders, and tasks converting one sequence to another use encoder-decoders.
+
+### Text generation
+Text generation involves creating coherent and contextually relevant text based on a prompt or input.
+
+GPT-2 is a decoder-only model pretrained on a large amount of text. It can generate convincing (though not always true!) text given a prompt and complete other NLP tasks like question answering despite not being explicitly trained to.
+
+1. GPT-2 uses byte pair encoding (BPE) to tokenize words and generate a token embedding. Positional encodings are added to the token embeddings to indicate the position of each token in the sequence. The input embeddings are passed through multiple decoder blocks to output some final hidden state. Within each decoder block, GPT-2 uses a *masked self-attention* layer which means GPT-2 can’t attend to future tokens. It is only allowed to attend to tokens on the left. This is different from BERT’s [mask] token because, in masked self-attention, an attention mask is used to set the score to 0 for future tokens.
+
+2. The output from the decoder is passed to a language modeling head, which performs a linear transformation to convert the hidden states into logits. The label is the next token in the sequence, which are created by shifting the logits to the right by one. The cross-entropy loss is calculated between the shifted logits and the labels to output the next most likely token.
+
+GPT-2’s pretraining objective is based entirely on causal language modeling, predicting the next word in a sequence. This makes GPT-2 especially good at tasks that involve generating text.
+
+### Text classification
+Text classification involves assigning predefined categories to text documents, such as sentiment analysis, topic classification, or spam detection.
+
+BERT is an encoder-only model and is the first model to effectively implement deep bidirectionality to learn richer representations of the text by attending to words on both sides.
+
+1. BERT uses WordPiece tokenization to generate a token embedding of the text. To tell the difference between a single sentence and a pair of sentences, a special [SEP] token is added to differentiate them. A special [CLS] token is added to the beginning of every sequence of text. The final output with the [CLS] token is used as the input to the classification head for classification tasks. BERT also adds a segment embedding to denote whether a token belongs to the first or second sentence in a pair of sentences.
+
+2. BERT is pretrained with two objectives: masked language modeling and next-sentence prediction. In masked language modeling, some percentage of the input tokens are randomly masked, and the model needs to predict these. This solves the issue of bidirectionality, where the model could cheat and see all the words and “predict” the next word. The final hidden states of the predicted mask tokens are passed to a feedforward network with a softmax over the vocabulary to predict the masked word.
+
+The second pretraining object is next-sentence prediction. The model must predict whether sentence B follows sentence A. Half of the time sentence B is the next sentence, and the other half of the time, sentence B is a random sentence. The prediction, whether it is the next sentence or not, is passed to a feedforward network with a softmax over the two classes (IsNext and NotNext).
+
+3. The input embeddings are passed through multiple encoder layers to output some final hidden states.
+
+To use the pretrained model for text classification, add a sequence classification head on top of the base BERT model. The sequence classification head is a linear layer that accepts the final hidden states and performs a linear transformation to convert them into logits. The cross-entropy loss is calculated between the logits and target to find the most likely label.
+
+
+### Token classification
+Token classification involves assigning a label to each token in a sequence, such as in named entity recognition or part-of-speech tagging.
+
+To use BERT for token classification tasks like named entity recognition (NER), add a token classification head on top of the base BERT model. The token classification head is a linear layer that accepts the final hidden states and performs a linear transformation to convert them into logits. The cross-entropy loss is calculated between the logits and each token to find the most likely label.
+
+
+### Question answering
+Question answering involves finding the answer to a question within a given context or passage.
+
+To use BERT for question answering, add a span classification head on top of the base BERT model. This linear layer accepts the final hidden states and performs a linear transformation to compute the span start and end logits corresponding to the answer. The cross-entropy loss is calculated between the logits and the label position to find the most likely span of text corresponding to the answer.
+
+### Summarization
+Summarization involves condensing a longer text into a shorter version while preserving its key information and meaning.
+
+Encoder-decoder models like BART and T5 are designed for the sequence-to-sequence pattern of a summarization task. We’ll explain how BART works in this section, and then you can try finetuning T5 at the end.
+
+1. BART’s encoder architecture is very similar to BERT and accepts a token and positional embedding of the text. BART is pretrained by corrupting the input and then reconstructing it with the decoder. Unlike other encoders with specific corruption strategies, BART can apply any type of corruption. The text infilling corruption strategy works the best though. In text infilling, a number of text spans are replaced with a single [mask] token. This is important because the model has to predict the masked tokens, and it teaches the model to predict the number of missing tokens. The input embeddings and masked spans are passed through the encoder to output some final hidden states, but unlike BERT, BART doesn’t add a final feedforward network at the end to predict a word.
+
+2. The encoder’s output is passed to the decoder, which must predict the masked tokens and any uncorrupted tokens from the encoder’s output. This gives additional context to help the decoder restore the original text. The output from the decoder is passed to a language modeling head, which performs a linear transformation to convert the hidden states into logits. The cross-entropy loss is calculated between the logits and the label, which is just the token shifted to the right.
+
+
+### Translation
+Translation involves converting text from one language to another while preserving its meaning. Translation is another example of a sequence-to-sequence task, which means you can use an encoder-decoder model like BART or T5 to do it. We’ll explain how BART works in this section, and then you can try finetuning T5 at the end.
+
+BART adapts to translation by adding a separate randomly initialized encoder to map a source language to an input that can be decoded into the target language. This new encoder’s embeddings are passed to the pretrained encoder instead of the original word embeddings. The source encoder is trained by updating the source encoder, positional embeddings, and input embeddings with the cross-entropy loss from the model output. The model parameters are frozen in this first step, and all the model parameters are trained together in the second step. BART has since been followed up by a multilingual version, mBART, intended for translation and pretrained on many different languages.
+
+## Modalities beyond text
+Transformers are not limited to text. They can also be applied to other modalities like speech and audio, images, and video. Of course, on this course we will focus on text, but we can briefly introduce the other modalities.
+
+### Speech and audio
+Let’s start by exploring how Transformer models handle speech and audio data, which presents unique challenges compared to text or images.
+
+Whisper is a encoder-decoder (sequence-to-sequence) transformer pretrained on 680,000 hours of labeled audio data. This amount of pretraining data enables zero-shot performance on audio tasks in English and many other languages. The decoder allows Whisper to map the encoders learned speech representations to useful outputs, such as text, without additional fine-tuning. Whisper just works out of the box.
+
+Diagram is from Whisper paper.
+
+This model has two main components:
+
+1. An **encoder** processes the input audio. The raw audio is first converted into a log-Mel spectrogram. This spectrogram is then passed through a Transformer encoder network.
+
+2. A **decoder** takes the encoded audio representation and autoregressively predicts the corresponding text tokens. It’s a standard Transformer decoder trained to predict the next text token given the previous tokens and the encoder output. Special tokens are used at the beginning of the decoder input to steer the model towards specific tasks like transcription, translation, or language identification.
+
+Whisper was pretrained on a massive and diverse dataset of 680,000 hours of labeled audio data collected from the web. This large-scale, weakly supervised pretraining is the key to its strong zero-shot performance across many languages and tasks.
+
+### Automatic speech recognition
+To use the pretrained model for automatic speech recognition, you leverage its full encoder-decoder structure. The encoder processes the audio input, and the decoder autoregressively generates the transcript token by token. When fine-tuning, the model is typically trained using a standard sequence-to-sequence loss (like cross-entropy) to predict the correct text tokens based on the audio input.
+
+### Computer vision
+Now let’s move on to computer vision tasks, which deal with understanding and interpreting visual information from images or videos.
+
+There are two ways to approach computer vision tasks:
+
+1. Split an image into a sequence of patches and process them in parallel with a Transformer.
+2. Use a modern CNN, like ConvNeXT, which relies on convolutional layers but adopts modern network designs.
+
+ViT and ConvNeXT are commonly used for image classification, but for other vision tasks like object detection, segmentation, and depth estimation, we’ll look at DETR, Mask2Former and GLPN, respectively; these models are better suited for those tasks.
+
+### Image classification
+Image classification is one of the fundamental computer vision tasks. Let’s see how different model architectures approach this problem.
+
+ViT and ConvNeXT can both be used for image classification; the main difference is that ViT uses an attention mechanism while ConvNeXT uses convolutions.
+
+ViT replaces convolutions entirely with a pure Transformer architecture. If you’re familiar with the original Transformer, then you’re already most of the way toward understanding ViT.
+
+The main change ViT introduced was in how images are fed to a Transformer:
+
+1. An image is split into square non-overlapping patches, each of which gets turned into a vector or patch embedding. The patch embeddings are generated from a convolutional 2D layer which creates the proper input dimensions (which for a base Transformer is 768 values for each patch embedding). If you had a 224x224 pixel image, you could split it into 196 16x16 image patches. Just like how text is tokenized into words, an image is “tokenized” into a sequence of patches.
+
+2. A learnable embedding - a special [CLS] token - is added to the beginning of the patch embeddings just like BERT. The final hidden state of the [CLS] token is used as the input to the attached classification head; other outputs are ignored. This token helps the model learn how to encode a representation of the image.
+
+3. The last thing to add to the patch and learnable embeddings are the position embeddings because the model doesn’t know how the image patches are ordered. The position embeddings are also learnable and have the same size as the patch embeddings. Finally, all of the embeddings are passed to the Transformer encoder.
+
+4. The output, specifically only the output with the [CLS] token, is passed to a multilayer perceptron head (MLP). ViT’s pretraining objective is simply classification. Like other classification heads, the MLP head converts the output into logits over the class labels and calculates the cross-entropy loss to find the most likely class.
+
+## Transformer Architectures
+
+### Encoder models
+
+Encoder models use only the encoder of a Transformer model. At each stage, the attention layers can access all the words in the initial sentence. These models are often characterized as having “bi-directional” attention, and are often called auto-encoding models.
+
+The pretraining of these models usually revolves around somehow corrupting a given sentence (for instance, by masking random words in it) and tasking the model with finding or reconstructing the initial sentence.
+
+Encoder models are best suited for tasks requiring an understanding of the full sentence, such as sentence classification, named entity recognition (and more generally word classification), and extractive question answering.
+
+As we saw in How 🤗 Transformers solve tasks, encoder models like BERT excel at understanding text because they can look at the entire context in both directions. This makes them perfect for tasks where comprehension of the whole input is important.
+
+Representatives of this family of models include:
+
+- BERT
+- DistilBERT
+- ModernBERT
+
+### Decoder models
+
+Decoder models use only the decoder of a Transformer model. At each stage, for a given word the attention layers can only access the words positioned before it in the sentence. These models are often called auto-regressive models.
+
+The pretraining of decoder models usually revolves around predicting the next word in the sentence.
+
+These models are best suited for tasks involving text generation.
+
+Decoder models like GPT are designed to generate text by predicting one token at a time. As we explored in How 🤗 Transformers solve tasks, they can only see previous tokens, which makes them excellent for creative text generation but less ideal for tasks requiring bidirectional understanding.
+
+Representatives of this family of models include:
+
+- Hugging Face SmolLM Series
+- Meta’s Llama Series
+- Google’s Gemma Series
+- DeepSeek’s V3
+
+## Modern Large Language Models (LLMs)
+Most modern Large Language Models (LLMs) use the decoder-only architecture. These models have grown dramatically in size and capabilities over the past few years, with some of the largest models containing hundreds of billions of parameters.
+
+Modern LLMs are typically trained in two phases:
+
+1. Pretraining: The model learns to predict the next token on vast amounts of text data
+2. Instruction tuning: The model is fine-tuned to follow instructions and generate helpful responses
+
+This approach has led to models that can understand and generate human-like text across a wide range of topics and tasks.
+
+### Key capabilities of modern LLMs
+
+Modern decoder-based LLMs have demonstrated impressive capabilities:
+
+| Capability         | Description                                 | Example                                   |
+|--------------------|---------------------------------------------|-------------------------------------------|
+| Text generation    | Creating coherent and contextually relevant text | Writing essays, stories, or emails        |
+| Summarization      | Condensing long documents into shorter versions | Creating executive summaries of reports   |
+| Translation        | Converting text between languages           | Translating English to Spanish            |
+| Question answering | Providing answers to factual questions      | “What is the capital of France?”          |
+| Code generation    | Writing or completing code snippets         | Creating a function based on a description|
+| Reasoning          | Working through problems step by step       | Solving math problems or logical puzzles  |
+| Few-shot learning  | Learning from a few examples in the prompt  | Classifying text after seeing just 2-3 examples |
+
+
+### Sequence-to-sequence models
+
+Encoder-decoder models (also called *sequence-to-sequence* models) use both parts of the Transformer architecture. At each stage, the attention layers of the encoder can access all the words in the initial sentence, whereas the attention layers of the decoder can only access the words positioned before a given word in the input.
+
+The pretraining of these models can take different forms, but it often involves reconstructing a sentence for which the input has been somehow corrupted (for instance by masking random words). The pretraining of the T5 model consists of replacing random spans of text (that can contain several words) with a single mask special token, and the task is then to predict the text that this mask token replaces.
+
+Sequence-to-sequence models are best suited for tasks revolving around generating new sentences depending on a given input, such as summarization, translation, or generative question answering.
+
+As we saw in How 🤗 Transformers solve tasks, encoder-decoder models like BART and T5 combine the strengths of both architectures. The encoder provides deep bidirectional understanding of the input, while the decoder generates appropriate output text. This makes them perfect for tasks that transform one sequence into another, like translation or summarization.
+
+#### Practical applications
+
+Sequence-to-sequence models excel at tasks that require transforming one form of text into another while preserving meaning. Some practical applications include:
+
+| Application               | Description                                 | Example Model      |
+|---------------------------|---------------------------------------------|--------------------|
+| Machine translation       | Converting text between languages           | Marian, T5         |
+| Text summarization        | Creating concise summaries of longer texts  | BART, T5           |
+| Data-to-text generation   | Converting structured data into natural language | T5             |
+| Grammar correction        | Fixing grammatical errors in text           | T5                 |
+| Question answering        | Generating answers based on context         | BART, T5           |
+
+
+Representatives of this family of models include:
+
+- BART
+- mBART
+- Marian
+- T5
+
+
+### Choosing the right architecture
+
+When working on a specific NLP task, how do you decide which architecture to use? Here’s a quick guide:
+
+| Task                              | Suggested Architecture      | Examples           |
+|------------------------------------|----------------------------|--------------------|
+| Text classification (sentiment, topic) | Encoder                | BERT, RoBERTa      |
+| Text generation (creative writing) | Decoder                    | GPT, LLaMA         |
+| Translation                       | Encoder-Decoder            | T5, BART           |
+| Summarization                     | Encoder-Decoder            | BART, T5           |
+| Named entity recognition          | Encoder                    | BERT, RoBERTa      |
+| Question answering (extractive)   | Encoder                    | BERT, RoBERTa      |
+| Question answering (generative)   | Encoder-Decoder or Decoder | T5, GPT            |
+| Conversational AI                 | Decoder                    | GPT, LLaMA         |
+
+
+When in doubt about which model to use, consider:
+
+1. What kind of understanding does your task need? (Bidirectional or unidirectional)
+2. Are you generating new text or analyzing existing text?
+3. Do you need to transform one sequence into another?
+The answers to these questions will guide you toward the right architecture.
+
+
+## Attention mechanisms
+
+Most transformer models use full attention in the sense that the attention matrix is square. It can be a big computational bottleneck when you have long texts. Longformer and reformer are models that try to be more efficient and use a sparse version of the attention matrix to speed up training.
+
+Standard attention mechanisms have a computational complexity of O(n²), where n is the sequence length. This becomes problematic for very long sequences. The specialized attention mechanisms below help address this limitation.
+
+### LSH attention
+Reformer uses LSH attention. In the softmax(QK^t), only the biggest elements (in the softmax dimension) of the matrix QK^t are going to give useful contributions. So for each query q in Q, we can consider only the keys k in K that are close to q. A hash function is used to determine if q and k are close. The attention mask is modified to mask the current token (except at the first position), because it will give a query and a key equal (so very similar to each other). Since the hash can be a bit random, several hash functions are used in practice (determined by a n_rounds parameter) and then are averaged together.
+
+### Local attention
+Longformer uses local attention: often, the local context (e.g., what are the two tokens to the left and right?) is enough to take action for a given token. Also, by stacking attention layers that have a small window, the last layer will have a receptive field of more than just the tokens in the window, allowing them to build a representation of the whole sentence.
+
+Some preselected input tokens are also given global attention: for those few tokens, the attention matrix can access all tokens and this process is symmetric: all other tokens have access to those specific tokens (on top of the ones in their local window). This is shown in Figure 2d of the paper, see below for a sample attention mask:
+
+
+Using those attention matrices with less parameters then allows the model to have inputs having a bigger sequence length.
+
+### Axial positional encodings
+Reformer uses axial positional encodings: in traditional transformer models, the positional encoding E is a matrix of size l by d, l being the sequence length and d the dimension of the hidden state. If you have very long texts, this matrix can be huge and take way too much space on the GPU. To alleviate that, axial positional encodings consist of factorizing that big matrix E in two smaller matrices E1 and E2, with dimensions l1 × d1 and l2 × d2, such that
+l1 × l2 = l and d1 + d2 = d (with the product for the lengths, this ends up being way smaller). The embedding for time step j in E is obtained by concatenating the embeddings for timestep j%l1 in E1 and j//l1 in E2.
+
+## The Role of Attention
+The attention mechanism is what gives LLMs their ability to understand context and generate coherent responses. When predicting the next word, not every word in a sentence carries equal weight - for example, in the sentence “The capital of France is …”, the words “France” and “capital” are crucial for determining that “Paris” should come next. This ability to focus on relevant information is what we call attention.
+
+This process of identifying the most relevant words to predict the next token has proven to be incredibly effective. Although the basic principle of training LLMs—predicting the next token—has remained generally consistent since BERT and GPT-2, there have been significant advancements in scaling neural networks and making the attention mechanism work for longer and longer sequences, at lower and lower costs.
+
+In short, the attention mechanism is the key to LLMs being able to generate text that is both coherent and context-aware. It sets modern LLMs apart from previous generations of language models.
+
+### Context Length and Attention Span
+
+Now that we understand attention, let’s explore how much context an LLM can actually handle. This brings us to context length, or the model’s ‘attention span’.
+
+The context length refers to the maximum number of tokens (words or parts of words) that the LLM can process at once. Think of it as the size of the model’s working memory.
+
+These capabilities are limited by several practical factors:
+
+ - The model’s architecture and size
+ - Available computational resources
+ - The complexity of the input and desired output
+
+In an ideal world, we could feed unlimited context to the model, but hardware constraints and computational costs make this impractical. This is why different models are designed with different context lengths to balance capability with efficiency.
+
+The context length is the maximum number of tokens the model can consider at once when generating a response.
+
+### The Art of Prompting
+When we pass information to LLMs, we structure our input in a way that guides the generation of the LLM toward the desired output. This is called prompting.
+
+Understanding how LLMs process information helps us craft better prompts. Since the model’s primary task is to predict the next token by analyzing the importance of each input token, the wording of your input sequence becomes crucial.
+
+Careful design of the prompt makes it easier to guide the generation of the LLM toward the desired output.
+
+## The Two-Phase Inference Process
+Now that we understand the basic components, let’s dive into how LLMs actually generate text. The process can be broken down into two main phases: prefill and decode. These phases work together like an assembly line, each playing a crucial role in producing coherent text.
+
+### The Prefill Phase
+The prefill phase is like the preparation stage in cooking - it’s where all the initial ingredients are processed and made ready. This phase involves three key steps:
+
+**Tokenization**: Converting the input text into tokens (think of these as the basic building blocks the model understands)
+**Embedding Conversion**: Transforming these tokens into numerical representations that capture their meaning
+**Initial Processing**: Running these embeddings through the model’s neural networks to create a rich understanding of the context
+
+This phase is computationally intensive because it needs to process all input tokens at once. Think of it as reading and understanding an entire paragraph before starting to write a response.
+
+### The Decode Phase
+After the prefill phase has processed the input, we move to the decode phase - this is where the actual text generation happens. The model generates one token at a time in what we call an autoregressive process (where each new token depends on all previous tokens).
+
+The decode phase involves several key steps that happen for each new token:
+
+1. **Attention Computation**: Looking back at all previous tokens to understand context
+2. **Probability Calculation**: Determining the likelihood of each possible next token
+3. **Token Selection**: Choosing the next token based on these probabilities
+4. **Continuation Check**: Deciding whether to continue or stop generation
+This phase is memory-intensive because the model needs to keep track of all previously generated tokens and their relationships.
+
+### Sampling Strategies
+Now that we understand how the model generates text, let’s explore the various ways we can control this generation process. Just like a writer might choose between being more creative or more precise, we can adjust how the model makes its token selections.
+
+#### Understanding Token Selection: From Probabilities to Token Choices
+
+When the model needs to choose the next token, it starts with raw probabilities (called logits) for every word in its vocabulary. But how do we turn these probabilities into actual choices? Let’s break down the process:
+
+1. **Raw Logits**: Think of these as the model’s initial gut feelings about each possible next word
+2. **Temperature Scaling**: Like a creativity dial - higher settings (>1.0) make choices more random and creative, lower settings (<1.0) make them more focused and deterministic
+3. **Top-p (Nucleus) Sampling**: Instead of considering all possible words, we only look at the most likely ones that add up to our chosen probability threshold (e.g., top 90%)
+4. **Top-k Filtering**: An alternative approach where we only consider the k most likely next words
+
+
+#### Managing Repetition: Keeping Output Fresh
+
+One common challenge with LLMs is their tendency to repeat themselves - much like a speaker who keeps returning to the same points. To address this, we use two types of penalties:
+
+1. **Presence Penalty**: A fixed penalty applied to any token that has appeared before, regardless of how often. This helps prevent the model from reusing the same words.
+2. **Frequency Penalty**: A scaling penalty that increases based on how often a token has been used. The more a word appears, the less likely it is to be chosen again.
+
+These penalties are applied early in the token selection process, adjusting the raw probabilities before other sampling strategies are applied. Think of them as gentle nudges encouraging the model to explore new vocabulary.
+
+#### Controlling Generation Length: Setting Boundaries
+Just as a good story needs proper pacing and length, we need ways to control how much text our LLM generates. This is crucial for practical applications - whether we’re generating a tweet-length response or a full blog post.
+
+We can control generation length in several ways:
+
+1. **Token Limits**: Setting minimum and maximum token counts
+2. **Stop Sequences**: Defining specific patterns that signal the end of generation
+3. **End-of-Sequence Detection**: Letting the model naturally conclude its response
+
+For example, if we want to generate a single paragraph, we might set a maximum of 100 tokens and use “\n\n” as a stop sequence. This ensures our output stays focused and appropriately sized for its purpose.
+
+#### Beam Search: Looking Ahead for Better Coherence
+
+While the strategies we’ve discussed so far make decisions one token at a time, beam search takes a more holistic approach. Instead of committing to a single choice at each step, it explores multiple possible paths simultaneously - like a chess player thinking several moves ahead.
+
+
+Here’s how it works:
+
+1. At each step, maintain multiple candidate sequences (typically 5-10)
+2. For each candidate, compute probabilities for the next token
+3. Keep only the most promising combinations of sequences and next tokens
+4. Continue this process until reaching the desired length or stop condition
+5. Select the sequence with the highest overall probability
+
+This approach often produces more coherent and grammatically correct text, though it requires more computational resources than simpler methods.
+
+### Practical Challenges and Optimization
+
+As we wrap up our exploration of LLM inference, let’s look at the practical challenges you’ll face when deploying these models, and how to measure and optimize their performance.
+
+#### Key Performance Metrics
+When working with LLMs, four critical metrics will shape your implementation decisions:
+
+1. **Time to First Token (TTFT)**: How quickly can you get the first response? This is crucial for user experience and is primarily affected by the prefill phase.
+2. **Time Per Output Token (TPOT)**: How fast can you generate subsequent tokens? This determines the overall generation speed.
+3. **Throughput**: How many requests can you handle simultaneously? This affects scaling and cost efficiency.
+4. **VRAM Usage**: How much GPU memory do you need? This often becomes the primary constraint in real-world applications.
+
+#### The Context Length Challenge
+One of the most significant challenges in LLM inference is managing context length effectively. Longer contexts provide more information but come with substantial costs:
+
+- **Memory Usage**: Grows quadratically with context length
+- **Processing Speed**: Decreases linearly with longer contexts
+- **Resource Allocation**: Requires careful balancing of VRAM usage
+
+Recent models like Qwen2.5-1M offer impressive 1M token context windows, but this comes at the cost of significantly slower inference times. The key is finding the right balance for your specific use case.
+
+The KV Cache Optimization
+
+To address these challenges, one of the most powerful optimizations is KV (Key-Value) caching. This technique significantly improves inference speed by storing and reusing intermediate calculations. This optimization:
+
+- **Reduces repeated calculations**
+- **Improves generation speed**
+- **Makes long-context generation practical**
+
+The trade-off is additional memory usage, but the performance benefits usually far outweigh this cost.
+
+
+### Bias and limitations
+
+If your intent is to use a pretrained model or a fine-tuned version in production, please be aware that, while these models are powerful tools, they come with limitations. The biggest of these is that, to enable pretraining on large amounts of data, researchers often scrape all the content they can find, taking the best as well as the worst of what is available on the internet.
+
+To give a quick illustration, let’s go back the example of a fill-mask pipeline with the BERT model:
+
+When asked to fill in the missing word in these two sentences, the model gives only one gender-free answer (waiter/waitress). The others are work occupations usually associated with one specific gender — and yes, prostitute ended up in the top 5 possibilities the model associates with “woman” and “work.” This happens even though BERT is one of the rare Transformer models not built by scraping data from all over the internet, but rather using apparently neutral data (it’s trained on the English Wikipedia and BookCorpus datasets).
+
+When you use these tools, you therefore need to keep in the back of your mind that the original model you are using could very easily generate sexist, racist, or homophobic content. Fine-tuning the model on your data won’t make this intrinsic bias disappear.
+
+## Key concepts covered
+
+### Natural Language Processing and LLMs
+
+We explored what NLP is and how Large Language Models have transformed the field. You learned that:
+
+- NLP encompasses a wide range of tasks from classification to generation
+- LLMs are powerful models trained on massive amounts of text data
+- These models can perform multiple tasks within a single architecture
+- Despite their capabilities, LLMs have limitations including hallucinations and bias
+
+### Transformer capabilities
+
+You saw how the pipeline() function from 🤗 Transformers makes it easy to use pre-trained models for various tasks:
+
+- Text classification, token classification, and question answering
+- Text generation and summarization
+- Translation and other sequence-to-sequence tasks
+- Speech recognition and image classification
+
+### Transformer architecture
+
+We discussed how Transformer models work at a high level, including:
+
+- The importance of the attention mechanism
+- How transfer learning enables models to adapt to specific tasks
+- The three main architectural variants: encoder-only, decoder-only, and encoder-decoder
+
+### Model architectures and their applications
+
+A key aspect of this chapter was understanding which architecture to use for different tasks:
+
+| Model           | Examples                          | Tasks                                                      |
+|-----------------|-----------------------------------|------------------------------------------------------------|
+| Encoder-only    | BERT, DistilBERT, ModernBERT      | Sentence classification, named entity recognition, extractive question answering |
+| Decoder-only    | GPT, LLaMA, Gemma, SmolLM         | Text generation, conversational AI, creative writing        |
+| Encoder-decoder | BART, T5, Marian, mBART           | Summarization, translation, generative question answering   |
+
+
+### Modern LLM developments
+You also learned about recent developments in the field:
+
+- How LLMs have grown in size and capability over time
+- The concept of scaling laws and how they guide model development
+- Specialized attention mechanisms that help models process longer sequences
+- The two-phase training approach of pretraining and instruction tuning
+
+### Practical applications
+Throughout the chapter, you’ve seen how these models can be applied to real-world problems:
+
+- Using the Hugging Face Hub to find and use pre-trained models
+- Leveraging the Inference API to test models directly in your browser
+- Understanding which models are best suited for specific tasks
