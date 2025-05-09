@@ -354,7 +354,7 @@ For example, you could build a system that:
 
 ## How do Transformers work?
 
-- GPT-like (also called *auto-regressive* Transformer models)
+- $${\color{lightyellow}GPT-like (also called *auto-regressive* Transformer models)}$$
 
 - BERT-like (also called *auto-encoding* Transformer models)
 
