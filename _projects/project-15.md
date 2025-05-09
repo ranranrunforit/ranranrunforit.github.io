@@ -613,6 +613,9 @@ ViT and ConvNeXT can both be used for image classification; the main difference 
 
 ViT replaces convolutions entirely with a pure Transformer architecture. If you’re familiar with the original Transformer, then you’re already most of the way toward understanding ViT.
 
+![vit_architecture](/images/vit_architecture.png)
+
+
 The main change ViT introduced was in how images are fed to a Transformer:
 
 1. An image is split into square non-overlapping patches, each of which gets turned into a vector or patch embedding. The patch embeddings are generated from a convolutional 2D layer which creates the proper input dimensions (which for a base Transformer is 768 values for each patch embedding). If you had a 224x224 pixel image, you could split it into 196 16x16 image patches. Just like how text is tokenized into words, an image is “tokenized” into a sequence of patches.
