@@ -613,7 +613,7 @@ ViT and ConvNeXT can both be used for image classification; the main difference 
 
 ViT replaces convolutions entirely with a pure Transformer architecture. If you’re familiar with the original Transformer, then you’re already most of the way toward understanding ViT.
 
-![vit_architecture](/images/vit_architecture.png)
+![vit_architecture](/images/vit_architecture.jpg)
 
 
 The main change ViT introduced was in how images are fed to a Transformer:
