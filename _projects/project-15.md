@@ -710,7 +710,7 @@ As we saw in How 🤗 Transformers solve tasks, <span style="background-color: #
 
 ### Practical applications
 
-Sequence-to-sequence models excel at tasks that require transforming one form of text into another while preserving meaning. Some practical applications include:
+<span style="background-color: #FFFF33;">Sequence-to-sequence models excel at tasks that require transforming one form of text into another while preserving meaning.</span> Some practical applications include:
 
 | Application               | Description                                 | Example Model      |
 |---------------------------|---------------------------------------------|--------------------|
