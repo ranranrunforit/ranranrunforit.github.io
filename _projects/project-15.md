@@ -164,7 +164,7 @@ Once you select a model by clicking on it, you’ll see that there is a widget e
 
 All the models can be tested directly through your browser using the Inference Providers, which is available on the Hugging Face website. You can play with the model directly on this page by inputting custom text and watching the model process the input data.
 
-Inference Providers that powers the widget is also available as a paid product, which comes in handy if you need it for your workflows. See the pricing page for more details.
+Inference Providers that powers the widget is also available as a paid product, which comes in handy if you need it for your workflows. 
 
 ### Mask filling
 
@@ -421,11 +421,36 @@ Each of these parts can be used independently, depending on the task:
 - **Encoder-decoder models** or **sequence-to-sequence models**: Good for generative tasks that require an input, such as translation or summarization.
 
 
-## Attention layers
+### Attention layers
 
 A key feature of Transformer models is that they are built with special layers called attention layers. This layer will tell the model to pay specific attention to certain words in the sentence you passed it (and more or less ignore the others) when dealing with the representation of each word.
 
+To put this into context, consider the task of translating text from English to French. Given the input “You like this course”, a translation model will need to also attend to the adjacent word “You” to get the proper translation for the word “like”, because in French the verb “like” is conjugated differently depending on the subject. The rest of the sentence, however, is not useful for the translation of that word. In the same vein, when translating “this” the model will also need to pay attention to the word “course”, because “this” translates differently depending on whether the associated noun is masculine or feminine. Again, the other words in the sentence will not matter for the translation of “course”. With more complex sentences (and more complex grammar rules), the model would need to pay special attention to words that might appear farther away in the sentence to properly translate each word.
+
+The same concept applies to any task associated with natural language: a word by itself has a meaning, but that meaning is deeply affected by the context, which can be any other word (or words) before or after the word being studied.
+
+Now that you have an idea of what attention layers are all about, let’s take a closer look at the Transformer architecture.
+
+### The original architecture
+The Transformer architecture was originally designed for translation. During training, the encoder receives inputs (sentences) in a certain language, while the decoder receives the same sentences in the desired target language. In the encoder, the attention layers can use all the words in a sentence (since, as we just saw, the translation of a given word can be dependent on what is after as well as before it in the sentence). The decoder, however, works sequentially and can only pay attention to the words in the sentence that it has already translated (so, only the words before the word currently being generated). For example, when we have predicted the first three words of the translated target, we give them to the decoder which then uses all the inputs of the encoder to try to predict the fourth word.
+
+To speed things up during training (when the model has access to target sentences), the decoder is fed the whole target, but it is not allowed to use future words (if it had access to the word at position 2 when trying to predict the word at position 2, the problem would not be very hard!). For instance, when trying to predict the fourth word, the attention layer will only have access to the words in positions 1 to 3.
+
+The original Transformer architecture looked like this, with the encoder on the left and the decoder on the right:
+
  ![attention_layer](/images/attention_layer.png)
+
+Note that the first attention layer in a decoder block pays attention to all (past) inputs to the decoder, but the second attention layer uses the output of the encoder. It can thus access the whole input sentence to best predict the current word. This is very useful as different languages can have grammatical rules that put the words in different orders, or some context provided later in the sentence may be helpful to determine the best translation of a given word.
+
+The attention mask can also be used in the encoder/decoder to prevent the model from paying attention to some special words — for instance, the special padding word used to make all the inputs the same length when batching together sentences.
+
+### Architectures vs. checkpoints
+As we dive into Transformer models in this course, you’ll see mentions of *architectures* and *checkpoints* as well as models. These terms all have slightly different meanings:
+
+- **Architecture**: This is the skeleton of the model — the definition of each layer and each operation that happens within the model.
+- **Checkpoints**: These are the weights that will be loaded in a given architecture.
+- **Model**: This is an umbrella term that isn’t as precise as “architecture” or “checkpoint”: it can mean both. This course will specify architecture or checkpoint when it matters to reduce ambiguity.
+For example, BERT is an architecture while `bert-base-cased`, a set of weights trained by the Google team for the first release of BERT, is a checkpoint. However, one can say “the BERT model” and “the `bert-base-cased` model.”
 
 
 ## How 🤗 Transformers solve tasks
