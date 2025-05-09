@@ -445,11 +445,13 @@ The original Transformer architecture looked like this, with the encoder on the 
 <span style="background-color: #FFFF33;">The *attention mask* can also be used in the encoder/decoder to prevent the model from paying attention to some special words — for instance, the special padding word used to make all the inputs the same length when batching together sentences.</span>
 
 ### Architectures vs. checkpoints
+
 As we dive into Transformer models in this course, you’ll see mentions of *architectures* and *checkpoints* as well as *models*. These terms all have slightly different meanings:
 
 - **Architecture**: This is the skeleton of the model — the definition of each layer and each operation that happens within the model.
 - **Checkpoints**: These are the weights that will be loaded in a given architecture.
 - **Model**: This is an umbrella term that isn’t as precise as “architecture” or “checkpoint”: it can mean both. This course will specify *architecture* or *checkpoint* when it matters to reduce ambiguity.
+
 For example, BERT is an architecture while `bert-base-cased`, a set of weights trained by the Google team for the first release of BERT, is a checkpoint. However, one can say “the BERT model” and “the `bert-base-cased` model.”
 
 
