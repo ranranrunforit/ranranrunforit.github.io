@@ -1,6 +1,6 @@
 ---
 title: "Interview Preparation - LLM Cheatsheet"
-excerpt: "When I have only 1 hours before the interview...😅 <br/><img src='/images/LLM.png'>"
+excerpt: "When I have only 1 hours right before the interview...😅 <br/><img src='/images/LLM.png'>"
 collection: projects
 date: 2025-05-08
 category: pythons
