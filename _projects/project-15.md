@@ -872,8 +872,6 @@ We can control generation length in several ways:
 2. **Stop Sequences**: Defining specific patterns that signal the end of generation
 3. **End-of-Sequence Detection**: Letting the model naturally conclude its response
 
-![Controlling_Generation](/images/Controlling_Generation.png)
-
 For example, if we want to generate a single paragraph, we might set a maximum of 100 tokens and use “\n\n” as a stop sequence. This ensures our output stays focused and appropriately sized for its purpose.
 
 ## Beam Search: Looking Ahead for Better Coherence
