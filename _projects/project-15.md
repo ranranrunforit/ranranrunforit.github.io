@@ -106,7 +106,7 @@ classifier(
  'scores': [0.8445963859558105, 0.111976258456707, 0.043427448719739914]}
 ```
 
-This pipeline is called zero-shot because you don’t need to fine-tune the model on your data to use it. It can directly return probability scores for any list of labels you want!
+This pipeline is called *zero-shot* because you don’t need to fine-tune the model on your data to use it. It can directly return probability scores for any list of labels you want!
 
 
 ### Text generation
