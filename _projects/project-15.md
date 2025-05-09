@@ -911,9 +911,9 @@ One of the most significant challenges in LLM inference is managing context leng
 - **Processing Speed**: Decreases linearly with longer contexts
 - **Resource Allocation**: Requires careful balancing of VRAM usage
 
-Recent models like Qwen2.5-1M offer impressive 1M token context windows, but this comes at the cost of significantly slower inference times. The key is finding the right balance for your specific use case.
-
 ![ContextWindow](/images/ContextWindow.png)
+
+Recent models like Qwen2.5-1M offer impressive 1M token context windows, but this comes at the cost of significantly slower inference times. The key is finding the right balance for your specific use case.
 
 ### The KV Cache Optimization
 
