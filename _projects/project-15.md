@@ -442,10 +442,10 @@ The original Transformer architecture looked like this, with the encoder on the 
 
 Note that the first attention layer in a decoder block pays attention to all (past) inputs to the decoder, but the second attention layer uses the output of the encoder. It can thus access the whole input sentence to best predict the current word. This is very useful as different languages can have grammatical rules that put the words in different orders, or some context provided later in the sentence may be helpful to determine the best translation of a given word.
 
-The attention mask can also be used in the encoder/decoder to prevent the model from paying attention to some special words — for instance, the special padding word used to make all the inputs the same length when batching together sentences.
+The *attention mask* can also be used in the encoder/decoder to prevent the model from paying attention to some special words — for instance, the special padding word used to make all the inputs the same length when batching together sentences.
 
 ### Architectures vs. checkpoints
-As we dive into Transformer models in this course, you’ll see mentions of *architectures* and *checkpoints* as well as models. These terms all have slightly different meanings:
+As we dive into Transformer models in this course, you’ll see mentions of *architectures* and *checkpoints* as well as *models*. These terms all have slightly different meanings:
 
 - **Architecture**: This is the skeleton of the model — the definition of each layer and each operation that happens within the model.
 - **Checkpoints**: These are the weights that will be loaded in a given architecture.
