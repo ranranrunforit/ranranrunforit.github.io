@@ -816,7 +816,7 @@ Understanding how LLMs process information helps us craft better prompts. <span 
 
 ## The Two-Phase Inference Process
 
-Now that we understand the basic components, let’s dive into how LLMs actually generate text. <span style="background-color: #FFFF33;">The process can be broken down into two main phases: prefill and decode. These phases work together like an assembly line, each playing a crucial role in producing coherent text.</span>
+Now that we understand the basic components, let’s dive into <span style="background-color: #FFFF33;">how LLMs actually generate text. The process can be broken down into two main phases: prefill and decode. These phases work together like an assembly line, each playing a crucial role in producing coherent text.</span>
 
 ### The Prefill Phase
 
