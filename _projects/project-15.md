@@ -829,15 +829,15 @@ Now that we understand the basic components, let’s dive into how LLMs actually
 <span style="background-color: #FFFF33;">This phase is computationally intensive because it needs to process all input tokens at once. Think of it as reading and understanding an entire paragraph before starting to write a response.</span>
 
 ### The Decode Phase
-After the prefill phase has processed the input, we move to the decode phase - this is where the actual text generation happens. The model generates one token at a time in what we call an autoregressive process (where each new token depends on all previous tokens).
+<span style="background-color: #FFFF33;">After the prefill phase has processed the input, we move to the decode phase - this is where the actual text generation happens. The model generates one token at a time in what we call an autoregressive process (where each new token depends on all previous tokens).</span>
 
-The decode phase involves several key steps that happen for each new token:
+<span style="background-color: #FFFF33;">The decode phase involves several key steps that happen for each new token:</span>
 
-1. **Attention Computation**: Looking back at all previous tokens to understand context
-2. **Probability Calculation**: Determining the likelihood of each possible next token
-3. **Token Selection**: Choosing the next token based on these probabilities
-4. **Continuation Check**: Deciding whether to continue or stop generation
-This phase is memory-intensive because the model needs to keep track of all previously generated tokens and their relationships.
+1. <span style="background-color: #FFFF33;">**Attention Computation**: Looking back at all previous tokens to understand context</span>
+2. <span style="background-color: #FFFF33;">**Probability Calculation**: Determining the likelihood of each possible next token</span>
+3. <span style="background-color: #FFFF33;">**Token Selection**: Choosing the next token based on these probabilities</span>
+4. <span style="background-color: #FFFF33;">**Continuation Check**: Deciding whether to continue or stop generation</span>
+<span style="background-color: #FFFF33;">This phase is memory-intensive because the model needs to keep track of all previously generated tokens and their relationships.</span>
 
 ## Sampling Strategies
 Now that we understand how the model generates text, let’s explore the various ways we can control this generation process. Just like a writer might choose between being more creative or more precise, we can adjust how the model makes its token selections.
