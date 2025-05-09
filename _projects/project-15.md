@@ -767,6 +767,7 @@ Longformer uses local attention: often, the local context (e.g., what are the tw
 
 Some preselected input tokens are also given global attention: for those few tokens, the attention matrix can access all tokens and this process is symmetric: all other tokens have access to those specific tokens (on top of the ones in their local window). This is shown in Figure 2d of the paper, see below for a sample attention mask:
 
+![local_attention_mask](/images/local_attention_mask.png)
 
 Using those attention matrices with less parameters then allows the model to have inputs having a bigger sequence length.
 
@@ -877,6 +878,7 @@ For example, if we want to generate a single paragraph, we might set a maximum o
 
 While the strategies we’ve discussed so far make decisions one token at a time, beam search takes a more holistic approach. Instead of committing to a single choice at each step, it explores multiple possible paths simultaneously - like a chess player thinking several moves ahead.
 
+![Beam_Search](/images/Beam_Search.png)
 
 Here’s how it works:
 
