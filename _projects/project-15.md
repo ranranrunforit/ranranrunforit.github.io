@@ -779,6 +779,8 @@ l1 × l2 = l and d1 + d2 = d (with the product for the lengths, this ends up bei
 
 The attention mechanism is what gives LLMs their ability to understand context and generate coherent responses. When predicting the next word, not every word in a sentence carries equal weight - for example, in the sentence “The capital of France is …”, the words “France” and “capital” are crucial for determining that “Paris” should come next. This ability to focus on relevant information is what we call attention.
 
+![AttentionSceneFinal](/images/AttentionSceneFinal.gif)
+
 This process of identifying the most relevant words to predict the next token has proven to be incredibly effective. Although the basic principle of training LLMs—predicting the next token—has remained generally consistent since BERT and GPT-2, there have been significant advancements in scaling neural networks and making the attention mechanism work for longer and longer sequences, at lower and lower costs.
 
 In short, the attention mechanism is the key to LLMs being able to generate text that is both coherent and context-aware. It sets modern LLMs apart from previous generations of language models.
@@ -841,6 +843,8 @@ Now that we understand how the model generates text, let’s explore the various
 
 When the model needs to choose the next token, it starts with raw probabilities (called logits) for every word in its vocabulary. But how do we turn these probabilities into actual choices? Let’s break down the process:
 
+![Token_Choices](/images/Token_Choices.png)
+
 1. **Raw Logits**: Think of these as the model’s initial gut feelings about each possible next word
 2. **Temperature Scaling**: Like a creativity dial - higher settings (>1.0) make choices more random and creative, lower settings (<1.0) make them more focused and deterministic
 3. **Top-p (Nucleus) Sampling**: Instead of considering all possible words, we only look at the most likely ones that add up to our chosen probability threshold (e.g., top 90%)
@@ -853,6 +857,8 @@ One common challenge with LLMs is their tendency to repeat themselves - much lik
 
 1. **Presence Penalty**: A fixed penalty applied to any token that has appeared before, regardless of how often. This helps prevent the model from reusing the same words.
 2. **Frequency Penalty**: A scaling penalty that increases based on how often a token has been used. The more a word appears, the less likely it is to be chosen again.
+
+![Managing_Repetition](/images/Managing_Repetition.png)
 
 These penalties are applied early in the token selection process, adjusting the raw probabilities before other sampling strategies are applied. Think of them as gentle nudges encouraging the model to explore new vocabulary.
 
