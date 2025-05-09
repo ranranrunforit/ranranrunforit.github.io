@@ -471,7 +471,7 @@ Language models work by being trained to predict the probability of a word given
 
 ## Types of language models
 
-In the Transformers library, language models generally fall into three architectural categories:
+<span style="background-color: #FFFF33;">In the Transformers library, language models generally fall into three architectural categories:</span>
 
 - <span style="background-color: #FFFF33;">**Encoder-only models** (like BERT): These models use a bidirectional approach to understand context from both directions. They’re best suited for tasks that require deep understanding of text, such as classification, named entity recognition, and question answering.</span>
 
