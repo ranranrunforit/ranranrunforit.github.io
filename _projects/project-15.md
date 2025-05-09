@@ -340,27 +340,26 @@ print(result)
 
 ### Combining data from multiple sources
 
-One powerful application of Transformer models is <div style="background-color: #FFFF33;">their ability to combine and process data from multiple sources. This is especially useful when you need to:
+One powerful application of Transformer models is <span style="background-color: #FFFF33;">their ability to combine and process data from multiple sources. This is especially useful when you need to: </span>
 
-1. Search across multiple databases or repositories
-2. Consolidate information from different formats (text, images, audio)
-3. Create a unified view of related information
+1. <span style="background-color: #FFFF33;">Search across multiple databases or repositories </span>
+2. <span style="background-color: #FFFF33;">Consolidate information from different formats (text, images, audio) </span>
+3. <span style="background-color: #FFFF33;">Create a unified view of related information </span>
 
 For example, you could build a system that:
 
 - Searches for information across databases in multiple modalities like text and image.
 - Combines results from different sources into a single coherent response. For example, from an audio file and text description.
-- Presents the most relevant information from a database of documents and metadata.</div>
+- Presents the most relevant information from a database of documents and metadata.
 
 ## How do Transformers work?
 
-<div style="background-color: #FFFF33;">
-- GPT-like (also called *auto-regressive* Transformer models)
+- <span style="background-color: #FFFF33;">GPT-like (also called *auto-regressive* Transformer models)</span>
 
-- BERT-like (also called *auto-encoding* Transformer models)
+- <span style="background-color: #FFFF33;">BERT-like (also called *auto-encoding* Transformer models)</span>
 
-- T5-like (also called *sequence-to-sequence* Transformer models)
-</div>
+- <span style="background-color: #FFFF33;">T5-like (also called *sequence-to-sequence* Transformer models)</span>
+
 ## Transformers are language models
 
 All the Transformer models mentioned above (GPT, BERT, T5, etc.) have been trained as language models. This means they have been trained on large amounts of raw text in a self-supervised fashion.
