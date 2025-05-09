@@ -21,7 +21,7 @@ tags:
 **LLMs (Large Language Models)** are a powerful subset of NLP models characterized by their massive size, extensive training data, and ability to perform a wide range of language tasks with minimal task-specific training. Models like the Llama, GPT, or Claude series are examples of LLMs that have revolutionized what’s possible in NLP.
 
 
-<span style="background-color: #FFFF33;">**NLP** is a field of linguistics and machine learning focused on understanding everything related to human language. The aim of NLP tasks is not only to understand single words individually, but to be able to understand the context of those words.</span>
+**NLP** is a field of linguistics and machine learning focused on understanding everything related to human language. The aim of NLP tasks is not only to understand single words individually, but to be able to understand the context of those words.
 
 The following is a list of common NLP tasks, with some examples of each:
 
@@ -340,7 +340,7 @@ print(result)
 
 ### Combining data from multiple sources
 
-One powerful application of Transformer models is their ability to combine and process data from multiple sources. This is especially useful when you need to:
+One powerful application of Transformer models is <span style="background-color: #FFFF33;">their ability to combine and process data from multiple sources. This is especially useful when you need to:
 
 1. Search across multiple databases or repositories
 2. Consolidate information from different formats (text, images, audio)
@@ -350,7 +350,7 @@ For example, you could build a system that:
 
 - Searches for information across databases in multiple modalities like text and image.
 - Combines results from different sources into a single coherent response. For example, from an audio file and text description.
-- Presents the most relevant information from a database of documents and metadata.
+- Presents the most relevant information from a database of documents and metadata.</span>
 
 ## How do Transformers work?
 
