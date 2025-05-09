@@ -747,19 +747,17 @@ When working on a specific NLP task, how do you decide which architecture to use
 
 
 <span style="background-color: #FFFF33;">When in doubt about which model to use, consider:</span>
-
 1. <span style="background-color: #FFFF33;">What kind of understanding does your task need? (Bidirectional or unidirectional)</span>
 2. <span style="background-color: #FFFF33;">Are you generating new text or analyzing existing text?</span>
 3. <span style="background-color: #FFFF33;">Do you need to transform one sequence into another?</span>
-
 <span style="background-color: #FFFF33;">The answers to these questions will guide you toward the right architecture.</span>
 
 
 ## Attention mechanisms
 
-Most transformer models use full attention in the sense that the attention matrix is square. It can be a big computational bottleneck when you have long texts. Longformer and reformer are models that try to be more efficient and use a sparse version of the attention matrix to speed up training.
+<span style="background-color: #FFFF33;">Most transformer models use full attention in the sense that the attention matrix is square. It can be a big computational bottleneck when you have long texts. Longformer and reformer are models that try to be more efficient and use a sparse version of the attention matrix to speed up training.</span>
 
-Standard attention mechanisms have a computational complexity of O(n²), where n is the sequence length. This becomes problematic for very long sequences. The specialized attention mechanisms below help address this limitation.
+<span style="background-color: #FFFF33;">Standard attention mechanisms have a computational complexity of O(n²), where n is the sequence length. This becomes problematic for very long sequences. The specialized attention mechanisms below help address this limitation.</span>
 
 ### LSH attention
 
@@ -794,13 +792,13 @@ In short, the attention mechanism is the key to LLMs being able to generate text
 
 Now that we understand attention, let’s explore how much context an LLM can actually handle. This brings us to context length, or the model’s ‘attention span’.
 
-The context length refers to the maximum number of tokens (words or parts of words) that the LLM can process at once. Think of it as the size of the model’s working memory.
+<span style="background-color: #FFFF33;">The context length refers to the maximum number of tokens (words or parts of words) that the LLM can process at once. Think of it as the size of the model’s working memory.</span>
 
-These capabilities are limited by several practical factors:
+<span style="background-color: #FFFF33;">These capabilities are limited by several practical factors:</span>
 
- - The model’s architecture and size
- - Available computational resources
- - The complexity of the input and desired output
+ - <span style="background-color: #FFFF33;">The model’s architecture and size</span>
+ - <span style="background-color: #FFFF33;">Available computational resources</span>
+ - <span style="background-color: #FFFF33;">The complexity of the input and desired output</span>
 
 In an ideal world, we could feed unlimited context to the model, but hardware constraints and computational costs make this impractical. This is why different models are designed with different context lengths to balance capability with efficiency.
 
@@ -810,25 +808,25 @@ The context length is the maximum number of tokens the model can consider at onc
 
 When we pass information to LLMs, we structure our input in a way that guides the generation of the LLM toward the desired output. This is called prompting.
 
-Understanding how LLMs process information helps us craft better prompts. Since the model’s primary task is to predict the next token by analyzing the importance of each input token, the wording of your input sequence becomes crucial.
+Understanding how LLMs process information helps us craft better prompts. <span style="background-color: #FFFF33;">Since the model’s primary task is to predict the next token by analyzing the importance of each input token, the wording of your input sequence becomes crucial.</span>
 
-Careful design of the prompt makes it easier to guide the generation of the LLM toward the desired output.
+<span style="background-color: #FFFF33;">Careful design of the prompt makes it easier to guide the generation of the LLM toward the desired output.</span>
 
 ## The Two-Phase Inference Process
 
-Now that we understand the basic components, let’s dive into how LLMs actually generate text. The process can be broken down into two main phases: prefill and decode. These phases work together like an assembly line, each playing a crucial role in producing coherent text.
+Now that we understand the basic components, let’s dive into how LLMs actually generate text. <span style="background-color: #FFFF33;">The process can be broken down into two main phases: prefill and decode. These phases work together like an assembly line, each playing a crucial role in producing coherent text.</span>
 
 ### The Prefill Phase
 
-The prefill phase is like the preparation stage in cooking - it’s where all the initial ingredients are processed and made ready. This phase involves three key steps:
+<span style="background-color: #FFFF33;">The prefill phase is like the preparation stage in cooking - it’s where all the initial ingredients are processed and made ready. This phase involves three key steps:</span>
 
-- **Tokenization**: Converting the input text into tokens (think of these as the basic building blocks the model understands)
+- <span style="background-color: #FFFF33;">**Tokenization**: Converting the input text into tokens (think of these as the basic building blocks the model understands)</span>
 
-- **Embedding Conversion**: Transforming these tokens into numerical representations that capture their meaning
+- <span style="background-color: #FFFF33;">**Embedding Conversion**: Transforming these tokens into numerical representations that capture their meaning</span>
 
-- **Initial Processing**: Running these embeddings through the model’s neural networks to create a rich understanding of the context
+- <span style="background-color: #FFFF33;">**Initial Processing**: Running these embeddings through the model’s neural networks to create a rich understanding of the context</span>
 
-This phase is computationally intensive because it needs to process all input tokens at once. Think of it as reading and understanding an entire paragraph before starting to write a response.
+<span style="background-color: #FFFF33;">This phase is computationally intensive because it needs to process all input tokens at once. Think of it as reading and understanding an entire paragraph before starting to write a response.</span>
 
 ### The Decode Phase
 After the prefill phase has processed the input, we move to the decode phase - this is where the actual text generation happens. The model generates one token at a time in what we call an autoregressive process (where each new token depends on all previous tokens).
