@@ -922,13 +922,13 @@ Recent models like Qwen2.5-1M offer impressive 1M token context windows, but thi
 
 ### The KV Cache Optimization
 
-To address these challenges, one of the most powerful optimizations is KV (Key-Value) caching. This technique significantly improves inference speed by storing and reusing intermediate calculations. This optimization:
+<span style="background-color: #FFFF33;">To address these challenges, one of the most powerful optimizations is KV (Key-Value) caching. This technique significantly improves inference speed by storing and reusing intermediate calculations. This optimization:</span>
 
-- **Reduces repeated calculations**
-- **Improves generation speed**
-- **Makes long-context generation practical**
+- <span style="background-color: #FFFF33;">**Reduces repeated calculations**</span>
+- <span style="background-color: #FFFF33;">**Improves generation speed**</span>
+- <span style="background-color: #FFFF33;">**Makes long-context generation practical**</span>
 
-The trade-off is additional memory usage, but the performance benefits usually far outweigh this cost.
+<span style="background-color: #FFFF33;">The trade-off is additional memory usage, but the performance benefits usually far outweigh this cost.
 
 
 ### Bias and limitations
