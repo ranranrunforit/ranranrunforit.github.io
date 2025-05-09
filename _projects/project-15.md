@@ -901,12 +901,12 @@ As we wrap up our exploration of LLM inference, let’s look at the practical ch
 
 ### Key Performance Metrics
 
-When working with LLMs, four critical metrics will shape your implementation decisions:
+<span style="background-color: #FFFF33;">When working with LLMs, four critical metrics will shape your implementation decisions:</span>
 
-1. **Time to First Token (TTFT)**: How quickly can you get the first response? This is crucial for user experience and is primarily affected by the prefill phase.
-2. **Time Per Output Token (TPOT)**: How fast can you generate subsequent tokens? This determines the overall generation speed.
-3. **Throughput**: How many requests can you handle simultaneously? This affects scaling and cost efficiency.
-4. **VRAM Usage**: How much GPU memory do you need? This often becomes the primary constraint in real-world applications.
+1. <span style="background-color: #FFFF33;">**Time to First Token (TTFT)**: How quickly can you get the first response? This is crucial for user experience and is primarily affected by the prefill phase.</span>
+2. <span style="background-color: #FFFF33;">**Time Per Output Token (TPOT)**: How fast can you generate subsequent tokens? This determines the overall generation speed.</span>
+3. <span style="background-color: #FFFF33;">**Throughput**: How many requests can you handle simultaneously? This affects scaling and cost efficiency.</span>
+4. <span style="background-color: #FFFF33;">**VRAM Usage**: How much GPU memory do you need? This often becomes the primary constraint in real-world applications.</span>
 
 ### The Context Length Challenge
 
