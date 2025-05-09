@@ -570,12 +570,26 @@ This model has two main components:
 
 Whisper was pretrained on a massive and diverse dataset of 680,000 hours of labeled audio data collected from the web. This large-scale, weakly supervised pretraining is the key to its strong zero-shot performance across many languages and tasks.
 
+Now that Whisper is pretrained, you can use it directly for zero-shot inference or finetune it on your data for improved performance on specific tasks like automatic speech recognition or speech translation!
+
 The key innovation in Whisper is its training on an unprecedented scale of diverse, weakly supervised audio data from the internet. This allows it to generalize remarkably well to different languages, accents, and tasks without task-specific finetuning.
 
 
 ### Automatic speech recognition
 
 To use the pretrained model for automatic speech recognition, you leverage its full encoder-decoder structure. The encoder processes the audio input, and the decoder autoregressively generates the transcript token by token. When fine-tuning, the model is typically trained using a standard sequence-to-sequence loss (like cross-entropy) to predict the correct text tokens based on the audio input.
+
+The easiest way to use a fine-tuned model for inference is within a `pipeline`.
+
+```python
+from transformers import pipeline
+
+transcriber = pipeline(
+    task="automatic-speech-recognition", model="openai/whisper-base.en"
+)
+transcriber("https://huggingface.co/datasets/Narsil/asr_dummy/resolve/main/mlk.flac")
+# Output: {'text': ' I have a dream that one day this nation will rise up and live out the true meaning of its creed.'}
+```
 
 ### Computer vision
 
@@ -585,6 +599,9 @@ There are two ways to approach computer vision tasks:
 
 1. Split an image into a sequence of patches and process them in parallel with a Transformer.
 2. Use a modern CNN, like ConvNeXT, which relies on convolutional layers but adopts modern network designs.
+
+A third approach mixes Transformers with convolutions (for example, Convolutional Vision Transformer or LeViT). We won't discuss those because they just combine the two approaches we examine here.  
+
 
 ViT and ConvNeXT are commonly used for image classification, but for other vision tasks like object detection, segmentation, and depth estimation, we’ll look at DETR, Mask2Former and GLPN, respectively; these models are better suited for those tasks.
 
