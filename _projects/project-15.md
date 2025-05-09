@@ -100,7 +100,7 @@ classifier(
 )
 ```
 
-```
+```python out
 {'sequence': 'This is a course about the Transformers library',
  'labels': ['education', 'business', 'politics'],
  'scores': [0.8445963859558105, 0.111976258456707, 0.043427448719739914]}
@@ -120,7 +120,7 @@ generator = pipeline("text-generation")
 generator("In this course, we will teach you how to")
 ```
 
-```
+```python out
 [{'generated_text': 'In this course, we will teach you how to understand and use '
                     'data flow and data interchange when handling user data. We '
                     'will be working with one or more of the most commonly used '
@@ -148,7 +148,7 @@ generator(
 )
 ```
 
-```
+```python out
 [{'generated_text': 'In this course, we will teach you how to manipulate the world and '
                     'move your mental and physical capabilities to your advantage.'},
  {'generated_text': 'In this course, we will teach you how to become an expert and '
@@ -177,7 +177,7 @@ unmasker = pipeline("fill-mask")
 unmasker("This course will teach you all about <mask> models.", top_k=2)
 ```
 
-```
+```python out
 [{'sequence': 'This course will teach you all about mathematical models.',
   'score': 0.19619831442832947,
   'token': 30412,
@@ -201,7 +201,7 @@ ner = pipeline("ner", grouped_entities=True)
 ner("My name is Sylvain and I work at Hugging Face in Brooklyn.")
 ```
 
-```
+```python out
 [{'entity_group': 'PER', 'score': 0.99816, 'word': 'Sylvain', 'start': 11, 'end': 18}, 
  {'entity_group': 'ORG', 'score': 0.97960, 'word': 'Hugging Face', 'start': 33, 'end': 45}, 
  {'entity_group': 'LOC', 'score': 0.99321, 'word': 'Brooklyn', 'start': 49, 'end': 57}
@@ -225,7 +225,7 @@ question_answerer(
     context="My name is Sylvain and I work at Hugging Face in Brooklyn",
 )
 ```
-```
+```python out
 {'score': 0.6385916471481323, 'start': 33, 'end': 45, 'answer': 'Hugging Face'}
 ```
 
@@ -263,7 +263,7 @@ summarizer(
 )
 ```
 
-```
+```python out
 [{'summary_text': ' America has changed dramatically during recent years . The '
                   'number of engineering graduates in the U.S. has declined in '
                   'traditional engineering disciplines such as mechanical, civil '
@@ -285,7 +285,7 @@ translator = pipeline("translation", model="Helsinki-NLP/opus-mt-fr-en")
 translator("Ce cours est produit par Hugging Face.")
 ```
 
-```
+```python out
 [{'translation_text': 'This course is produced by Hugging Face.'}]
 ```
 Like with text generation and summarization, you can specify a `max_length` or a `min_length` for the result.
@@ -309,7 +309,7 @@ result = image_classifier(
 print(result)
 ```
 
-```
+```python out
 [{'label': 'lynx, catamount', 'score': 0.43350091576576233},
  {'label': 'cougar, puma, catamount, mountain lion, painter, panther, Felis concolor',
   'score': 0.034796204417943954},
@@ -334,7 +334,7 @@ result = transcriber(
 print(result)
 ```
 
-```
+```python out
 {'text': ' I have a dream that one day this nation will rise up and live out the true meaning of its creed.'}
 ```
 
