@@ -850,31 +850,32 @@ When the model needs to choose the next token, it starts with raw probabilities 
 
 ![Token_Choices](/images/Token_Choices.png)
 
-1. **Raw Logits**: Think of these as the model’s initial gut feelings about each possible next word
-2. **Temperature Scaling**: Like a creativity dial - higher settings (>1.0) make choices more random and creative, lower settings (<1.0) make them more focused and deterministic
-3. **Top-p (Nucleus) Sampling**: Instead of considering all possible words, we only look at the most likely ones that add up to our chosen probability threshold (e.g., top 90%)
-4. **Top-k Filtering**: An alternative approach where we only consider the k most likely next words
+1. <span style="background-color: #FFFF33;">**Raw Logits**: Think of these as the model’s initial gut feelings about each possible next word</span>
+2. <span style="background-color: #FFFF33;">**Temperature Scaling**: Like a creativity dial - higher settings (>1.0) make choices more random and creative, lower settings (<1.0) make them more focused and deterministic</span>
+3. <span style="background-color: #FFFF33;">**Top-p (Nucleus) Sampling**: Instead of considering all possible words, we only look at the most likely ones that add up to our chosen probability threshold (e.g., top 90%)</span>
+4. <span style="background-color: #FFFF33;">**Top-k Filtering**: An alternative approach where we only consider the k most likely next words</span>
 
 
 ### Managing Repetition: Keeping Output Fresh
 
-One common challenge with LLMs is their tendency to repeat themselves - much like a speaker who keeps returning to the same points. To address this, we use two types of penalties:
+<span style="background-color: #FFFF33;">One common challenge with LLMs is their tendency to repeat themselves - much like a speaker who keeps returning to the same points. To address this, we use two types of penalties:</span>
 
-1. **Presence Penalty**: A fixed penalty applied to any token that has appeared before, regardless of how often. This helps prevent the model from reusing the same words.
-2. **Frequency Penalty**: A scaling penalty that increases based on how often a token has been used. The more a word appears, the less likely it is to be chosen again.
+1. <span style="background-color: #FFFF33;">**Presence Penalty**: A fixed penalty applied to any token that has appeared before, regardless of how often. This helps prevent the model from reusing the same words.</span>
+2. <span style="background-color: #FFFF33;">**Frequency Penalty**: A scaling penalty that increases based on how often a token has been used. The more a word appears, the less likely it is to be chosen again.</span>
 
 ![Managing_Repetition](/images/Managing_Repetition.png)
 
 These penalties are applied early in the token selection process, adjusting the raw probabilities before other sampling strategies are applied. Think of them as gentle nudges encouraging the model to explore new vocabulary.
 
 ### Controlling Generation Length: Setting Boundaries
+
 Just as a good story needs proper pacing and length, we need ways to control how much text our LLM generates. This is crucial for practical applications - whether we’re generating a tweet-length response or a full blog post.
 
-We can control generation length in several ways:
+<span style="background-color: #FFFF33;">We can control generation length in several ways:</span>
 
-1. **Token Limits**: Setting minimum and maximum token counts
-2. **Stop Sequences**: Defining specific patterns that signal the end of generation
-3. **End-of-Sequence Detection**: Letting the model naturally conclude its response
+1. <span style="background-color: #FFFF33;">**Token Limits**: Setting minimum and maximum token counts</span>
+2. <span style="background-color: #FFFF33;">**Stop Sequences**: Defining specific patterns that signal the end of generation</span>
+3. <span style="background-color: #FFFF33;">**End-of-Sequence Detection**: Letting the model naturally conclude its response</span>
 
 For example, if we want to generate a single paragraph, we might set a maximum of 100 tokens and use “\n\n” as a stop sequence. This ensures our output stays focused and appropriately sized for its purpose.
 
