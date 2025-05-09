@@ -408,17 +408,17 @@ This process will also achieve better results than training from scratch (unless
 
 The model is primarily composed of two blocks:
 
-**Encoder (left)**: The encoder receives an input and builds a representation of it (its features). This means that the model is optimized to acquire understanding from the input.
+**Encoder (left)**: <span style="background-color: #FFFF33;">The encoder receives an input and builds a representation of it (its features). This means that the model is optimized to acquire understanding from the input.</span>
 
-**Decoder (right)**: The decoder uses the encoder’s representation (features) along with other inputs to generate a target sequence. This means that the model is optimized for generating outputs.
+**Decoder (right)**: <span style="background-color: #FFFF33;">The decoder uses the encoder’s representation (features) along with other inputs to generate a target sequence. This means that the model is optimized for generating outputs.</span>
 
  ![Encoder-Decoder](/images/Encoder-Decoder.png)
 
 Each of these parts can be used independently, depending on the task:
 
-- **Encoder-only models**: Good for tasks that require understanding of the input, such as sentence classification and named entity recognition.
-- **Decoder-only models**: Good for generative tasks such as text generation.
-- **Encoder-decoder models** or **sequence-to-sequence models**: Good for generative tasks that require an input, such as translation or summarization.
+- **Encoder-only models**: <span style="background-color: #FFFF33;">Good for tasks that require understanding of the input, such as sentence classification and named entity recognition.</span>
+- **Decoder-only models**:  <span style="background-color: #FFFF33;">Good for generative tasks such as text generation.</span>
+- **Encoder-decoder models** or **sequence-to-sequence models**:  <span style="background-color: #FFFF33;">Good for generative tasks that require an input, such as translation or summarization.</span>
 
 
 ### Attention layers
