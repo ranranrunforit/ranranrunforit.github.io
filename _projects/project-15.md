@@ -133,9 +133,28 @@ You can control how many different sequences are generated with the argument `nu
 
 ### Using any model from the Hub in a pipeline
 
-The previous examples used the default model for the task at hand, but you can also choose a particular model from the Hub to use in a pipeline for a specific task — say, text generation. Go to the Model Hub and click on the corresponding tag on the left to display only the supported models for that task. You should get to a page like this one.
+The previous examples used the default model for the task at hand, but you can also choose a particular model from the Hub to use in a pipeline for a specific task — say, text generation. 
 
 Let’s try the `HuggingFaceTB/SmolLM2-360M` model! Here’s how to load it in the same pipeline as before:
+
+```python
+from transformers import pipeline
+
+generator = pipeline("text-generation", model="HuggingFaceTB/SmolLM2-360M")
+generator(
+    "In this course, we will teach you how to",
+    max_length=30,
+    num_return_sequences=2,
+)
+```
+
+```
+[{'generated_text': 'In this course, we will teach you how to manipulate the world and '
+                    'move your mental and physical capabilities to your advantage.'},
+ {'generated_text': 'In this course, we will teach you how to become an expert and '
+                    'practice realtime, and with a hands on experience on both real '
+                    'time and real'}]
+```
 
 You can refine your search for a model by clicking on the language tags, and pick a model that will generate text in another language. The Model Hub even contains checkpoints for multilingual models that support several languages.
 
