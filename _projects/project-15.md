@@ -747,9 +747,11 @@ When working on a specific NLP task, how do you decide which architecture to use
 
 
 <span style="background-color: #FFFF33;">When in doubt about which model to use, consider:</span>
+
 1. <span style="background-color: #FFFF33;">What kind of understanding does your task need? (Bidirectional or unidirectional)</span>
 2. <span style="background-color: #FFFF33;">Are you generating new text or analyzing existing text?</span>
 3. <span style="background-color: #FFFF33;">Do you need to transform one sequence into another?</span>
+
 <span style="background-color: #FFFF33;">The answers to these questions will guide you toward the right architecture.</span>
 
 
