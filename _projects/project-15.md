@@ -277,7 +277,7 @@ Like with text generation, you can specify a `max_length` or a `min_length`for t
 
 ### Translation
 
-For translation, you can use a default model if you provide a language pair in the task name (such as "translation_en_to_fr"), but the easiest way is to pick the model you want to use on the Model Hub. Here we’ll try translating from French to English:
+For translation, you can use a default model if you provide a language pair in the task name (such as "`translation_en_to_fr`"), but the easiest way is to pick the model you want to use on the Model Hub. Here we’ll try translating from French to English:
 ```python
 from transformers import pipeline
 
