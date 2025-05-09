@@ -113,7 +113,22 @@ This pipeline is called *zero-shot* because you don’t need to fine-tune the mo
 
 Now let’s see how to use a pipeline to generate some text. The main idea here is that you provide a prompt and the model will auto-complete it by generating the remaining text. This is similar to the predictive text feature that is found on many phones. Text generation involves randomness, so it’s normal if you don’t get the same results as shown below.
 
-You can control how many different sequences are generated with the argument num_return_sequences and the total length of the output text with the argument max_length.
+```python
+from transformers import pipeline
+
+generator = pipeline("text-generation")
+generator("In this course, we will teach you how to")
+```
+
+```
+[{'generated_text': 'In this course, we will teach you how to understand and use '
+                    'data flow and data interchange when handling user data. We '
+                    'will be working with one or more of the most commonly used '
+                    'data flows — data flows of various types, as seen by the '
+                    'HTTP'}]
+```
+
+You can control how many different sequences are generated with the argument `num_return_sequences` and the total length of the output text with the argument `max_length`.
 
 
 ### Using any model from the Hub in a pipeline
