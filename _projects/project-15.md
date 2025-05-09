@@ -687,6 +687,7 @@ This approach has led to models that can understand and generate human-like text
 
 Modern decoder-based LLMs have demonstrated impressive capabilities:
 
+<div style="background-color: #FFFF33;">
 | Capability         | Description                                 | Example                                   |
 |--------------------|---------------------------------------------|-------------------------------------------|
 | Text generation    | Creating coherent and contextually relevant text | Writing essays, stories, or emails        |
@@ -696,7 +697,7 @@ Modern decoder-based LLMs have demonstrated impressive capabilities:
 | Code generation    | Writing or completing code snippets         | Creating a function based on a description|
 | Reasoning          | Working through problems step by step       | Solving math problems or logical puzzles  |
 | Few-shot learning  | Learning from a few examples in the prompt  | Classifying text after seeing just 2-3 examples |
-
+</div>
 
 ### Sequence-to-sequence models
 
