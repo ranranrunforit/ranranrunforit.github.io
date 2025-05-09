@@ -676,10 +676,10 @@ Representatives of this family of models include:
 
 Most modern Large Language Models (LLMs) use the decoder-only architecture. These models have grown dramatically in size and capabilities over the past few years, with some of the largest models containing hundreds of billions of parameters.
 
-Modern LLMs are typically trained in two phases:
+<span style="background-color: #FFFF33;">Modern LLMs are typically trained in two phases:</span>
 
-1. **Pretraining**: The model learns to predict the next token on vast amounts of text data
-2. **Instruction tuning**: The model is fine-tuned to follow instructions and generate helpful responses
+1. <span style="background-color: #FFFF33;">**Pretraining**: The model learns to predict the next token on vast amounts of text data</span>
+2. <span style="background-color: #FFFF33;">**Instruction tuning**: The model is fine-tuned to follow instructions and generate helpful responses</span>
 
 This approach has led to models that can understand and generate human-like text across a wide range of topics and tasks.
 
