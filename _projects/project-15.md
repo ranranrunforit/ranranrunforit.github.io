@@ -881,19 +881,19 @@ For example, if we want to generate a single paragraph, we might set a maximum o
 
 ## Beam Search: Looking Ahead for Better Coherence
 
-While the strategies we’ve discussed so far make decisions one token at a time, beam search takes a more holistic approach. Instead of committing to a single choice at each step, it explores multiple possible paths simultaneously - like a chess player thinking several moves ahead.
+While the strategies we’ve discussed so far make decisions one token at a time, <span style="background-color: #FFFF33;">beam search takes a more holistic approach. Instead of committing to a single choice at each step, it explores multiple possible paths simultaneously - like a chess player thinking several moves ahead.</span>
 
 ![Beam_Search](/images/Beam_Search.png)
 
-Here’s how it works:
+<span style="background-color: #FFFF33;">Here’s how it works:</span>
 
-1. At each step, maintain multiple candidate sequences (typically 5-10)
-2. For each candidate, compute probabilities for the next token
-3. Keep only the most promising combinations of sequences and next tokens
-4. Continue this process until reaching the desired length or stop condition
-5. Select the sequence with the highest overall probability
+1. <span style="background-color: #FFFF33;">At each step, maintain multiple candidate sequences (typically 5-10)</span>
+2. <span style="background-color: #FFFF33;">For each candidate, compute probabilities for the next token</span>
+3. <span style="background-color: #FFFF33;">Keep only the most promising combinations of sequences and next tokens</span>
+4. <span style="background-color: #FFFF33;">Continue this process until reaching the desired length or stop condition</span>
+5. <span style="background-color: #FFFF33;">Select the sequence with the highest overall probability</span>
 
-This approach often produces more coherent and grammatically correct text, though it requires more computational resources than simpler methods.
+<span style="background-color: #FFFF33;">This approach often produces more coherent and grammatically correct text, though it requires more computational resources than simpler methods.</span>
 
 ## Practical Challenges and Optimization
 
