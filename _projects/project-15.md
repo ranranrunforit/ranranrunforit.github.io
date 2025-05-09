@@ -657,13 +657,13 @@ Representatives of this family of models include:
 
 ### Decoder models
 
-Decoder models use only the decoder of a Transformer model. At each stage, for a given word the attention layers can only access the words positioned before it in the sentence. These models are often called auto-regressive models.
+<span style="background-color: #FFFF33;">Decoder models use only the decoder of a Transformer model. At each stage, for a given word the attention layers can only access the words positioned before it in the sentence. These models are often called auto-regressive models.</span>
 
-The pretraining of decoder models usually revolves around predicting the next word in the sentence.
+<span style="background-color: #FFFF33;">The pretraining of decoder models usually revolves around predicting the next word in the sentence.</span>
 
-These models are best suited for tasks involving text generation.
+<span style="background-color: #FFFF33;">These models are best suited for tasks involving text generation.</span>
 
-Decoder models like GPT are designed to generate text by predicting one token at a time. As we explored in How 🤗 Transformers solve tasks, they can only see previous tokens, which makes them excellent for creative text generation but less ideal for tasks requiring bidirectional understanding.
+<span style="background-color: #FFFF33;">Decoder models like GPT are designed to generate text by predicting one token at a time.</span> As we explored in How 🤗 Transformers solve tasks, <span style="background-color: #FFFF33;">they can only see previous tokens, which makes them excellent for creative text generation but less ideal for tasks requiring bidirectional understanding.</span>
 
 Representatives of this family of models include:
 
