@@ -558,6 +558,8 @@ Let’s start by exploring how Transformer models handle speech and audio data, 
 
 Whisper is a encoder-decoder (sequence-to-sequence) transformer pretrained on 680,000 hours of labeled audio data. This amount of pretraining data enables zero-shot performance on audio tasks in English and many other languages. The decoder allows Whisper to map the encoders learned speech representations to useful outputs, such as text, without additional fine-tuning. Whisper just works out of the box.
 
+![whisper_architecture](/images/whisper_architecture.png)
+
 Diagram is from Whisper paper.
 
 This model has two main components:
