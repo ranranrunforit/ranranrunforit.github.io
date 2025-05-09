@@ -354,11 +354,13 @@ For example, you could build a system that:
 
 ## How do Transformers work?
 
+<span style="color:blue">
 - GPT-like (also called *auto-regressive* Transformer models)
 
 - BERT-like (also called *auto-encoding* Transformer models)
 
 - T5-like (also called *sequence-to-sequence* Transformer models)
+</span>
 
 ## Transformers are language models
 
