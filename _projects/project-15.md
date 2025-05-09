@@ -527,7 +527,7 @@ To use BERT for token classification tasks like named entity recognition (NER), 
 
 Question answering involves finding the answer to a question within a given context or passage.
 
-To use BERT for question answering, add a span classification head on top of the base BERT model. This linear layer accepts the final hidden states and performs a linear transformation to compute the span start and end logits corresponding to the answer. The cross-entropy loss is calculated between the logits and the label position to find the most likely span of text corresponding to the answer.
+To use BERT for question answering, add a `span` classification head on top of the base BERT model. This linear layer accepts the final hidden states and performs a linear transformation to compute the `span` start and end logits corresponding to the answer. The cross-entropy loss is calculated between the logits and the label position to find the most likely span of text corresponding to the answer.
 
 ### Summarization
 
