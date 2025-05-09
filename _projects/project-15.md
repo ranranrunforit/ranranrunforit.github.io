@@ -1,6 +1,6 @@
 ---
 title: "Interview Preparation - LLM Cheatsheet"
-excerpt: "Notes from HuggingFace🤗 LLM course. <br/><img src='/images/LLM.png'>"
+excerpt: "If you only have two hours before the interview. <br/><img src='/images/LLM.png'>"
 collection: projects
 date: 2025-05-08
 category: pythons
