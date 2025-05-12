@@ -496,21 +496,42 @@ Chain of thought prompting is based on greedy decoding, predicting the next word
  
 ## Document the various prompt attempts
 
-The last tip was mentioned before in this chapter, but we can’t stress enough how impofiant it is: document your prompt attempts in full detail so you can learn over time what went well and what did not.
+The last tip was mentioned before in this chapter, but we can’t stress enough how important
+it is: document your prompt attempts in full detail so you can learn over time what went well
+and what did not.
 
-Prompt outputs can differ across models, across sampling settings, and even across different versions of the same model. Moreover, even across identical prompts to the same model, small differences in output sentence formatting and word choice can occur. (For example, as mentioned previously, if two tokens have the same predicted probability, ties may be broken randomly. This can then impact subsequent predicted tokens.).
+Prompt outputs can differ across models, across sampling settings, and even across different
+versions of the same model. Moreover, even across identical prompts to the same model,
+small differences in output sentence formatting and word choice can occur. (For example, as
+mentioned previously, if two tokens have the same predicted probability, ties may be broken
+randomly. This can then impact subsequent predicted tokens.).
 
-We recommend creating a Google Sheet with Table 21 as a template. The advantages of this approach are that you have a complete record when you inevitably have to revisit your prompting work–either to pick it up in the future (you’d be surprised how much you can
-forget after just a shofi break), to test prompt performance on different versions of a model, and to help debug future errors.
+We recommend creating a Google Sheet with Table 21 as a template. The advantages of
+this approach are that you have a complete record when you inevitably have to revisit your
+prompting work–either to pick it up in the future (you’d be surprised how much you can
+forget after just a short break), to test prompt performance on different versions of a model,
+and to help debug future errors.
 
-Beyond the fields in this table, it’s also helpful to track the version of the prompt (iteration), a field to capture if the result was OK/NOT OK/SOMETIMES OK, and a field to capture feedback. If you’re lucky enough to be using Vefiex AI Studio, save your prompts (using the same name and version as listed in your documentation) and track the hyperlink to the saved prompt in the table. This way, you’re always one click away from re-running your prompts.
+Beyond the fields in this table, it’s also helpful to track the version of the prompt (iteration),
+a field to capture if the result was OK/NOT OK/SOMETIMES OK, and a field to capture
+feedback. If you’re lucky enough to be using Vertex AI Studio, save your prompts (using the
+same name and version as listed in your documentation) and track the hyperlink to the saved
+prompt in the table. This way, you’re always one click away from re-running your prompts.
 
-When working on a retrieval augmented generation system, you should also capture the specific aspects of the RAG system that impact what content was insefied into the prompt, including the query, chunk settings, chunk output, and other information.
- 
-Once you feel the prompt is close to perfect, take it to your project codebase. And in the codebase, save prompts in a separate file from code, so it’s easier to maintain. Finally, ideally your prompts are pafi of an operationalized system, and as a prompt engineer you should rely on automated tests and evaluation procedures to understand how well your prompt generalizes to a task.
+When working on a *retrieval augmented generation* system, you should also capture the
+specific aspects of the RAG system that impact what content was inserted into the prompt,
+including the query, chunk settings, chunk output, and other information.
 
-Prompt engineering is an iterative process. Craft and test different prompts, analyze, and document the results. Refine your prompt based on the model’s performance. Keep experimenting until you achieve the desired output. When you change a model or model configuration, go back and keep experimenting with the previously used prompts.
+Once you feel the prompt is close to perfect, take it to your project codebase. And in the
+codebase, save prompts in a separate file from code, so it’s easier to maintain. Finally, ideally
+your prompts are part of an operationalized system, and as a prompt engineer you should
+rely on automated tests and evaluation procedures to understand how well your prompt
+generalizes to a task.
 
+Prompt engineering is an iterative process. Craft and test different prompts, analyze,
+and document the results. Refine your prompt based on the model’s performance. Keep
+experimenting until you achieve the desired output. When you change a model or model
+configuration, go back and keep experimenting with the previously used prompts.
 
 # Summary
 
