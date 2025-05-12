@@ -507,7 +507,9 @@ Using variables in prompt
  
 ## Experiment with input formats and writing styles
 
-Different models, model configurations, prompt formats, word choices, and submits can yield different results. Therefore, it’s impofiant to experiment with prompt attributes like the style, the word choice, and the type prompt (zero shot, few shot, system prompt).
+Different models, model configurations, prompt formats, word choices, and submits can yield
+different results. Therefore, it’s important to experiment with prompt attributes like the style,
+the word choice, and the type prompt (zero shot, few shot, system prompt).
 
 For example a prompt with the goal to generate text about the revolutionary video game console Sega Dreamcast, can be formulated as a **question**, a **statement** or an **instruction**, resulting in different outputs:
 -	**Question**: What was the Sega Dreamcast and why was it such a revolutionary console?
@@ -527,10 +529,15 @@ It’s important for you to stay on top of model architecture changes, added dat
 
 ## Experiment with output formats
 
-Besides the prompt input format, consider experimenting with the output format. For non- creative tasks like extracting, selecting, parsing, ordering, ranking, or categorizing data try having your output returned in a structured format like JSON or XML.
+Besides the prompt input format, consider experimenting with the output format. For noncreative
+tasks like extracting, selecting, parsing, ordering, ranking, or categorizing data try
+having your output returned in a structured format like JSON or XML.
 
-There are some benefits in returning JSON objects from a prompt that extracts data. In a real-world application I don’t need to manually create this JSON format, I can already
-return the data in a sofied order (very handy when working with datetime objects), but most impofiantly, by prompting for a JSON format it forces the model to create a structure and limit hallucinations.
+There are some benefits in returning JSON objects from a prompt that extracts data. In
+a real-world application I don’t need to manually create this JSON format, I can already
+return the data in a sorted order (very handy when working with datetime objects), but most
+importantly, by prompting for a JSON format it forces the model to create a structure and
+limit hallucinations.
 
 ## Experiment together with other prompt engineers
 
