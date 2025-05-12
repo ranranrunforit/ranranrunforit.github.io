@@ -570,4 +570,4 @@ The whitepaper then discusses the challenges of gen AI like the problems that ca
 # Acknowledgements
 This study note was compiled with the help of deep and manual research, drawing inspiration and information from the excellent resource:
 
-The prompt engineering whitepaper (google 2025) PDF: [Prompt Engineering - Lee Boonstra](https://www.gptaiflow.tech/assets/files/2025-01-18-pdf-1-TechAI-Goolge-whitepaper_Prompt%20Engineering_v4-af36dcc7a49bb7269a58b1c9b89a8ae1.pdf)
+The prompt engineering whitepaper (google 2025) : [Prompt Engineering - Lee Boonstra](https://www.gptaiflow.tech/assets/files/2025-01-18-pdf-1-TechAI-Goolge-whitepaper_Prompt%20Engineering_v4-af36dcc7a49bb7269a58b1c9b89a8ae1.pdf)
