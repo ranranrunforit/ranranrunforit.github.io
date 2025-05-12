@@ -26,11 +26,10 @@ token prediction is based on the relationship between what’s in the previous t
 the LLM has seen during its training.
 
 When you write a prompt, you are attempting to set up the LLM to predict the right sequence
-of tokens. Prompt engineering is the process of designing high-quality prompts that guide
-LLMs to produce accurate outputs. This process involves tinkering to find the best prompt,
+of tokens. <span style="background-color: #FFFF33;">Prompt engineering is the process of designing high-quality prompts that guide LLMs to produce accurate outputs. This process involves tinkering to find the best prompt,
 optimizing prompt length, and evaluating a prompt’s writing style and structure in relation
 to the task. In the context of natural language processing and LLMs, a prompt is an input
-provided to the model to generate a response or prediction.
+provided to the model to generate a response or prediction. </span>
 
 These prompts can be used to achieve various kinds of understanding and generation
 tasks such as text summarization, information extraction, question and answering, text
@@ -480,12 +479,14 @@ To control the length of a generated LLM response, you can either set a max toke
 
 To reuse prompts and make it more dynamic use variables in the prompt, which can be changed for different inputs. E.g. as shown in Table 20, a prompt which gives facts about a city. Instead of hardcoding the city name in the prompt, use a variable. Variables can save you time and effort by allowing you to avoid repeating yourself. If you need to use the same piece of information in multiple prompts, you can store it in a variable and then reference that variable in each prompt. This makes a lot of sense when integrating prompts into your own applications.
 
+```
 Prompt
 VARIABLES
 {city} = "Amsterdam"
 PROMPT
 You are a travel guide. Tell me a fact about the city: {city}
 Output	Amsterdam is a beautiful city full of canals, bridges, and narrow streets. It’s a great place to visit for its rich history, culture, and nightlife.
+```
 
 Table 20. Using variables in prompts
  
