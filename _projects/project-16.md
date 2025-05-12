@@ -323,7 +323,7 @@ For example, you can use automatic prompt engineering that will help with traini
  
 ## Code prompting
 
-Gemini focuses primarily on text-based prompts, which also includes writing prompts for returning code. Let’s go to the Vefiex AI Studio and test these prompts to look at some coding examples.
+Gemini focuses primarily on text-based prompts, which also includes writing prompts for returning code.
 
 ### Prompts for writing code
 
