@@ -140,12 +140,12 @@ next token will meet the top-P criteria, and none are selected out.</span>
 <span style="background-color: #FFFF33;">As a general starting point, a **temperature of .2, top-P of .95, and top-K of 30** will give you
 relatively coherent results that **can be creative but not excessively so**. If you want **especially
 creative results**, try starting with a **temperature of .9, top-P of .99, and top-K of 40**. And if you
-want less creative results, try starting with a temperature of .1, top-P of .9, and top-K of 20.
-Finally, if your task always has a single correct answer (e.g., answering a math problem), start
-with a temperature of 0.</span>
+want **less creative results**, try starting with a **temperature of .1, top-P of .9, and top-K of 20**.
+Finally, if your task **always has a single correct answer (e.g., answering a math problem)**, start
+with a **temperature of 0**.</span>
 
-NOTE: With more freedom (higher temperature, top-K, top-P, and output tokens), the LLM
-might generate text that is less relevant.
+<span style="background-color: #FFFF33;">NOTE: With **more freedom (higher temperature, top-K, top-P, and output tokens)**, the LLM
+might **generate text that is less relevant**.</span>
 
 # Prompting techniques
 
