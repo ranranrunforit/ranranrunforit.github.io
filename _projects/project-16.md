@@ -432,7 +432,7 @@ BEFORE:
 
 AFTER REWRITE:
 
-`Act as a travel guide for tourists. Describe great places to visit in New York Manhattan with a 3 year old.`
+<span style="background-color: #FFFF33;">`Act as a travel guide for tourists. Describe great places to visit in New York Manhattan with a 3 year old.`</span>
 
 Try using verbs that describe the action. Here’s a set of examples:
 
@@ -446,7 +446,7 @@ Examples:
 
 DO:
 
-`Generate a 3 paragraph blog post about the top 5 video game consoles. The blog post should be informative and engaging, and it should be written in a conversational style.`
+<span style="background-color: #FFFF33;">`Generate a 3 paragraph blog post about the top 5 video game consoles. The blog post should be informative and engaging, and it should be written in a conversational style.`</span>
 
 DO NOT:
 
@@ -469,26 +469,26 @@ If possible, use positive instructions: instead of telling the model what not to
 
 DO:
 
-`Generate a 1 paragraph blog post about the top 5 video game consoles. Only discuss the console, the company who made it, the year, and total sales.`
+<span style="background-color: #FFFF33;">`Generate a 1 paragraph blog post about the top 5 video game consoles. Only discuss the console, the company who made it, the year, and total sales.`</span>
 
 DO NOT:
 
 `Generate a 1 paragraph blog post about the top 5 video game consoles. Do not list video game names.`
 
-As a best practice, start by prioritizing instructions, clearly stating what you want the model
-to do and only use constraints when necessary for safety, clarity or specific requirements.
+<span style="background-color: #FFFF33;">As a best practice, start by prioritizing instructions, clearly stating what you want the model
+to do and only use constraints when necessary for safety, clarity or specific requirements.</span>
 Experiment and iterate to test different combinations of instructions and constraints to find
 what works best for your specific tasks, and document these.
 
 ## Control the max token length
 
-To control the length of a generated LLM response, you can either set a max token limit in the configuration or explicitly request a specific length in your prompt. For example:
+<span style="background-color: #FFFF33;">To control the length of a generated LLM response, you can either set a max token limit in the configuration or explicitly request a specific length in your prompt.</span> For example:
 
 "Explain quantum physics in a tweet length message."
 
 ## Use variables in prompts
 
-To reuse prompts and make it more dynamic use variables in the prompt, which can be changed for different inputs. E.g. a prompt which gives facts about a city. Instead of hardcoding the city name in the prompt, use a variable. Variables can save you time and effort by allowing you to avoid repeating yourself. If you need to use the same piece of information in multiple prompts, you can store it in a variable and then reference that variable in each prompt. This makes a lot of sense when integrating prompts into your own applications.
+To reuse prompts and make it more dynamic use variables in the prompt, which can be changed for different inputs. E.g. a prompt which gives facts about a city. Instead of hardcoding the city name in the prompt, use a variable. Variables can save you time and effort by allowing you to avoid repeating yourself. <span style="background-color: #FFFF33;">If you need to use the same piece of information in multiple prompts, you can store it in a variable and then reference that variable in each prompt. This makes a lot of sense when integrating prompts into your own applications.</span>
 
 ```
 -------
@@ -518,7 +518,8 @@ For example a prompt with the goal to generate text about the revolutionary vide
 
 Generally speaking, the order of your few-shots examples should not matter much. However, when doing classification tasks, make sure you mix up the possible response classes in the few shot examples. This is because you might otherwise be overfitting to the specific order of the examples. By mixing up the possible response classes, you can ensure that the model is learning to identify the key features of each class, rather than simply memorizing the order of the examples. This will lead to more robust and generalizable performance on unseen data.
 
-A good rule of thumb is to start with 6 few shot examples and stafi testing the accuracy from there.
+A good rule of thumb is to start with 6 few shot examples and start testing the accuracy
+from there.
 
 ## Adapt to model updates
 
