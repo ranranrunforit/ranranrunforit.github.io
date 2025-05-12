@@ -62,29 +62,29 @@ Temperature, top-K, and top-P are the most common configuration settings that de
 how predicted token probabilities are processed to choose a single output token.</span>
 
 ### Temperature
-<span style="background-color: #FFFF33;">Temperature controls *the degree of randomness* in token selection. *Lower* temperatures
-are good for prompts that expect a more *deterministic* response, while *higher* temperatures
-can lead to more *diverse or unexpected* results. A temperature of 0 (*greedy decoding*) is
-*deterministic*: the *highest probability* token is always selected (though note that if two tokens
+<span style="background-color: #FFFF33;">Temperature controls **the degree of randomness** in token selection. **Lower** temperatures
+are good for prompts that expect a more **deterministic** response, while **higher** temperatures
+can lead to more **diverse or unexpected** results. A temperature of 0 (*greedy decoding*) is
+**deterministic**: the **highest probability** token is always selected (though note that if two tokens
 have the same highest predicted probability, depending on how tiebreaking is implemented
 you may not always get the same output with temperature 0).</span>
 
-<span style="background-color: #FFFF33;">Temperatures *close to the max* tend to create *more random* output. And as *temperature gets
-higher and higher, all tokens become equally likely to be the next predicted token*.</span>
+<span style="background-color: #FFFF33;">Temperatures **close to the max** tend to create **more random output**. And **as temperature gets
+higher and higher, all tokens become equally likely to be the next predicted token**.</span>
 
 The Gemini temperature control can be understood in a similar way to the softmax function
-used in machine learning. <span style="background-color: #FFFF33;">A *low temperature* setting mirrors a *low softmax temperature* (T),
-emphasizing *a single, preferred temperature with high certainty*. A *higher* Gemini temperature
-setting is like a *high softmax temperature*, making *a wider range of temperatures around
-the selected setting more acceptable*. This increased uncertainty accommodates scenarios
+used in machine learning. <span style="background-color: #FFFF33;">A **low temperature** setting mirrors a **low softmax temperature** (T),
+emphasizing **a single, preferred temperature with high certainty**. A **higher** Gemini temperature
+setting is like a **high softmax temperature**, making **a wider range of temperatures around
+the selected setting more acceptable**. This increased uncertainty accommodates scenarios
 where a rigid, precise temperature may not be essential like for example when experimenting
 with creative outputs.</span>
 
 ### Top-K and top-P
-Top-K and top-P (also known as nucleus sampling)4 are two sampling settings used in LLMs
+<span style="background-color: #FFFF33;">Top-K and top-P (also known as nucleus sampling) are two sampling settings used in LLMs
 to restrict the predicted next token to come from tokens with the top predicted probabilities.
 Like temperature, these sampling settings control the randomness and diversity of
-generated text.
+generated text.</span>
 
 - **Top-K** sampling selects the top K most likely tokens from the model’s predicted
 distribution. The higher top-K, the more creative and varied the model’s output; the
