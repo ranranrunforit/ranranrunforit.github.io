@@ -115,8 +115,8 @@ temperature is applied to sample from the tokens that passed the top-K and top-P
 only top-K or top-P is available, the behavior is the same but only the one top-K or P setting
 is used.</span>
 
-<span style="background-color: #FFFF33;">If temperature is not available, whatever tokens meet the top-K and/or top-P criteria are then
-randomly selected from to produce a single next predicted token.</span>
+<span style="background-color: #FFFF33;">**If temperature is not available, whatever tokens meet the top-K and/or top-P criteria are then
+randomly selected from to produce a single next predicted token.**</span>
 
 <span style="background-color: #FFFF33;">**At extreme settings of one sampling configuration value, that one sampling setting either
 cancels out other configuration settings or becomes irrelevant.**</span>
