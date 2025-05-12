@@ -144,7 +144,7 @@ want **less creative results**, try starting with a **temperature of .1, top-P o
 Finally, if your task **always has a single correct answer (e.g., answering a math problem)**, start
 with a **temperature of 0**.</span>
 
-<span style="background-color: #FFFF33;">NOTE: With **more freedom (higher temperature, top-K, top-P, and output tokens)**, the LLM
+<span style="background-color: #FFFF33;">**NOTE:** With **more freedom (higher temperature, top-K, top-P, and output tokens)**, the LLM
 might **generate text that is less relevant**.</span>
 
 # Prompting techniques
