@@ -25,7 +25,6 @@ predicted token to the end of the sequential text for predicting the following t
 token prediction is based on the relationship between what’s in the previous tokens and what
 the LLM has seen during its training.
 
-
 When you write a prompt, you are attempting to set up the LLM to predict the right sequence
 of tokens. Prompt engineering is the process of designing high-quality prompts that guide
 LLMs to produce accurate outputs. This process involves tinkering to find the best prompt,
@@ -195,9 +194,6 @@ When you choose examples for your prompt, use examples that are relevant to the 
 
 If you are trying to generate output that is robust to a variety of inputs, then it is important to include edge cases in your examples. Edge cases are inputs that are unusual or unexpected, but that the model should still be able to handle.
  
-
-
-
 ## System, contextual and role prompting
 
 System, contextual and role prompting are all techniques used to guide how LLMs generate text, but they focus on different aspects:
@@ -219,7 +215,6 @@ However, each type of prompt serves a slightly different primary purpose:
 Distinguishing between system, contextual, and role prompts provides a framework for designing prompts with clear intent, allowing for flexible combinations and making it easier to analyze how each prompt type influences the language model’s output.
 
 Let’s dive into these three different kinds of prompts.
-
 
 ### System prompting
 
@@ -246,9 +241,7 @@ Here are some styles you can choose from which I find effective:
 
 **Confrontational, Descriptive, Direct, Formal, Humorous, Influential, Informal, Inspirational, Persuasive**
  
-
 Let’s change our prompt in Table 6 to include a humorous and inspirational style.
-
 
 ### Contextual prompting
 
@@ -284,25 +277,17 @@ The LLM response includes the chain of thought reasoning, which means more outpu
 
 To explain the following example in Table 11, let’s first try to create a prompt that is not using CoT prompting to showcase the flaws of a large language model.
 
-
 Yikes. That’s obviously the wrong answer. As a matter of fact, LLMs often struggle with mathematical tasks and can provide incorrect answers – even for a task as simple as multiplying two numbers. This is because they are trained on large volumes of text and math may require a different approach. So let’s see if intermediate reasoning steps will improve the output.
 
 Alright, now the final answer is correct. That’s because we clearly instructed the LLM to explain each step instead of just returning an answer. It’s interesting to see that the model adds up the 17 increased years. In my head I would take the difference of years between my pafiner and me and add those up. (20+(9-3)). Let’s help the model to think a little bit more like me.
- 
-
-
-
 
 Table 12 is an example of ‘zero-shot’ Chain of thought. Chain of thought prompting can be very powerful when combined with a single-shot or few-shot, as what you can see in Table 13:
-
 
 Chain of thought can be useful for various use-cases. Think of code generation, for breaking down the request into a few steps, and mapping those to specific lines of code. Or for creating synthetic data when you have some kind of seed like “The product is called XYZ, write a description guiding the model through the assumptions you would make based on the product given title.” Generally, any task that can be solved by ‘talking through is a good candidate for a chain of thought. If you can explain the steps to solve the problem, try chain of thought.
 
 Please refer to the notebook10 hosted in the GoogleCloudPlatform Github repository which will go into fufiher detail on CoT prompting:
- 
 
 In the best practices section of this chapter, we will learn some best practices specific to Chain of thought prompting.
-
 
 ### Self-consistency
 
@@ -319,14 +304,11 @@ It follows the following steps:
 
 Let’s look into an example of an email classification system, which classifies an email as IMPORTANT or NOT IMPORTANT. A zero-shot chain of thought prompt will be sent to the LLM multiple times, to see if the responses differ after each submit. Notice the friendly tone, the word choice and the sarcasm that’s been used in the email. All this could trick the LLM.
  
-
 You can use the above prompt and try to see if it returns a consistent classification. Depending on the model that you are using and the temperature configuration, it might return “IMPORTANT” or “NOT IMPORTANT”.
  
-
 By generating many Chains of Thoughts, and taking the most commonly occurring answer (“IMPORTANT”), we can get a more consistently correct answer from the LLM.
 
 This example shows how self-consistency prompting can be used to improve the accuracy of an LLM’s response by considering multiple perspectives and selecting the most consistent answer.
-
 
 ### Tree of Thoughts (ToT)
 
@@ -336,7 +318,6 @@ This approach makes ToT pafiicularly well-suited for complex tasks that require 
 
 There’s a great notebook, which goes into a bit more detail showing The Tree of Thought (ToT) which is based on the paper ‘Large Language Model Guided Tree-of-Thought’.9
 
-
 ### ReAct (reason & act)
 
 Reason and act (ReAct) prompting is a paradigm for enabling LLMs to solve complex tasks using natural language reasoning combined with external tools (search, code interpreter etc.) allowing the LLM to perform cefiain actions, such as interacting with external APIs to retrieve information which is a first step towards agent modeling.
@@ -345,23 +326,17 @@ ReAct mimics how humans operate in the real world, as we reason verbally and can
 
 ReAct prompting works by combining reasoning and acting into a thought-action loop. The LLM first reasons about the problem and generates a plan of action. It then performs the actions in the plan and observes the results. The LLM then uses the observations to update its reasoning and generate a new plan of action. This process continues until the LLM reaches a solution to the problem.
  
-
-
-
-
 To see this in action, you need to write some code. In code Snippet 1 I am using the langchain framework for Python, together with VefiexAI (google-cloud-aiplatform) and the google-search-results pip packages.
 
 To run this sample you must create a (free) SerpAPI key from hflps://serpapi.com/manage- api-key and set an environment variable SERPAPI_API_KEY.
 
 Next let’s write some Python code, with the task for the LLM to figure out: How many children have a famous dad that performs in the band Metallica.
 
-
 Code Snippet 2 shows the result. Notice that ReAct makes a chain of five searches. In fact, the LLM is scraping Google search results to figure out the band names. Then, it lists the results as observations and chains the thought for the next search.
  
 Code Snippet 2 figures out that the band Metallica has four band members. Then it searches each band member to request the total of children and add up the total. Finally, it returns the total number of children as the final answer.
 
 ReAct prompting in practice requires understanding that you continually have to resend the previous prompts/responses (and do trimming of the extra generated content) as well as set up the model with appropriate examples/instructions. Please refer to the notebook14 hosted in the GoogleCloudPlatform Github repository, which goes into a bit more detail showing the actual LLM inputs and outputs with a more elaborate example
-
 
 ### Automatic Prompt Engineering
 
@@ -376,11 +351,9 @@ For example, you can use automatic prompt engineering that will help with traini
 2.	Evaluate all of the instruction candidates by scoring the candidates based on a chosen metric, For example, you can use. BLEU (Bilingual Evaluation Understudy) or ROUGE (Recall-Oriented Understudy for Gisting Evaluation).
 3.	Select the instruction candidate with the highest evaluation score. This candidate will be the final prompt you can use in your software application or chatbot. You can also tweak the select prompt and evaluate again.
  
-
 ### Code prompting
 
 Gemini focuses primarily on text-based prompts, which also includes writing prompts for returning code. Let’s go to the Vefiex AI Studio and test these prompts to look at some coding examples.
-
 
 ### Prompts for writing code
 
@@ -389,7 +362,6 @@ Gemini can also be a developer and help you with writing code in any programming
 Imagine a folder on your machine with hundreds of files that needs to be renamed. Renaming each file would take you a lot of time. You know a little Bash, and could write a script to automate this, but that may also take awhile. So let’s write a prompt. You can write the prompt in the public consumer chatbot Gemini, or if you are more concerned
 about confidentiality, you can write these prompts within your Google Cloud account and open Vefiex AI Studio. The advantage of Vefiex AI Studio is that you can configure the temperature etc.
  
-
 That seems like good code to me - it’s even documented! However, since LLMs can’t reason, and repeat training data, it’s essential to read and test your code first.
 
 The moment we are all waiting for, does it really work?
@@ -403,7 +375,6 @@ test. and hit enter.
 
 It worked!
 
-
 ### Prompts for explaining code
 
 As a developer when you work in teams you have to read someone else’s code. Gemini can help you with this as well. Let’s take the code output from Table 16, remove the comments and ask the large language model to explain what’s happening, See Table 17:
@@ -416,7 +387,6 @@ Read and review the code. Copy the output from the prompt and paste it into a ne
 
 NOTE: When prompting for (Python) code in the Language Studio in Vefiex AI, you will have to click on the ‘Markdown’ button. Otherwise you will receive plain text which is missing the proper indenting of lines, which is impofiant for running Python code.
 
-
 ### Prompts for debugging and reviewing code
 
 Let’s manually write some edits to the code of Table 18. It should prompt the user for the filename prefix, and write this prefix in upper case characters. See the example code in Snippet *3, but what a bummer. It now returns Python errors!
@@ -425,34 +395,24 @@ Doh! That looks like a bug:
 
 Let’s see if we can ask the large language model to debug and review code. Have a look into Table 19:
 
-
 These improvements make the code more robust and flexible while also making it easier to read and understand... (The response was truncated because
 it has reached the token limit. Try to increase the token limit if you need a longer response.)
 
-
 That’s great. Not only did it tell me how to solve the problem, it also figured out that my code had more bugs and how to solve them, too. The last part of the prompt gave suggestions to improve the code in general.
  
-
-
-
 ### What about multimodal prompting?
 
 Prompting for code still uses the same regular large language model. Multimodal prompting is a separate concern, it refers to a technique where you use multiple input formats to guide a large language model, instead of just relying on text. This can include combinations of text, images, audio, code, or even other formats, depending on the model’s capabilities and the task at hand.
-
 
 # Best Practices
 Finding the right prompt requires tinkering. Language Studio in Vefiex AI is a perfect place to play around with your prompts, with the ability to test against the various models.
 
 Use the following best practices to become a pro in prompt engineering.
 
-
 ## Provide examples
 
 The most important best practice is to provide (one shot / few shot) examples within a prompt. This is highly effective because it acts as a powerful teaching tool. These examples showcase desired outputs or similar responses, allowing the model to learn from them and tailor its own generation accordingly. It’s like giving the model a reference point or target to aim for, improving the accuracy, style, and tone of its response to better match your expectations.
  
-
-
-
 ### Design with simplicity
 
 Prompts should be concise, clear, and easy to understand for both you and the model. As a rule of thumb, if it’s already confusing for you it will likely be also confusing for the model. Try not to use complex language and don’t provide unnecessary information.
@@ -471,9 +431,6 @@ Try using verbs that describe the action. Here’s a set of examples:
 
 **Act, Analyze, Categorize, Classify, Contrast, Compare, Create, Describe, Define, Evaluate, Extract, Find, Generate, Identify, List, Measure, Organize, Parse, Pick, Predict, Provide, Rank, Recommend, Return, Retrieve, Rewrite, Select, Show, Sofi, Summarize, Translate, Write.**
  
-
-
-
 ### Be specific about the output
 
 Be specific about the desired output. A concise instruction might not guide the LLM enough or could be too generic. Providing specific details in the prompt (through system or context prompting) can help the model to focus on what’s relevant, improving the overall accuracy.
@@ -488,7 +445,6 @@ DO NOT:
 
 Generate a blog post about video game consoles.
 
-
 ### Use Instructions over Constraints
 
 Instructions and constraints are used in prompting to guide the output of a LLM.
@@ -496,10 +452,6 @@ Instructions and constraints are used in prompting to guide the output of a LLM.
 •	An **instruction** provides explicit instructions on the desired format, style, or content of the response. It guides the model on what the model should do or produce.
 •	A **constraint** is a set of limitations or boundaries on the response. It limits what the model should not do or avoid.
  
-
-
-
-
 Growing research suggests that focusing on positive instructions in prompting can be more effective than relying heavily on constraints. This approach aligns with how humans prefer positive instructions over lists of what not to do.
 
 Instructions directly communicate the desired outcome, whereas constraints might leave the model guessing about what is allowed. It gives flexibility and encourages creativity within the defined boundaries, while constraints can limit the model’s potential. Also a list of constraints can clash with each other.
@@ -517,16 +469,12 @@ DO NOT:
 Generate a 1 paragraph blog post about the top 5 video game consoles. Do not list video game names.
 
 As a best practice, stafi by prioritizing instructions, clearly stating what you want the model to do and only use constraints when necessary for safety, clarity or specific requirements. Experiment and iterate to test different combinations of instructions and constraints to find what works best for your specific tasks, and document these.
- 
-
-
 
 ### Control the max token length
 
 To control the length of a generated LLM response, you can either set a max token limit in the configuration or explicitly request a specific length in your prompt. For example:
 
 "Explain quantum physics in a tweet length message."
-
 
 ### Use variables in prompts
 
@@ -542,32 +490,24 @@ Output	Amsterdam is a beautiful city full of canals, bridges, and narrow streets
 Table 20. Using variables in prompts
  
 
-
-
 ### Experiment with input formats and writing styles
 
 Different models, model configurations, prompt formats, word choices, and submits can yield different results. Therefore, it’s impofiant to experiment with prompt attributes like the style, the word choice, and the type prompt (zero shot, few shot, system prompt).
 
 For example a prompt with the goal to generate text about the revolutionary video game console Sega Dreamcast, can be formulated as a **question**, a **statement** or an **instruction**, resulting in different outputs:
 -	**Question**: What was the Sega Dreamcast and why was it such a revolutionary console?
-
 -	**Statement**: The Sega Dreamcast was a sixth-generation video game console released by Sega in 1999. It...
 -	**Instruction**: Write a single paragraph that describes the Sega Dreamcast console and explains why it was so revolutionary.
-
 
 ### For few-shot prompting with classification tasks, mix up the classes
 
 Generally speaking, the order of your few-shots examples should not matter much. However, when doing classification tasks, make sure you mix up the possible response classes in the few shot examples. This is because you might otherwise be overfitting to the specific order of the examples. By mixing up the possible response classes, you can ensure that the model is learning to identify the key features of each class, rather than simply memorizing the order of the examples. This will lead to more robust and generalizable performance on unseen data.
- 
-
 
 A good rule of thumb is to start with 6 few shot examples and stafi testing the accuracy from there.
-
 
 ### Adapt to model updates
 
 It’s important for you to stay on top of model architecture changes, added data, and capabilities. Try out newer model versions and adjust your prompts to better leverage new model features. Tools like Vefiex AI Studio are great to store, test, and document the various versions of your prompt.
-
 
 ### Experiment with output formats
 
@@ -580,7 +520,6 @@ return the data in a sofied order (very handy when working with datetime objects
 
 If you are in a situation where you have to try to come up with a good prompt, you might want to find multiple people to make an attempt. When everyone follows the best practices (as listed in this chapter) you are going to see a variance in performance between all the different prompt attempts.
 
-
 ### CoT Best practices
 
 For CoT prompting, putting the answer after the reasoning is required because the generation of the reasoning changes the tokens that the model gets when it predicts the final answer.
@@ -591,9 +530,6 @@ For CoT prompting, set the temperature to 0.
 
 Chain of thought prompting is based on greedy decoding, predicting the next word in a sequence based on the highest probability assigned by the language model. Generally speaking, when using reasoning, to come up with the final answer, there’s likely one single correct answer. Therefore the temperature should always set to 0.
  
-
-
-
 ### Document the various prompt attempts
 
 The last tip was mentioned before in this chapter, but we can’t stress enough how impofiant it is: document your prompt attempts in full detail so you can learn over time what went well and what did not.
@@ -607,19 +543,14 @@ Beyond the fields in this table, it’s also helpful to track the version of the
 
 When working on a retrieval augmented generation system, you should also capture the specific aspects of the RAG system that impact what content was insefied into the prompt, including the query, chunk settings, chunk output, and other information.
  
-
-
-
-
 Once you feel the prompt is close to perfect, take it to your project codebase. And in the codebase, save prompts in a separate file from code, so it’s easier to maintain. Finally, ideally your prompts are pafi of an operationalized system, and as a prompt engineer you should rely on automated tests and evaluation procedures to understand how well your prompt generalizes to a task.
 
 Prompt engineering is an iterative process. Craft and test different prompts, analyze, and document the results. Refine your prompt based on the model’s performance. Keep experimenting until you achieve the desired output. When you change a model or model configuration, go back and keep experimenting with the previously used prompts.
 
 
+# Summary
 
-Summary
-
-This whitepaper discusses prompt engineering. We learned various prompting techniques, such as:
+The prompt engineering whitepaper (google 2025) discusses prompt engineering. We learned various prompting techniques, such as:
 
 -	Zero prompting
 
@@ -645,7 +576,6 @@ We even looked into ways how you can automate your prompts.
 
 The whitepaper then discusses the challenges of gen AI like the problems that can happen when your prompts are insufficient. We closed with best practices on how to become a better prompt engineer.
  
-
 # Acknowledgements
 This study note was compiled with the help of deep and manual research, drawing inspiration and information from the excellent resource:
 
