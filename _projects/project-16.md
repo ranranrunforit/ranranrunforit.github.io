@@ -342,6 +342,7 @@ Then it takes the contents of the folder and renames all the
 files inside by prepending the name draft to the file name.
 
 ```
+A prompt for generating Bash code
 
 The moment we are all waiting for, does it really work?
 
@@ -360,6 +361,7 @@ Explain to me the below Bash code:
 Bash code part
 
 ```
+A prompt for explaining code
 
 ### Prompts for translating code
 
@@ -374,6 +376,7 @@ Translate the below Bash code to a Python snippet.
 Bash code part
 
 ```
+A prompt for translating code from Bash to Python
 
 NOTE: When prompting for (Python) code in the Language Studio in Vertex AI, you will have
 to click on the 'Markdown' button. Otherwise you will receive plain text which is missing the
@@ -399,6 +402,7 @@ Debug what's wrong and explain how I can improve the code.
 python code part
 
 ```
+A prompt for debugging and reviewing Python code
 
 That’s great. Not only did it tell me how to solve the problem, it also figured out that my code had more bugs and how to solve them, too. The last part of the prompt gave suggestions to improve the code in general.
  
