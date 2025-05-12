@@ -646,3 +646,7 @@ We even looked into ways how you can automate your prompts.
 The whitepaper then discusses the challenges of gen AI like the problems that can happen when your prompts are insufficient. We closed with best practices on how to become a better prompt engineer.
  
 
+# Acknowledgements
+This study note was compiled with the help of deep and manual research, drawing inspiration and information from the excellent resource:
+
+[Prompt Engineering - Lee Boonstra](https://www.gptaiflow.tech/assets/files/2025-01-18-pdf-1-TechAI-Goolge-whitepaper_Prompt%20Engineering_v4-af36dcc7a49bb7269a58b1c9b89a8ae1.pdf)
