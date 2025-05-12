@@ -4,6 +4,7 @@ excerpt: "I got some interview questions about prompts 😅, so here's a quick s
 collection: projects
 date: 2025-05-12
 category: pythons
+description: "Hopefully next time I will get it right💪."
 tags:
   - Zero prompting
   - Few shot prompting
