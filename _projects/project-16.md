@@ -406,7 +406,7 @@ Use the following best practices to become a pro in prompt engineering.
 
 ## Provide examples
 
-The most important best practice is to provide (one shot / few shot) examples within a prompt. This is highly effective because it acts as a powerful teaching tool. These examples showcase desired outputs or similar responses, allowing the model to learn from them and tailor its own generation accordingly. It’s like giving the model a reference point or target to aim for, improving the accuracy, style, and tone of its response to better match your expectations.
+<span style="background-color: #FFFF33;">The most important best practice is to provide (one shot / few shot) examples within a prompt. This is highly effective because it acts as a powerful teaching tool.</span> These examples showcase desired outputs or similar responses, allowing the model to learn from them and tailor its own generation accordingly. It’s like giving the model a reference point or target to aim for, improving the accuracy, style, and tone of its response to better match your expectations.
  
 ## Design with simplicity
 
@@ -416,15 +416,15 @@ Examples:
 
 BEFORE:
 
-I am visiting New York right now, and I'd like to hear more about great locations. I am with two 3 year old kids. Where should we go during our vacation?
+`I am visiting New York right now, and I'd like to hear more about great locations. I am with two 3 year old kids. Where should we go during our vacation?`
 
 AFTER REWRITE:
 
-Act as a travel guide for tourists. Describe great places to visit in New York Manhattan with a 3 year old.
+`Act as a travel guide for tourists. Describe great places to visit in New York Manhattan with a 3 year old.`
 
 Try using verbs that describe the action. Here’s a set of examples:
 
-**Act, Analyze, Categorize, Classify, Contrast, Compare, Create, Describe, Define, Evaluate, Extract, Find, Generate, Identify, List, Measure, Organize, Parse, Pick, Predict, Provide, Rank, Recommend, Return, Retrieve, Rewrite, Select, Show, Sofi, Summarize, Translate, Write.**
+<span style="background-color: #FFFF33;">**Act, Analyze, Categorize, Classify, Contrast, Compare, Create, Describe, Define, Evaluate, Extract, Find, Generate, Identify, List, Measure, Organize, Parse, Pick, Predict, Provide, Rank, Recommend, Return, Retrieve, Rewrite, Select, Show, Sofi, Summarize, Translate, Write.**</span>
  
 ## Be specific about the output
 
