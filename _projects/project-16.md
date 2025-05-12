@@ -177,7 +177,7 @@ When creating prompts for AI models, it is helpful to provide examples. These ex
 
  <span style="background-color: #FFFF33;">A **few-shot** prompt provides *multiple* examples to the model. **This approach shows the model a pattern that it needs to follow. The idea is similar to one-shot, but multiple examples of the desired pattern increases the chance the model follows the pattern**.</span>
  
-The number of examples you need for few-shot prompting depends on a few factors, including the complexity of the task, the quality of the examples, and the capabilities of the generative AI (gen AI) model you are using.  <span style="background-color: #FFFF33;">As a general rule of thumb, you should use at least three to five examples for few-shot prompting. However, you may need to use more examples for more complex tasks, or you may need to use fewer due to the input length limitation of your model.</span>
+The number of examples you need for few-shot prompting depends on a few factors, including the complexity of the task, the quality of the examples, and the capabilities of the generative AI (gen AI) model you are using. <span style="background-color: #FFFF33;">As a general rule of thumb, you should use at least three to five examples for few-shot prompting. However, you may need to use more examples for more complex tasks, or you may need to use fewer due to the input length limitation of your model.</span>
 
 When you choose examples for your prompt, use examples that are relevant to the task you want to perform. The examples should be diverse, of high quality, and well written. One small mistake can confuse the model and will result in undesired output.
 
@@ -266,7 +266,7 @@ tokens, which means predictions cost more money and take longer.
 
 Chain of thought prompting can be very powerful when combined with a single-shot or few-shot.
 
-Chain of thought can be useful for various use-cases. Think of code generation, for breaking down the request into a few steps, and mapping those to specific lines of code. Or for creating synthetic data when you have some kind of seed like “The product is called XYZ, write a description guiding the model through the assumptions you would make based on the product given title.” Generally, any task that can be solved by ‘talking through is a good candidate for a chain of thought. If you can explain the steps to solve the problem, try chain of thought.
+Chain of thought can be useful for various use-cases. Think of code generation, for breaking down the request into a few steps, and mapping those to specific lines of code. Or for creating synthetic data when you have some kind of seed like "The product is called XYZ, write a description guiding the model through the assumptions you would make based on the product given title." span style="background-color: #FFFF33;">Generally, any task that can be solved by 'talking through' is a good candidate for a chain of thought. If you can explain the steps to solve the problem, try chain of thought.</span>
 
 In the best practices section of this chapter, we will learn some best practices specific to Chain of thought prompting.
 
