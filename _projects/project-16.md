@@ -432,7 +432,8 @@ BEFORE:
 
 AFTER REWRITE:
 
-<span style="background-color: #FFFF33;">`Act as a travel guide for tourists. Describe great places to visit in New York Manhattan with a 3 year old.`</span>
+<span style="background-color: #FFFF33;">`Act as a travel guide for tourists. Describe great places to visit in New York Manhattan with a 3 year old.`
+</span>
 
 Try using verbs that describe the action. Here’s a set of examples:
 
@@ -445,8 +446,9 @@ Try using verbs that describe the action. Here’s a set of examples:
 Examples:
 
 DO:
-
-<span style="background-color: #FFFF33;">`Generate a 3 paragraph blog post about the top 5 video game consoles. The blog post should be informative and engaging, and it should be written in a conversational style.`</span>
+<span style="background-color: #FFFF33;">
+`Generate a 3 paragraph blog post about the top 5 video game consoles. The blog post should be informative and engaging, and it should be written in a conversational style.`
+</span>
 
 DO NOT:
 
@@ -468,9 +470,9 @@ Constraints are still valuable but in cefiain situations. To prevent the model f
 If possible, use positive instructions: instead of telling the model what not to do, tell it what to do instead. This can avoid confusion and improve the accuracy of the output.
 
 DO:
-
-`Generate a 1 paragraph blog post about the top 5 video game consoles. <span style="background-color: #FFFF33;">Only discuss</span> the console, the company who made it, the year, and total sales.`
-
+<span style="background-color: #FFFF33;">
+`Generate a 1 paragraph blog post about the top 5 video game consoles. Only discuss the console, the company who made it, the year, and total sales.`
+</span>
 DO NOT:
 
 `Generate a 1 paragraph blog post about the top 5 video game consoles. Do not list video game names.`
