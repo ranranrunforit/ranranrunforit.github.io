@@ -1,6 +1,6 @@
 ---
 title: "Interview Preparations - Prompt Engineering"
-excerpt: "I got some interview questions about promptd, so Here's a quick study note 😅. <br/><img src='/images/Prompt.png'>"
+excerpt: "I got some interview questions about prompts, so here's a quick study note 😅. <br/><img src='/images/Prompt.png'>"
 collection: projects
 date: 2025-05-12
 category: pythons
