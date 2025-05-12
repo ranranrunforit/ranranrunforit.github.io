@@ -150,8 +150,8 @@ might **generate text that is less relevant**.</span>
 # Prompting techniques
 
 LLMs are tuned to follow instructions and are trained on large amounts of data so they can
-understand a prompt and generate an answer. But LLMs aren’t perfect; the clearer your
-prompt text, the better it is for the LLM to predict the next likely text. Additionally, specific
+understand a prompt and generate an answer. But LLMs aren’t perfect; <span style="background-color: #FFFF33;">the clearer your
+prompt text, the better it is for the LLM to predict the next likely text.</span> Additionally, specific
 techniques that take advantage of how LLMs are trained and how LLMs work will help you get
 the relevant results from LLMs
 
