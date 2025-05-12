@@ -166,7 +166,6 @@ process is in the Best Practices section later in this chapter ("Document the va
 The model temperature should be set to a low number, since no creativity is needed, and we use the gemini-pro default top-K and top-P values, which effectively disable both settings (see 'LLM Output Configuration' above). Pay attention to the generated output. The words disturbing and masterpiece should make the prediction a little more complicated, as both
 words are used in the same sentence.
 
-
 When zero-shot doesn’t work, you can provide demonstrations or examples in the prompt, which leads to “one-shot” and “few-shot” prompting. General prompting / zero shot
 
 
