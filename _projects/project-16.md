@@ -252,22 +252,21 @@ By using step back prompting techniques you can increase the accuracy of your pr
 
 <span style="background-color: #FFFF33;">Chain of Thought (CoT) prompting is a technique for improving the reasoning capabilities of LLMs by generating **intermediate reasoning steps**. This helps the LLM generate more accurate answers. You can combine it with few-shot prompting to get better results on more complex tasks that require reasoning before responding as it’s a challenge with a zero-shot chain of thought.</span>
 
-CoT has a lot of advantages. First of all, it’s low-effofi while being very effective and works well with off-the-shelf LLMs (so no need to finetune). You also get interpretability with CoT prompting, as you can learn from the LLM’s responses and see the reasoning steps that were followed. If there’s a malfunction, you will be able to identify it. Chain of thought appears
-to improve robustness when moving between different LLM versions. Which means the performance of your prompt should drift less between different LLMs than if your prompt does not use reasoning chains. Of course there are also disadvantages, but they are somewhat intuitive.
+CoT has a lot of advantages. First of all, it’s low-effort while being very effective and works
+well with off-the-shelf LLMs (so no need to finetune). You also get interpretability with CoT
+prompting, as you can learn from the LLM’s responses and see the reasoning steps that were
+followed. If there’s a malfunction, you will be able to identify it. Chain of thought appears
+to improve robustness when moving between different LLM versions. Which means the
+performance of your prompt should drift less between different LLMs than if your prompt
+does not use reasoning chains. Of course there are also disadvantages, but they are
+somewhat intuitive.
 
-The LLM response includes the chain of thought reasoning, which means more output tokens, which means predictions cost more money and take longer.
+The LLM response includes the chain of thought reasoning, which means more output
+tokens, which means predictions cost more money and take longer.
 
-To explain the following example in Table 11, let’s first try to create a prompt that is not using CoT prompting to showcase the flaws of a large language model.
-
-Yikes. That’s obviously the wrong answer. As a matter of fact, LLMs often struggle with mathematical tasks and can provide incorrect answers – even for a task as simple as multiplying two numbers. This is because they are trained on large volumes of text and math may require a different approach. So let’s see if intermediate reasoning steps will improve the output.
-
-Alright, now the final answer is correct. That’s because we clearly instructed the LLM to explain each step instead of just returning an answer. It’s interesting to see that the model adds up the 17 increased years. In my head I would take the difference of years between my pafiner and me and add those up. (20+(9-3)). Let’s help the model to think a little bit more like me.
-
-Table 12 is an example of ‘zero-shot’ Chain of thought. Chain of thought prompting can be very powerful when combined with a single-shot or few-shot, as what you can see in Table 13:
+Chain of thought prompting can be very powerful when combined with a single-shot or few-shot.
 
 Chain of thought can be useful for various use-cases. Think of code generation, for breaking down the request into a few steps, and mapping those to specific lines of code. Or for creating synthetic data when you have some kind of seed like “The product is called XYZ, write a description guiding the model through the assumptions you would make based on the product given title.” Generally, any task that can be solved by ‘talking through is a good candidate for a chain of thought. If you can explain the steps to solve the problem, try chain of thought.
-
-Please refer to the notebook10 hosted in the GoogleCloudPlatform Github repository which will go into fufiher detail on CoT prompting:
 
 In the best practices section of this chapter, we will learn some best practices specific to Chain of thought prompting.
 
