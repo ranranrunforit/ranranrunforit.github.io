@@ -187,19 +187,19 @@ If you are trying to generate output that is robust to a variety of inputs, then
 
 System, contextual and role prompting are all techniques used to guide how LLMs generate text, but they focus on different aspects:
 
--	<span style="background-color: #FFFF33;">**System prompting** sets the overall context and purpose for the language model. It defines the ‘big picture’ of what the model should be doing, like translating a language, classifying a review etc.</span>
--	<span style="background-color: #FFFF33;">**Contextual prompting** provides specific details or background information relevant to the current conversation or task. It helps the model to understand the nuances of what’s being asked and tailor the response accordingly.</span>
--	<span style="background-color: #FFFF33;">**Role prompting** assigns a specific character or identity for the language model to adopt. This helps the model generate responses that are consistent with the assigned role and its associated knowledge and behavior.</span>
+-	<span style="background-color: #FFFF33;">**System prompting** sets the **overall context and purpose** for the language model. It defines the ‘big picture’ of what the model should be doing, like translating a language, classifying a review etc.</span>
+-	<span style="background-color: #FFFF33;">**Contextual prompting** provides **specific details or background information** relevant to the current conversation or task. It helps the model to understand the nuances of what’s being asked and tailor the response accordingly.</span>
+-	<span style="background-color: #FFFF33;">**Role prompting** assigns **a specific character or identity** for the language model to adopt. This helps the model generate responses that are consistent with the assigned role and its associated knowledge and behavior.</span>
 
 There can be considerable overlap between system, contextual, and role prompting. E.g. a prompt that assigns a role to the system, can also have a context.
 
 However, each type of prompt serves a slightly different primary purpose:
 
--	System prompt: Defines the model’s fundamental capabilities and overarching purpose.
+-	 <span style="background-color: #FFFF33;">System prompt: **Defines the model’s fundamental capabilities and overarching purpose**.</span>
 
--	Contextual prompt: Provides immediate, task-specific information to guide the response. It’s highly specific to the current task or input, which is dynamic.
+-	 <span style="background-color: #FFFF33;">Contextual prompt: **Provides immediate, task-specific information to guide the response. It’s highly specific to the current task or input, which is dynamic**.</span>
 
--	Role prompt: Frames the model’s output style and voice. It adds a layer of specificity and personality.
+-	 <span style="background-color: #FFFF33;">Role prompt: **Frames the model’s output style and voice. It adds a layer of specificity and personality**.</span>
  
 Distinguishing between system, contextual, and role prompts provides a framework for designing prompts with clear intent, allowing for flexible combinations and making it easier to analyze how each prompt type influences the language model’s output.
 
@@ -209,12 +209,12 @@ Let’s dive into these three different kinds of prompts.
 
 Table 3 contains a system prompt, where I specify additional information on how to return the output. I increased the temperature to get a higher creativity level, and I specified a higher token limit. However, because of my clear instruction on how to return the output the model didn’t return extra text.
 
-System prompts can be useful for generating output that meets specific requirements. The name ‘system prompt’ actually stands for ‘providing an additional task to the system’. For example, you could use a system prompt to generate a code snippet that is compatible with a specific programming language, or you could use a system prompt to return a cefiain structure. Have a look into Table 4, where I return the output in JSON format.
+System prompts can be useful for generating output that meets specific requirements. The name 'system prompt' actually stands for 'providing an additional task to the system'. For example, you could use a system prompt to generate a code snippet that is compatible with a specific programming language, or you could use a system prompt to return a cefiain structure. Have a look into Table 4, where I return the output in JSON format.
  
 There are some benefits in returning JSON objects from a prompt that extracts data. In a real-world application I don’t need to manually create this JSON format, I can already
 return the data in a sofied order (very handy when working with datetime objects), but most impofiantly, by prompting for a JSON format it forces the model to create a structure and limit hallucinations.
 
-System prompts can also be really useful for safety and toxicity. To control the output, simply add an additional line to your prompt like: ‘You should be respectful in your answer.’.
+System prompts can also be really useful for safety and toxicity. To control the output, simply add an additional line to your prompt like: 'You should be respectful in your answer.'.
 
 
 ### Role prompting
