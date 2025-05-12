@@ -207,29 +207,32 @@ Let’s dive into these three different kinds of prompts.
 
 ### System prompting
 
-System prompts can be useful for generating output that meets specific requirements. The name 'system prompt' actually stands for 'providing an additional task to the system'. For example, you could use a system prompt to generate a code snippet that is compatible with a specific programming language, or you could use a system prompt to return a cefiain structure. 
+<span style="background-color: #FFFF33;">System prompts can be useful for generating output that meets specific requirements. The
+name 'system prompt' actually stands for 'providing an additional task to the system'.</span> For
+example, you could use a system prompt to generate a code snippet that is compatible with
+a specific programming language, or you could use a system prompt to return a certain
+structure. 
  
 There are some benefits in returning JSON objects from a prompt that extracts data. In
 a real-world application I don’t need to manually create this JSON format, I can already
-return the data in a sorted order (very handy when working with datetime objects), but most
+return the data in a sorted order (very handy when working with datetime objects), <span style="background-color: #FFFF33;">but most
 importantly, by prompting for a JSON format it forces the model to create a structure and
-limit hallucinations.
+limit hallucinations.</span>
 
-System prompts can also be really useful for safety and toxicity. To control the output, simply add an additional line to your prompt like: 'You should be respectful in your answer.'.
+<span style="background-color: #FFFF33;">System prompts can also be really useful for safety and toxicity. To control the output, simply add an additional line to your prompt like: 'You should be respectful in your answer.'.</span>
 
 
 ### Role prompting
 
-Role prompting is a technique in prompt engineering that involves assigning a specific role to the gen AI model. This can help the model to generate more relevant and informative output, as the model can craft its responses to the specific role that it has been assigned.
+<span style="background-color: #FFFF33;">Role prompting is a technique in prompt engineering that involves assigning a specific role to the gen AI model. This can help the model to generate more relevant and informative output, as the model can craft its responses to the specific role that it has been assigned.</span>
 
 For example, you could role prompt a gen AI model to be a book editor, a kindergafien teacher, or a motivational speaker. Once the model has been assigned a role, you can then give it prompts that are specific to that role. For example, you could prompt a teacher to create a lesson plan that they can then review. Have a look into Table 5, where the model takes the role of a travel guide.
 
-
-Defining a role perspective for an AI model gives it a blueprint of the tone, style, and focused expefiise you’re looking for to improve the quality, relevance, and effectiveness of your output.
+<span style="background-color: #FFFF33;">Defining a role perspective for an AI model gives it a blueprint of the tone, style, and focused expefiise you’re looking for to improve the quality, relevance, and effectiveness of your output.</span>
 
 Here are some styles you can choose from which I find effective:
 
-**Confrontational, Descriptive, Direct, Formal, Humorous, Influential, Informal, Inspirational, Persuasive**
+<span style="background-color: #FFFF33;">**Confrontational, Descriptive, Direct, Formal, Humorous, Influential, Informal, Inspirational, Persuasive**</span>
  
 Let’s change our prompt in Table 6 to include a humorous and inspirational style.
 
