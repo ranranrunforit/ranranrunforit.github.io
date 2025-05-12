@@ -157,13 +157,14 @@ the relevant results from LLMs
 
 ## General prompting / zero shot
 
-A zero-shot prompt is the simplest type of prompt. It only provides a description of a task and some text for the LLM to get stafied with. This input could be anything: a question, a stafi of a story, or instructions. The name zero-shot stands for ’no examples’.
+A *zero-shot* prompt is the simplest type of prompt. It only provides a description of a task
+and some text for the LLM to get started with. This input could be anything: a question, a start of a story, or instructions. The name zero-shot stands for 'no examples'.
 
-Let’s use Vefiex AI Studio (for Language) in Vefiex AI,6 which provides a playground to test prompts. In Table 1, you will see an example zero-shot prompt to classify movie reviews.
+The table format as used below is a great way of documenting prompts. Your prompts will likely go through many iterations before they end up in a codebase, so it’s important to keep track of your prompt engineering work in a disciplined, structured way. More on this table format, the importance of tracking prompt engineering work, and the prompt development
+process is in the Best Practices section later in this chapter ("Document the various prompt attempts").
 
-The table format as used below is a great way of documenting prompts. Your prompts will likely go through many iterations before they end up in a codebase, so it’s impofiant to keep track of your prompt engineering work in a disciplined, structured way. More on this table format, the impofiance of tracking prompt engineering work, and the prompt development process is in the Best Practices section later in this chapter (“Document the various prompt attempts”).
-
-The model temperature should be set to a low number, since no creativity is needed, and we use the gemini-pro default top-K and top-P values, which effectively disable both settings (see ‘LLM Output Configuration’ above). Pay attention to the generated output. The words disturbing and masterpiece should make the prediction a little more complicated, as both words are used in the same sentence.
+The model temperature should be set to a low number, since no creativity is needed, and we use the gemini-pro default top-K and top-P values, which effectively disable both settings (see 'LLM Output Configuration' above). Pay attention to the generated output. The words disturbing and masterpiece should make the prediction a little more complicated, as both
+words are used in the same sentence.
 
 
 When zero-shot doesn’t work, you can provide demonstrations or examples in the prompt, which leads to “one-shot” and “few-shot” prompting. General prompting / zero shot
