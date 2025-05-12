@@ -563,7 +563,7 @@ Prompt outputs can differ across models, across sampling settings, and even acro
 versions of the same model. Moreover, even across identical prompts to the same model,
 small differences in output sentence formatting and word choice can occur. (For example, as
 mentioned previously, if two tokens have the same predicted probability, ties may be broken
-randomly. This can then impact subsequent predicted tokens.).
+randomly. This can then impact subsequent predicted tokens.)
 
 ![Table21](/images/Table21.png)
 
