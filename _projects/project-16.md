@@ -175,7 +175,7 @@ When creating prompts for AI models, it is helpful to provide examples. These ex
 
  <span style="background-color: #FFFF33;">A **one-shot** prompt, provides *a single* example, hence the name one-shot. The idea is the model has an example it can imitate to best complete the task.</span>
 
- <span style="background-color: #FFFF33;">A **few-shot** prompt provides *multiple* examples to the model. This approach shows the model a pattern that it needs to follow. The idea is similar to one-shot, but multiple examples of the desired pattern increases the chance the model follows the pattern.</span>
+ <span style="background-color: #FFFF33;">A **few-shot** prompt provides *multiple* examples to the model. **This approach shows the model a pattern that it needs to follow. The idea is similar to one-shot, but multiple examples of the desired pattern increases the chance the model follows the pattern**.</span>
  
 The number of examples you need for few-shot prompting depends on a few factors, including the complexity of the task, the quality of the examples, and the capabilities of the generative AI (gen AI) model you are using.  <span style="background-color: #FFFF33;">As a general rule of thumb, you should use at least three to five examples for few-shot prompting. However, you may need to use more examples for more complex tasks, or you may need to use fewer due to the input length limitation of your model.</span>
 
