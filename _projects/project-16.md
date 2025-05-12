@@ -426,7 +426,10 @@ DO NOT:
 
 Generate a 1 paragraph blog post about the top 5 video game consoles. Do not list video game names.
 
-As a best practice, stafi by prioritizing instructions, clearly stating what you want the model to do and only use constraints when necessary for safety, clarity or specific requirements. Experiment and iterate to test different combinations of instructions and constraints to find what works best for your specific tasks, and document these.
+As a best practice, start by prioritizing instructions, clearly stating what you want the model
+to do and only use constraints when necessary for safety, clarity or specific requirements.
+Experiment and iterate to test different combinations of instructions and constraints to find
+what works best for your specific tasks, and document these.
 
 ## Control the max token length
 
@@ -436,7 +439,7 @@ To control the length of a generated LLM response, you can either set a max toke
 
 ## Use variables in prompts
 
-To reuse prompts and make it more dynamic use variables in the prompt, which can be changed for different inputs. E.g. as shown in Table 20, a prompt which gives facts about a city. Instead of hardcoding the city name in the prompt, use a variable. Variables can save you time and effort by allowing you to avoid repeating yourself. If you need to use the same piece of information in multiple prompts, you can store it in a variable and then reference that variable in each prompt. This makes a lot of sense when integrating prompts into your own applications.
+To reuse prompts and make it more dynamic use variables in the prompt, which can be changed for different inputs. E.g. a prompt which gives facts about a city. Instead of hardcoding the city name in the prompt, use a variable. Variables can save you time and effort by allowing you to avoid repeating yourself. If you need to use the same piece of information in multiple prompts, you can store it in a variable and then reference that variable in each prompt. This makes a lot of sense when integrating prompts into your own applications.
 
 ```
 -------
@@ -453,7 +456,6 @@ Amsterdam is a beautiful city full of canals, bridges, and narrow streets. It’
 ```
 Using variables in prompt
  
-
 ## Experiment with input formats and writing styles
 
 Different models, model configurations, prompt formats, word choices, and submits can yield different results. Therefore, it’s impofiant to experiment with prompt attributes like the style, the word choice, and the type prompt (zero shot, few shot, system prompt).
