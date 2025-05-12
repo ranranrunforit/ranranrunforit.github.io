@@ -432,8 +432,7 @@ BEFORE:
 
 AFTER REWRITE:
 
-<span style="background-color: #FFFF33;">`Act as a travel guide for tourists. Describe great places to visit in New York Manhattan with a 3 year old.`
-</span>
+<span style="background-color: #FFFF33;">`Act as a travel guide for tourists. Describe great places to visit in New York Manhattan with a 3 year old.`</span>
 
 Try using verbs that describe the action. Here’s a set of examples:
 
