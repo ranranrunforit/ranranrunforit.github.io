@@ -469,7 +469,7 @@ If possible, use positive instructions: instead of telling the model what not to
 
 DO:
 
-<span style="background-color: #FFFF33;">`Generate a 1 paragraph blog post about the top 5 video game consoles. Only discuss the console, the company who made it, the year, and total sales.`</span>
+`Generate a 1 paragraph blog post about the top 5 video game consoles. <span style="background-color: #FFFF33;">Only discuss</span> the console, the company who made it, the year, and total sales.`
 
 DO NOT:
 
@@ -518,26 +518,26 @@ For example a prompt with the goal to generate text about the revolutionary vide
 
 ## For few-shot prompting with classification tasks, mix up the classes
 
-Generally speaking, the order of your few-shots examples should not matter much. However, when doing classification tasks, make sure you mix up the possible response classes in the few shot examples. This is because you might otherwise be overfitting to the specific order of the examples. By mixing up the possible response classes, you can ensure that the model is learning to identify the key features of each class, rather than simply memorizing the order of the examples. This will lead to more robust and generalizable performance on unseen data.
+<span style="background-color: #FFFF33;">Generally speaking, the order of your few-shots examples should not matter much. However, when doing classification tasks, make sure you mix up the possible response classes in the few shot examples. This is because you might otherwise be overfitting to the specific order of the examples. By mixing up the possible response classes, you can ensure that the model is learning to identify the key features of each class, rather than simply memorizing the order of the examples. This will lead to more robust and generalizable performance on unseen data.</span>
 
 A good rule of thumb is to start with 6 few shot examples and start testing the accuracy
 from there.
 
 ## Adapt to model updates
 
-It’s important for you to stay on top of model architecture changes, added data, and capabilities. Try out newer model versions and adjust your prompts to better leverage new model features. Tools like Vefiex AI Studio are great to store, test, and document the various versions of your prompt.
+It’s important for you to stay on top of model architecture changes, added data, and capabilities. Try out newer model versions and adjust your prompts to better leverage new model features. 
 
 ## Experiment with output formats
 
-Besides the prompt input format, consider experimenting with the output format. For noncreative
+Besides the prompt input format, consider experimenting with the output format. <span style="background-color: #FFFF33;">For noncreative
 tasks like extracting, selecting, parsing, ordering, ranking, or categorizing data try
-having your output returned in a structured format like JSON or XML.
+having your output returned in a structured format like JSON or XML.</span>
 
 There are some benefits in returning JSON objects from a prompt that extracts data. In
 a real-world application I don’t need to manually create this JSON format, I can already
-return the data in a sorted order (very handy when working with datetime objects), but most
+return the data in a sorted order (very handy when working with datetime objects), <span style="background-color: #FFFF33;">but most
 importantly, by prompting for a JSON format it forces the model to create a structure and
-limit hallucinations.
+limit hallucinations.</span>
 
 ## Experiment together with other prompt engineers
 
@@ -549,9 +549,9 @@ For CoT prompting, putting the answer after the reasoning is required because th
 
 With CoT and self-consistency you need to be able to extract the final answer from your prompt, separated from the reasoning.
 
-For CoT prompting, set the temperature to 0.
+<span style="background-color: #FFFF33;">For CoT prompting, set the temperature to 0.</span>
 
-Chain of thought prompting is based on greedy decoding, predicting the next word in a sequence based on the highest probability assigned by the language model. Generally speaking, when using reasoning, to come up with the final answer, there’s likely one single correct answer. Therefore the temperature should always set to 0.
+<span style="background-color: #FFFF33;">Chain of thought prompting is based on greedy decoding, predicting the next word in a sequence based on the highest probability assigned by the language model. Generally speaking, when using reasoning, to come up with the final answer, there’s likely one single correct answer. Therefore the temperature should always set to 0.</span>
  
 ## Document the various prompt attempts
 
