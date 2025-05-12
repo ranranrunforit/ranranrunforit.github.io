@@ -1,6 +1,6 @@
 ---
-title: "Prompt Engineering"
-excerpt: "Prompt engineering Quick Study Notes. <br/><img src='/images/Prompt.png'>"
+title: "Interview Preparations - Prompt Engineering"
+excerpt: "Quick Study Notes about Prompts. <br/><img src='/images/Prompt.png'>"
 collection: projects
 date: 2025-05-12
 category: pythons
