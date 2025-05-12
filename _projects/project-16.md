@@ -340,6 +340,7 @@ Prompt
 Write a code snippet in Bash, which asks for a folder name.
 Then it takes the contents of the folder and renames all the
 files inside by prepending the name draft to the file name.
+
 ```
 
 The moment we are all waiting for, does it really work?
@@ -355,7 +356,9 @@ As a developer when you work in teams you have to read someone else’s code. Ge
 Prompt
 -------
 Explain to me the below Bash code:
-Bash code
+
+Bash code part
+
 ```
 
 ### Prompts for translating code
@@ -367,7 +370,9 @@ The bash code from Table 16 seems to work fine. However this script could really
 Prompt
 -------
 Translate the below Bash code to a Python snippet.
-Bash code
+
+Bash code part
+
 ```
 
 NOTE: When prompting for (Python) code in the Language Studio in Vertex AI, you will have
@@ -381,14 +386,17 @@ proper indenting of lines, which is important for running Python code.
 Prompt
 -------
 The below Python code gives an error:
+
 Traceback (most recent call last):
 File "/
 Users/leeboonstra/Documents/test_folder/rename_files.py", line
 7, in <module>
 text = toUpperCase(prefix)
 NameError: name 'toUpperCase' is not defined
+
 Debug what's wrong and explain how I can improve the code.
-python code
+
+python code part
 
 ```
 
@@ -428,17 +436,17 @@ Try using verbs that describe the action. Here’s a set of examples:
  
 ## Be specific about the output
 
-Be specific about the desired output. A concise instruction might not guide the LLM enough or could be too generic. Providing specific details in the prompt (through system or context prompting) can help the model to focus on what’s relevant, improving the overall accuracy.
+<span style="background-color: #FFFF33;">Be specific about the desired output. A concise instruction might not guide the LLM enough or could be too generic. Providing specific details in the prompt (through system or context prompting) can help the model to focus on what’s relevant, improving the overall accuracy.</span>
 
 Examples:
 
 DO:
 
-Generate a 3 paragraph blog post about the top 5 video game consoles. The blog post should be informative and engaging, and it should be written in a conversational style.
+`Generate a 3 paragraph blog post about the top 5 video game consoles. The blog post should be informative and engaging, and it should be written in a conversational style.`
 
 DO NOT:
 
-Generate a blog post about video game consoles.
+`Generate a blog post about video game consoles.`
 
 ## Use Instructions over Constraints
 
@@ -457,11 +465,11 @@ If possible, use positive instructions: instead of telling the model what not to
 
 DO:
 
-Generate a 1 paragraph blog post about the top 5 video game consoles. Only discuss the console, the company who made it, the year, and total sales.
+`Generate a 1 paragraph blog post about the top 5 video game consoles. Only discuss the console, the company who made it, the year, and total sales.`
 
 DO NOT:
 
-Generate a 1 paragraph blog post about the top 5 video game consoles. Do not list video game names.
+`Generate a 1 paragraph blog post about the top 5 video game consoles. Do not list video game names.`
 
 As a best practice, start by prioritizing instructions, clearly stating what you want the model
 to do and only use constraints when necessary for safety, clarity or specific requirements.
