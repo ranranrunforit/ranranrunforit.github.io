@@ -234,8 +234,6 @@ Here are some styles you can choose from which I find effective:
 
 <span style="background-color: #FFFF33;">**Confrontational, Descriptive, Direct, Formal, Humorous, Influential, Informal, Inspirational, Persuasive**</span>
  
-Let’s change our prompt in Table 6 to include a humorous and inspirational style.
-
 ### Contextual prompting
 
 <span style="background-color: #FFFF33;">By providing contextual prompts, you can help ensure that your AI interactions are as seamless and efficient as possible. The model will be able to more quickly understand your request and be able to generate more accurate and relevant responses.</span>
