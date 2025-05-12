@@ -298,7 +298,6 @@ Now that we are familiar with chain of thought and self-consistency prompting, l
 
 <span style="background-color: #FFFF33;">This approach makes ToT pafiicularly well-suited for complex tasks that require exploration. It works by maintaining a tree of thoughts, where each thought represents a coherent language sequence that serves as an intermediate step toward solving a problem. The model can then explore different reasoning paths by branching out from different nodes in the tree.</span>
 
-
 ## ReAct (reason & act)
 
 <span style="background-color: #FFFF33;">Reason and act (ReAct) prompting is a paradigm for enabling LLMs to solve complex tasks using natural language reasoning combined with external tools (search, code interpreter etc.) allowing the LLM to perform cefiain actions, such as interacting with external APIs to retrieve information which is a first step towards agent modeling.</span>
@@ -335,19 +334,12 @@ about confidentiality, you can write these prompts within your Google Cloud acco
 That seems like good code to me - it’s even documented! However, since LLMs can’t reason, and repeat training data, it’s essential to read and test your code first.
 
 The moment we are all waiting for, does it really work?
- 
-Let’s try it first with a test folder with only a few files in it, which will need to be renamed from filename.txt to draft_filename.txt.
-1.	Copy the output from Table 16 (without the ```bash ``` text wrapper), and paste it in a new file called: “rename_files.sh”.
-2.	Open a terminal window and type: . rename_files.sh. It will ask to enter a folder name, e.g.
-test. and hit enter.
-
-3.	The script seems to run fine. You will see the message: Files renamed successfully. When you look into the test folder, notice that all the files were perfectly renamed to draft_filename.txt.
 
 It worked!
 
 ### Prompts for explaining code
 
-As a developer when you work in teams you have to read someone else’s code. Gemini can help you with this as well. Let’s take the code output from Table 16, remove the comments and ask the large language model to explain what’s happening, See Table 17:
+As a developer when you work in teams you have to read someone else’s code. Gemini can help you with this as well. Let’s take the code output from Table 16, remove the comments and ask the large language model to explain what’s happening
 
 ### Prompts for translating code
 
@@ -355,18 +347,13 @@ The bash code from Table 16 seems to work fine. However this script could really
 
 Read and review the code. Copy the output from the prompt and paste it into a new file: file_renamer.py. Test the code by opening a Terminal window, and execute the following command python file_renamer.py.
 
-NOTE: When prompting for (Python) code in the Language Studio in Vefiex AI, you will have to click on the ‘Markdown’ button. Otherwise you will receive plain text which is missing the proper indenting of lines, which is impofiant for running Python code.
+NOTE: When prompting for (Python) code in the Language Studio in Vertex AI, you will have
+to click on the 'Markdown' button. Otherwise you will receive plain text which is missing the
+proper indenting of lines, which is important for running Python code.
 
 ### Prompts for debugging and reviewing code
 
 Let’s manually write some edits to the code of Table 18. It should prompt the user for the filename prefix, and write this prefix in upper case characters. See the example code in Snippet *3, but what a bummer. It now returns Python errors!
-
-Doh! That looks like a bug:
-
-Let’s see if we can ask the large language model to debug and review code. Have a look into Table 19:
-
-These improvements make the code more robust and flexible while also making it easier to read and understand... (The response was truncated because
-it has reached the token limit. Try to increase the token limit if you need a longer response.)
 
 That’s great. Not only did it tell me how to solve the problem, it also figured out that my code had more bugs and how to solve them, too. The last part of the prompt gave suggestions to improve the code in general.
  
@@ -375,6 +362,7 @@ That’s great. Not only did it tell me how to solve the problem, it also figure
 Prompting for code still uses the same regular large language model. Multimodal prompting is a separate concern, it refers to a technique where you use multiple input formats to guide a large language model, instead of just relying on text. This can include combinations of text, images, audio, code, or even other formats, depending on the model’s capabilities and the task at hand.
 
 # Best Practices
+
 Finding the right prompt requires tinkering. Language Studio in Vefiex AI is a perfect place to play around with your prompts, with the ability to test against the various models.
 
 Use the following best practices to become a pro in prompt engineering.
@@ -452,11 +440,15 @@ To reuse prompts and make it more dynamic use variables in the prompt, which can
 
 ```
 Prompt
+
 VARIABLES
 {city} = "Amsterdam"
 PROMPT
 You are a travel guide. Tell me a fact about the city: {city}
-Output	Amsterdam is a beautiful city full of canals, bridges, and narrow streets. It’s a great place to visit for its rich history, culture, and nightlife.
+
+Output
+
+Amsterdam is a beautiful city full of canals, bridges, and narrow streets. It’s a great place to visit for its rich history, culture, and nightlife.
 ```
 
 Table 20. Using variables in prompts
