@@ -166,16 +166,16 @@ process is in the Best Practices section later in this chapter ("Document the va
 The model temperature should be set to a low number, since no creativity is needed, and we use the gemini-pro default top-K and top-P values, which effectively disable both settings (see 'LLM Output Configuration' above). Pay attention to the generated output. The words disturbing and masterpiece should make the prediction a little more complicated, as both
 words are used in the same sentence.
 
-When zero-shot doesn’t work, you can provide demonstrations or examples in the prompt, which leads to “one-shot” and “few-shot” prompting.
+When zero-shot doesn’t work, you can provide demonstrations or examples in the prompt, which leads to "one-shot" and "few-shot" prompting.
 
 
 ## One-shot & few-shot
 
 When creating prompts for AI models, it is helpful to provide examples. These examples can help the model understand what you are asking for. Examples are especially useful when you want to steer the model to a cefiain output structure or pattern.
 
-A **one-shot** prompt, provides *a single* example, hence the name one-shot. The idea is the model has an example it can imitate to best complete the task.
+ <span style="background-color: #FFFF33;">A **one-shot** prompt, provides *a single* example, hence the name one-shot. The idea is the model has an example it can imitate to best complete the task.</span>
 
-A **few-shot** prompt 7 provides *multiple* examples to the model. This approach shows the model a pattern that it needs to follow. The idea is similar to one-shot, but multiple examples of the desired pattern increases the chance the model follows the pattern.
+ <span style="background-color: #FFFF33;">A **few-shot** prompt provides *multiple* examples to the model. This approach shows the model a pattern that it needs to follow. The idea is similar to one-shot, but multiple examples of the desired pattern increases the chance the model follows the pattern.</span>
  
 
 
