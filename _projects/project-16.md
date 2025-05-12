@@ -86,13 +86,13 @@ to restrict the predicted next token to come from tokens with the top predicted 
 Like temperature, these sampling settings control the randomness and diversity of
 generated text.</span>
 
-- **Top-K** sampling selects the top K most likely tokens from the model’s predicted
+- <span style="background-color: #FFFF33;">**Top-K** sampling selects the top K most likely tokens from the model’s predicted
 distribution. The higher top-K, the more creative and varied the model’s output; the
 lower top-K, the more restive and factual the model’s output. A top-K of 1 is equivalent to
-greedy decoding.
-- **Top-P** sampling selects the top tokens whose cumulative probability does not exceed
+greedy decoding.</span>
+- <span style="background-color: #FFFF33;">**Top-P** sampling selects the top tokens whose cumulative probability does not exceed
 a certain value (P). Values for P range from 0 (greedy decoding) to 1 (all tokens in the
-LLM’s vocabulary).
+LLM’s vocabulary).</span>
 
 The best way to choose between top-K and top-P is to experiment with both methods (or
 both together) and see which one produces the results you are looking for.
