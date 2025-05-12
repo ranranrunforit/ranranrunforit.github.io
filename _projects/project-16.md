@@ -109,40 +109,40 @@ depends on the specific application and desired outcome, and the settings all im
 another. It’s also important to make sure you understand how your chosen model combines
 the different sampling settings together.
 
-If temperature, top-K, and top-P are all available (as in Vertex Studio), tokens that meet
+<span style="background-color: #FFFF33;">**If temperature, top-K, and top-P are all available (as in Vertex Studio), tokens that meet
 both the top-K and top-P criteria are candidates for the next predicted token, and then
-temperature is applied to sample from the tokens that passed the top-K and top-P criteria. If
+temperature is applied to sample from the tokens that passed the top-K and top-P criteria.** If
 only top-K or top-P is available, the behavior is the same but only the one top-K or P setting
-is used.
+is used.</span>
 
-If temperature is not available, whatever tokens meet the top-K and/or top-P criteria are then
-randomly selected from to produce a single next predicted token.
+<span style="background-color: #FFFF33;">If temperature is not available, whatever tokens meet the top-K and/or top-P criteria are then
+randomly selected from to produce a single next predicted token.</span>
 
-At extreme settings of one sampling configuration value, that one sampling setting either
-cancels out other configuration settings or becomes irrelevant.
+<span style="background-color: #FFFF33;">**At extreme settings of one sampling configuration value, that one sampling setting either
+cancels out other configuration settings or becomes irrelevant.**</span>
 
-- If you set temperature to 0, top-K and top-P become irrelevant–the most probable
+- <span style="background-color: #FFFF33;">If you **set temperature to 0, top-K and top-P become irrelevant**–the most probable
 token becomes the next token predicted. If you set temperature extremely high (above
 1–generally into the 10s), temperature becomes irrelevant and whatever tokens make
 it through the top-K and/or top-P criteria are then randomly sampled to choose a next
-predicted token.
+predicted token.</span>
 
-- If you set top-K to 1, temperature and top-P become irrelevant. Only one token passes the
+- <span style="background-color: #FFFF33;">If you set top-K to 1, temperature and top-P become irrelevant. Only one token passes the
 top-K criteria, and that token is the next predicted token. If you set top-K extremely high,
 like to the size of the LLM’s vocabulary, any token with a nonzero probability of being the
-next token will meet the top-K criteria and none are selected out.
+next token will meet the top-K criteria and none are selected out.</span>
 
-- If you set top-P to 0 (or a very small value), most LLM sampling implementations will then
+- <span style="background-color: #FFFF33;">If you set top-P to 0 (or a very small value), most LLM sampling implementations will then
 only consider the most probable token to meet the top-P criteria, making temperature and
 top-K irrelevant. If you set top-P to 1, any token with a nonzero probability of being the
-next token will meet the top-P criteria, and none are selected out.
+next token will meet the top-P criteria, and none are selected out.</span>
 
-As a general starting point, a temperature of .2, top-P of .95, and top-K of 30 will give you
-relatively coherent results that can be creative but not excessively so. If you want especially
-creative results, try starting with a temperature of .9, top-P of .99, and top-K of 40. And if you
+<span style="background-color: #FFFF33;">As a general starting point, a **temperature of .2, top-P of .95, and top-K of 30** will give you
+relatively coherent results that **can be creative but not excessively so**. If you want **especially
+creative results**, try starting with a **temperature of .9, top-P of .99, and top-K of 40**. And if you
 want less creative results, try starting with a temperature of .1, top-P of .9, and top-K of 20.
 Finally, if your task always has a single correct answer (e.g., answering a math problem), start
-with a temperature of 0.
+with a temperature of 0.</span>
 
 NOTE: With more freedom (higher temperature, top-K, top-P, and output tokens), the LLM
 might generate text that is less relevant.
