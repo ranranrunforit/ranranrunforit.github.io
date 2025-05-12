@@ -333,6 +333,15 @@ about confidentiality, you can write these prompts within your Google Cloud acco
  
 That seems like good code to me - it’s even documented! However, since LLMs can’t reason, and repeat training data, it’s essential to read and test your code first.
 
+```
+-------
+Prompt
+-------
+Write a code snippet in Bash, which asks for a folder name.
+Then it takes the contents of the folder and renames all the
+files inside by prepending the name draft to the file name.
+```
+
 The moment we are all waiting for, does it really work?
 
 It worked!
@@ -341,11 +350,25 @@ It worked!
 
 As a developer when you work in teams you have to read someone else’s code. Gemini can help you with this as well. Let’s take the code output from Table 16, remove the comments and ask the large language model to explain what’s happening
 
+```
+-------
+Prompt
+-------
+Explain to me the below Bash code:
+Bash code
+```
+
 ### Prompts for translating code
 
-The bash code from Table 16 seems to work fine. However this script could really be reusable when it would prompt me for file names, ideally it should work as a separate application with an UI. As a stafiing point, Python would be a better language for a (web) application than Bash. LLMs can help with translating code from one language to another. See the example in Table 18:
+The bash code from Table 16 seems to work fine. However this script could really be reusable when it would prompt me for file names, ideally it should work as a separate application with an UI. As a stafiing point, Python would be a better language for a (web) application than Bash. LLMs can help with translating code from one language to another. 
 
-Read and review the code. Copy the output from the prompt and paste it into a new file: file_renamer.py. Test the code by opening a Terminal window, and execute the following command python file_renamer.py.
+```
+-------
+Prompt
+-------
+Translate the below Bash code to a Python snippet.
+Bash code
+```
 
 NOTE: When prompting for (Python) code in the Language Studio in Vertex AI, you will have
 to click on the 'Markdown' button. Otherwise you will receive plain text which is missing the
@@ -353,7 +376,21 @@ proper indenting of lines, which is important for running Python code.
 
 ### Prompts for debugging and reviewing code
 
-Let’s manually write some edits to the code of Table 18. It should prompt the user for the filename prefix, and write this prefix in upper case characters. See the example code in Snippet *3, but what a bummer. It now returns Python errors!
+```
+-------
+Prompt
+-------
+The below Python code gives an error:
+Traceback (most recent call last):
+File "/
+Users/leeboonstra/Documents/test_folder/rename_files.py", line
+7, in <module>
+text = toUpperCase(prefix)
+NameError: name 'toUpperCase' is not defined
+Debug what's wrong and explain how I can improve the code.
+python code
+
+```
 
 That’s great. Not only did it tell me how to solve the problem, it also figured out that my code had more bugs and how to solve them, too. The last part of the prompt gave suggestions to improve the code in general.
  
