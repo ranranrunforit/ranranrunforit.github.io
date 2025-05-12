@@ -55,11 +55,11 @@ possibly need to engineer your prompt to accommodate.
 <span style="background-color: #FFFF33;">Output length restriction is especially important for some LLM prompting techniques, like ReAct, where the LLM will keep emitting useless tokens after the response you want.</span>
 
 ## Sampling controls
-LLMs do not formally predict a single token. Rather, LLMs predict probabilities for what the
+LLMs do not formally predict a single token. <span style="background-color: #FFFF33;">Rather, LLMs predict probabilities for what the
 next token could be, with each token in the LLM’s vocabulary getting a probability. Those
 token probabilities are then sampled to determine what the next produced token will be.
 Temperature, top-K, and top-P are the most common configuration settings that determine
-how predicted token probabilities are processed to choose a single output token.
+how predicted token probabilities are processed to choose a single output token.</span>
 
 ### Temperature
 Temperature controls the degree of randomness in token selection. Lower temperatures
