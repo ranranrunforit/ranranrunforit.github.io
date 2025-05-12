@@ -307,17 +307,7 @@ ReAct mimics how humans operate in the real world, as we reason verbally and can
 
 ReAct prompting works by combining reasoning and acting into a thought-action loop. The LLM first reasons about the problem and generates a plan of action. It then performs the actions in the plan and observes the results. The LLM then uses the observations to update its reasoning and generate a new plan of action. This process continues until the LLM reaches a solution to the problem.
  
-To see this in action, you need to write some code. In code Snippet 1 I am using the langchain framework for Python, together with VefiexAI (google-cloud-aiplatform) and the google-search-results pip packages.
-
-To run this sample you must create a (free) SerpAPI key from hflps://serpapi.com/manage- api-key and set an environment variable SERPAPI_API_KEY.
-
-Next let’s write some Python code, with the task for the LLM to figure out: How many children have a famous dad that performs in the band Metallica.
-
-Code Snippet 2 shows the result. Notice that ReAct makes a chain of five searches. In fact, the LLM is scraping Google search results to figure out the band names. Then, it lists the results as observations and chains the thought for the next search.
- 
-Code Snippet 2 figures out that the band Metallica has four band members. Then it searches each band member to request the total of children and add up the total. Finally, it returns the total number of children as the final answer.
-
-ReAct prompting in practice requires understanding that you continually have to resend the previous prompts/responses (and do trimming of the extra generated content) as well as set up the model with appropriate examples/instructions. Please refer to the notebook14 hosted in the GoogleCloudPlatform Github repository, which goes into a bit more detail showing the actual LLM inputs and outputs with a more elaborate example
+ReAct prompting in practice requires understanding that you continually have to resend the previous prompts/responses (and do trimming of the extra generated content) as well as set up the model with appropriate examples/instructions. 
 
 ## Automatic Prompt Engineering
 
