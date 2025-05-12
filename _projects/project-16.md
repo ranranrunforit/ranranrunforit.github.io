@@ -413,7 +413,7 @@ Use the following best practices to become a pro in prompt engineering.
 
 The most important best practice is to provide (one shot / few shot) examples within a prompt. This is highly effective because it acts as a powerful teaching tool. These examples showcase desired outputs or similar responses, allowing the model to learn from them and tailor its own generation accordingly. It’s like giving the model a reference point or target to aim for, improving the accuracy, style, and tone of its response to better match your expectations.
  
-### Design with simplicity
+## Design with simplicity
 
 Prompts should be concise, clear, and easy to understand for both you and the model. As a rule of thumb, if it’s already confusing for you it will likely be also confusing for the model. Try not to use complex language and don’t provide unnecessary information.
 
@@ -431,7 +431,7 @@ Try using verbs that describe the action. Here’s a set of examples:
 
 **Act, Analyze, Categorize, Classify, Contrast, Compare, Create, Describe, Define, Evaluate, Extract, Find, Generate, Identify, List, Measure, Organize, Parse, Pick, Predict, Provide, Rank, Recommend, Return, Retrieve, Rewrite, Select, Show, Sofi, Summarize, Translate, Write.**
  
-### Be specific about the output
+## Be specific about the output
 
 Be specific about the desired output. A concise instruction might not guide the LLM enough or could be too generic. Providing specific details in the prompt (through system or context prompting) can help the model to focus on what’s relevant, improving the overall accuracy.
 
@@ -445,7 +445,7 @@ DO NOT:
 
 Generate a blog post about video game consoles.
 
-### Use Instructions over Constraints
+## Use Instructions over Constraints
 
 Instructions and constraints are used in prompting to guide the output of a LLM.
 
@@ -470,13 +470,13 @@ Generate a 1 paragraph blog post about the top 5 video game consoles. Do not lis
 
 As a best practice, stafi by prioritizing instructions, clearly stating what you want the model to do and only use constraints when necessary for safety, clarity or specific requirements. Experiment and iterate to test different combinations of instructions and constraints to find what works best for your specific tasks, and document these.
 
-### Control the max token length
+## Control the max token length
 
 To control the length of a generated LLM response, you can either set a max token limit in the configuration or explicitly request a specific length in your prompt. For example:
 
 "Explain quantum physics in a tweet length message."
 
-### Use variables in prompts
+## Use variables in prompts
 
 To reuse prompts and make it more dynamic use variables in the prompt, which can be changed for different inputs. E.g. as shown in Table 20, a prompt which gives facts about a city. Instead of hardcoding the city name in the prompt, use a variable. Variables can save you time and effort by allowing you to avoid repeating yourself. If you need to use the same piece of information in multiple prompts, you can store it in a variable and then reference that variable in each prompt. This makes a lot of sense when integrating prompts into your own applications.
 
@@ -490,7 +490,7 @@ Output	Amsterdam is a beautiful city full of canals, bridges, and narrow streets
 Table 20. Using variables in prompts
  
 
-### Experiment with input formats and writing styles
+## Experiment with input formats and writing styles
 
 Different models, model configurations, prompt formats, word choices, and submits can yield different results. Therefore, it’s impofiant to experiment with prompt attributes like the style, the word choice, and the type prompt (zero shot, few shot, system prompt).
 
@@ -499,28 +499,28 @@ For example a prompt with the goal to generate text about the revolutionary vide
 -	**Statement**: The Sega Dreamcast was a sixth-generation video game console released by Sega in 1999. It...
 -	**Instruction**: Write a single paragraph that describes the Sega Dreamcast console and explains why it was so revolutionary.
 
-### For few-shot prompting with classification tasks, mix up the classes
+## For few-shot prompting with classification tasks, mix up the classes
 
 Generally speaking, the order of your few-shots examples should not matter much. However, when doing classification tasks, make sure you mix up the possible response classes in the few shot examples. This is because you might otherwise be overfitting to the specific order of the examples. By mixing up the possible response classes, you can ensure that the model is learning to identify the key features of each class, rather than simply memorizing the order of the examples. This will lead to more robust and generalizable performance on unseen data.
 
 A good rule of thumb is to start with 6 few shot examples and stafi testing the accuracy from there.
 
-### Adapt to model updates
+## Adapt to model updates
 
 It’s important for you to stay on top of model architecture changes, added data, and capabilities. Try out newer model versions and adjust your prompts to better leverage new model features. Tools like Vefiex AI Studio are great to store, test, and document the various versions of your prompt.
 
-### Experiment with output formats
+## Experiment with output formats
 
 Besides the prompt input format, consider experimenting with the output format. For non- creative tasks like extracting, selecting, parsing, ordering, ranking, or categorizing data try having your output returned in a structured format like JSON or XML.
 
 There are some benefits in returning JSON objects from a prompt that extracts data. In a real-world application I don’t need to manually create this JSON format, I can already
 return the data in a sofied order (very handy when working with datetime objects), but most impofiantly, by prompting for a JSON format it forces the model to create a structure and limit hallucinations.
 
-### Experiment together with other prompt engineers
+## Experiment together with other prompt engineers
 
 If you are in a situation where you have to try to come up with a good prompt, you might want to find multiple people to make an attempt. When everyone follows the best practices (as listed in this chapter) you are going to see a variance in performance between all the different prompt attempts.
 
-### CoT Best practices
+## CoT Best practices
 
 For CoT prompting, putting the answer after the reasoning is required because the generation of the reasoning changes the tokens that the model gets when it predicts the final answer.
 
@@ -530,7 +530,7 @@ For CoT prompting, set the temperature to 0.
 
 Chain of thought prompting is based on greedy decoding, predicting the next word in a sequence based on the highest probability assigned by the language model. Generally speaking, when using reasoning, to come up with the final answer, there’s likely one single correct answer. Therefore the temperature should always set to 0.
  
-### Document the various prompt attempts
+## Document the various prompt attempts
 
 The last tip was mentioned before in this chapter, but we can’t stress enough how impofiant it is: document your prompt attempts in full detail so you can learn over time what went well and what did not.
 
