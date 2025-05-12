@@ -317,8 +317,7 @@ You will prompt a model to generate more prompts. Evaluate them, possibly alter 
 
 For example, you can use automatic prompt engineering that will help with training a chatbot for a merchandise t-shifi webshop. We want to figure out all the various ways customers could phrase their order for buying a band merchandise t-shirt.
 
-1.	Write the prompt which will generate the output variants. In this example, I am using gemini-pro to generate 10 instructions. See Table 15:
- 
+1.	Write the prompt which will generate the output variants. In this example, I am using gemini-pro to generate 10 instructions. 
 2.	Evaluate all of the instruction candidates by scoring the candidates based on a chosen metric, For example, you can use. BLEU (Bilingual Evaluation Understudy) or ROUGE (Recall-Oriented Understudy for Gisting Evaluation).
 3.	Select the instruction candidate with the highest evaluation score. This candidate will be the final prompt you can use in your software application or chatbot. You can also tweak the select prompt and evaluate again.
  
