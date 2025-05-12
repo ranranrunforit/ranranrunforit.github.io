@@ -1,5 +1,5 @@
 ---
-title: "Interview Preparation - LLM Cheatsheet"
+title: "Interview Preparations - LLM Cheatsheet"
 excerpt: "When I have only 1 hour right before the interview...😅 <br/><img src='/images/LLM.png'>"
 collection: projects
 date: 2025-05-08
