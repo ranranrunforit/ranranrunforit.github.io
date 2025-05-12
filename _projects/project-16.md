@@ -36,10 +36,6 @@ tasks such as text summarization, information extraction, question and answering
 classification, language or code translation, code generation, and code documentation
 or reasoning.
 
-When prompt engineering, you will start by choosing a model. Prompts might need to be
-optimized for your specific model, regardless of whether you use Gemini language models in
-Vertex AI, GPT, Claude, or an open source model like Gemma or LLaMA.
-
 Besides the prompt, you will also need to tinker with the various configurations of a LLM.
 
 # LLM output configuration
@@ -49,16 +45,14 @@ engineering requires setting these configurations optimally for your task.
 
 ## Output length
 An important configuration setting is the number of tokens to generate in a response.
-Generating more tokens requires more computation from the LLM, leading to higher energy
-consumption, potentially slower response times, and higher costs.
+<span style="background-color: #FFFF33;">Generating more tokens requires more computation from the LLM, leading to higher energy consumption, potentially slower response times, and higher costs.</span>
 
 Reducing the output length of the LLM doesn’t cause the LLM to become more stylistically
 or textually succinct in the output it creates, it just causes the LLM to stop predicting more
 tokens once the limit is reached. If your needs require a short output length, you’ll also
 possibly need to engineer your prompt to accommodate.
 
-Output length restriction is especially important for some LLM prompting techniques, like
-ReAct, where the LLM will keep emitting useless tokens after the response you want.
+<span style="background-color: #FFFF33;">Output length restriction is especially important for some LLM prompting techniques, like ReAct, where the LLM will keep emitting useless tokens after the response you want.</span>
 
 ## Sampling controls
 LLMs do not formally predict a single token. Rather, LLMs predict probabilities for what the
