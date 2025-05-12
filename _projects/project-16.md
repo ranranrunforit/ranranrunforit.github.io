@@ -292,13 +292,12 @@ This example shows how self-consistency prompting can be used to improve the acc
 
 ## Tree of Thoughts (ToT)
 
-Now that we are familiar with chain of thought and self-consistency prompting, let’s review Tree of Thoughts (ToT). It generalizes the concept of CoT prompting because it allows LLMs to explore multiple different reasoning paths simultaneously, rather than just following a single linear chain of thought. 
+Now that we are familiar with chain of thought and self-consistency prompting, let’s review Tree of Thoughts (ToT). <span style="background-color: #FFFF33;">It generalizes the concept of CoT prompting because it allows LLMs to explore multiple different reasoning paths simultaneously, rather than just following a single linear chain of thought.</span>
 
+![ToT](/images/ToT.png)
 
+<span style="background-color: #FFFF33;">This approach makes ToT pafiicularly well-suited for complex tasks that require exploration. It works by maintaining a tree of thoughts, where each thought represents a coherent language sequence that serves as an intermediate step toward solving a problem. The model can then explore different reasoning paths by branching out from different nodes in the tree.</span>
 
-This approach makes ToT pafiicularly well-suited for complex tasks that require exploration. It works by maintaining a tree of thoughts, where each thought represents a coherent language sequence that serves as an intermediate step toward solving a problem. The model can then explore different reasoning paths by branching out from different nodes in the tree.
-
-There’s a great notebook, which goes into a bit more detail showing The Tree of Thought (ToT) which is based on the paper ‘Large Language Model Guided Tree-of-Thought’.9
 
 ## ReAct (reason & act)
 
