@@ -565,6 +565,8 @@ small differences in output sentence formatting and word choice can occur. (For 
 mentioned previously, if two tokens have the same predicted probability, ties may be broken
 randomly. This can then impact subsequent predicted tokens.).
 
+![Table21](/images/Table21.png)
+
 We recommend creating a Google Sheet with Table 21 as a template. The advantages of
 this approach are that you have a complete record when you inevitably have to revisit your
 prompting work–either to pick it up in the future (you’d be surprised how much you can
