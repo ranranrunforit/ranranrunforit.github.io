@@ -3,7 +3,7 @@ title: "Gemini Search"
 excerpt: "A Perplexity-style search engine powered by Google's Gemini 2.0 Flash Thinking Experimental model with grounding through Google Search.<br/><img src='/images/Demo.gif'>"
 collection: projects
 date: 2025-02-14
-category: pythons
+category: python
 description: "A Perplexity-style search engine powered by Google's Gemini 2.0 Flash Thinking Experimental model with grounding through Google Search."
 tags:
   - React
