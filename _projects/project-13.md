@@ -3,7 +3,7 @@ title: "RAG Pipeline"
 excerpt: "An End-to-End Retrieval Augmented Generation (RAG) System for Answering Questions. <br/><img src='/images/RAG.png'>"
 collection: projects
 date: 2025-04-08
-category: pythons
+category: python
 description: "A Retrieval Augmented Generation (RAG) system designed to answer questions about Pittsburgh and CMU."
 tags:
   - Retrieval-Augmented-Generation
