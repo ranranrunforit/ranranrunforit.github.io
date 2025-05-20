@@ -3,7 +3,7 @@ title: "Walmart Store Sales Forecasting"
 excerpt: "Utilize singular value decomposition (SVD) for feature engineering using R.<br/><img src='/images/walmart.jpeg'>"
 collection: projects
 date: 2023-10-31
-category: rshinys
+category: rshiny
 description: "Utilize singular value decomposition (SVD) for feature engineering using R."
 tags:
   - R
