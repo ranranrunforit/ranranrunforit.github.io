@@ -3,7 +3,7 @@ title: "GAIA Agent"
 excerpt: "Created an agent and Evaluated its performance using a subset of the level 1 questions of the validation set from GAIA. <br/><img src='/images/gaia.png'>"
 collection: projects
 date: 2025-04-26
-category: pythons
+category: python
 description: "Score 50% on the GAIA benchmark."
 tags:
   - GAIA
