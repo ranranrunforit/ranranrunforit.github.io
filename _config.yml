@@ -75,14 +75,16 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 project_category:
-  pythons:
+  python:
     title: 'Python'
-  rshinys:
+  rshiny:
     title: 'R / R Shiny App'    
-  tableaus:
+  tableau:
     title: 'Tableau'
   d3js:
     title: 'D3.js'
+  LLM:
+    title: 'LLM'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
