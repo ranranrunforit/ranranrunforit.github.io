@@ -2,7 +2,7 @@
 title: "Baby Driver in Python"
 excerpt: "A collection of Internet of Things projects. <br/><img src='/images/PiCarX.png'>"
 collection: projects
-category: pythons
+category: python
 date: 2024-10-16
 description: "A collection of Internet of Things projects."
 tags:
