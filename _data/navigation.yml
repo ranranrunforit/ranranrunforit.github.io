@@ -7,18 +7,6 @@
 main:
   - title: "Projects"
     url: /projects/
-
-#  - title: "Python"
-#    url: /python/ 
-
-#  - title: "R Shiny"
-#    url: /rshiny/   
-
-#  - title: "Tableau"
-#    url: /tableau/    
-        
-#  - title: "D3.js"
-#    url: /d3js/
     
   - title: "Curriculum Vitae / Resume"
     url: /cv/
