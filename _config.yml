@@ -75,6 +75,8 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 project_category:
+  LLM:
+    title: 'LLM'
   python:
     title: 'Python'
   rshiny:
@@ -83,8 +85,7 @@ project_category:
     title: 'Tableau'
   d3js:
     title: 'D3.js'
-  LLM:
-    title: 'LLM'
+
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
