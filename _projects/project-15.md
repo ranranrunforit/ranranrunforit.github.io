@@ -3,7 +3,7 @@ title: "Interview Preparations - LLM Cheatsheet"
 excerpt: "When I have only 1 hour right before the interview...😅 <br/><img src='/images/LLM.png'>"
 collection: projects
 date: 2025-05-08
-category: AI
+category: LLM
 description: "Notes from HuggingFace🤗 LLM course."
 tags:
   - LLM
