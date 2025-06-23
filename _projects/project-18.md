@@ -464,9 +464,9 @@ Indeed, prompting the model to think "step by step" encourages the decoding proc
 This allows the model to consider sub-steps in more detail, which in general leads to less errors than trying to generate the final solution directly.
 
 
->We have recently seen a lot of interest for reasoning strategies. This is what's behind models like Deepseek R1 or OpenAI's o1, which have been fine-tuned to "think before answering".
+> We have recently seen a lot of interest for reasoning strategies. This is what's behind models like Deepseek R1 or OpenAI's o1, which have been fine-tuned to "think before answering".
 >
->These models have been trained to always include specific _thinking_ sections (enclosed between `<think>` and `</think>` special tokens). This is not just a prompting technique like ReAct, but a training method where the model learns to generate these sections after analyzing thousands of examples that show what we expect it to do.
+> These models have been trained to always include specific _thinking_ sections (enclosed between `<think>` and `</think>` special tokens). This is not just a prompting technique like ReAct, but a training method where the model learns to generate these sections after analyzing thousands of examples that show what we expect it to do.
 
 
 --- 
@@ -589,8 +589,6 @@ We learned that Actions bridge an agent's internal reasoning and its real-world 
 
 This deliberate execution ensures that each action is precise and ready for external processing via the stop and parse approach. In the next section, we will explore Observations to see how agents capture and integrate feedback from their environment.
 
-After this, we will **finally be ready to build our first Agent!**
-
 # Observe: Integrating Feedback to Reflect and Adapt
 
 Observations are **how an Agent perceives the consequences of its actions**.
@@ -631,11 +629,6 @@ After performing an action, the framework follows these steps in order:
 
 ---
 We've now learned the Agent's Thought-Action-Observation Cycle. 
-
-If some aspects still seem a bit blurry, don't worry—we'll revisit and deepen these concepts in future Units. 
-
-Now, it's time to put your knowledge into practice by coding your very first Agent!
-
 
 
 # Acknowledgements
