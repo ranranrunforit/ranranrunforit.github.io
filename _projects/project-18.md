@@ -264,7 +264,7 @@ But we can also use Python's `inspect` module to retrieve all the information fo
 
 <details>
 <summary> decorator code</summary>
-
+     
 ```python
 import inspect
 
@@ -312,7 +312,7 @@ def tool(func):
         outputs=outputs
     )
 ```
-
+  
 </details>
 
 Just to reiterate, with this decorator in place we can implement our tool like this:
