@@ -36,13 +36,14 @@ Also earned my Certificate in AI Agents from Hugging Face 😂
 
 **Update**
 
-Finally achieved a 100 by creating a RAG agent (with all the answers...), basically cheating 😂.
+Finally achieved a score of 100 by creating a RAG agent (with all the answers...), so basically cheating 😂
 
-If equipped with all the necessary AI tools (without the RAG), it could only boost the accuracy to 80%.
+If equipped with all the necessary AI tools (Without the RAG), it could only boost the accuracy to 80%.
 
 At 7:40:23 PM on June 3rd, 2025.
 
  ![image](/images/Rank2.png)
+
 
 
 
