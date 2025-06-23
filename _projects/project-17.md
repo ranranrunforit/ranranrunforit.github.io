@@ -540,7 +540,6 @@ The framework can then easily parse the name of the function to call and the arg
 This clear, machine-readable format minimizes errors and enables external tools to accurately process the agent’s command.
 
 Note: Function-calling agents operate similarly by structuring each action so that a designated function is invoked with the correct arguments.
-We'll dive deeper into those types of Agents in a future Unit.
 
 ## Code Agents
 
@@ -555,7 +554,6 @@ This approach offers several advantages:
 - **Direct Integration:** Code Agents can integrate directly with external libraries and APIs, enabling more complex operations such as data processing or real-time decision making.
 
 You must keep in mind that executing LLM-generated code may pose security risks, from prompt injection to the execution of harmful code.
-That's why it's recommended to use AI agent frameworks like `smolagents` that integrate default safeguards.
 
 For example, a Code Agent tasked with fetching the weather might generate the following Python snippet:
 
