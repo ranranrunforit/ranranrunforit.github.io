@@ -35,8 +35,9 @@ and got my Certificate of AI Agents from Hugging Face 😂
 ---
 **Update**
 
-Finally Got 100 by Creating a RAG agent (with all the answers...), basically cheating 😂. 
-If it had all the necessery tools(without the RAG), it can only boost the mark to 80% correctness.   
+Finally got 100 by creating a RAG agent (with all the answers...), basically cheating 😂. 
+
+If it had all the necessery tools (without the RAG), it can only boost the mark to 80% correctness.   
 
 At 7:40:23 PM June 3rd, 2025
 
