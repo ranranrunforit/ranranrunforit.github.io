@@ -23,23 +23,24 @@ tags:
 
 Ranked #26 on the Hugging Face Student Scores Leaderboard 😅
 
-At 5:17:54 PM April 26th, 2025
+At 5:17:54 PM on April 26th, 2025
 
  ![image](/images/Rank.png)
 
 
-and got my Certificate of AI Agents from Hugging Face 😂
+Also earned my Certificate in AI Agents from Hugging Face 😂
  
  ![image2](/images/congrats.png)
 
 ---
+
 **Update**
 
-Finally got 100 by creating a RAG agent (with all the answers...), basically cheating 😂. 
+Finally achieved a 100 by creating a RAG agent (with all the answers...), basically cheating 😂.
 
-If it had all the necessery tools (without the RAG), it can only boost the mark to 80% correctness.   
+If equipped with all the necessary AI tools (without the RAG), it could only boost the accuracy to 80%.
 
-At 7:40:23 PM June 3rd, 2025
+At 7:40:23 PM on June 3rd, 2025.
 
  ![image](/images/Rank2.png)
 
