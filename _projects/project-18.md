@@ -465,7 +465,7 @@ This allows the model to consider sub-steps in more detail, which in general lea
 
 
 >We have recently seen a lot of interest for reasoning strategies. This is what's behind models like Deepseek R1 or OpenAI's o1, which have been fine-tuned to "think before answering".
-
+>
 >These models have been trained to always include specific _thinking_ sections (enclosed between `<think>` and `</think>` special tokens). This is not just a prompting technique like ReAct, but a training method where the model learns to generate these sections after analyzing thousands of examples that show what we expect it to do.
 
 
@@ -475,7 +475,7 @@ Now that we better understand the Thought process, let's go deeper on the second
 # Actions:  Enabling the Agent to Engage with Its Environment
 
 > In this section, we explore the concrete steps an AI agent takes to interact with its environment. 
-
+>
 > We’ll cover how actions are represented (using JSON or code), the importance of the stop and parse approach, and introduce different types of agents.
 
 Actions are the concrete steps an **AI agent takes to interact with its environment**. 
