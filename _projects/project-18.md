@@ -358,7 +358,7 @@ To summarize, we learned:
 
 - *Why Tools Are Essential*: They enable Agents to overcome the limitations of static model training, handle real-time tasks, and perform specialized actions.
 
-Now, we can move on to the [Agent Workflow](agent-steps-and-structure) where you’ll see how an Agent observes, thinks, and acts. This **brings together everything we’ve covered so far** and sets the stage for creating your own fully functional AI Agent.
+Now, we can move on to the Agent Workflow where you’ll see how an Agent observes, thinks, and acts. This **brings together everything we’ve covered so far** and sets the stage for creating your own fully functional AI Agent.
 
 
 # Understanding AI Agents through the Thought-Action-Observation Cycle
@@ -371,7 +371,6 @@ In the previous sections, we learned:
 In this section, **we’ll explore the complete AI Agent Workflow**, a cycle we defined as Thought-Action-Observation. 
 
 And then, we’ll dive deeper on each of these steps.
-
 
 ## The Core Components
 
@@ -424,10 +423,9 @@ By understanding and applying these principles, you can design agents that not o
 Let’s now dive deeper into the Thought, Action, Observation as the individual steps of the process.
 
 # Thought: Internal Reasoning and the ReAct Approach
+ 
+>In this section, we dive into the inner workings of an AI agent—its ability to reason and plan. We’ll explore how the agent leverages its internal dialogue to analyze information, break down complex problems into manageable steps, and decide what action to take next. Additionally, we introduce the ReAct approach, a prompting technique that encourages the model to think “step by step” before acting. 
 
-<Tip> 
-In this section, we dive into the inner workings of an AI agent—its ability to reason and plan. We’ll explore how the agent leverages its internal dialogue to analyze information, break down complex problems into manageable steps, and decide what action to take next. Additionally, we introduce the ReAct approach, a prompting technique that encourages the model to think “step by step” before acting. 
-</Tip>
 
 Thoughts represent the **Agent's internal reasoning and planning processes** to solve the task.
 
@@ -465,22 +463,20 @@ Indeed, prompting the model to think "step by step" encourages the decoding proc
 
 This allows the model to consider sub-steps in more detail, which in general leads to less errors than trying to generate the final solution directly.
 
-<Tip>
-We have recently seen a lot of interest for reasoning strategies. This is what's behind models like Deepseek R1 or OpenAI's o1, which have been fine-tuned to "think before answering".
 
-These models have been trained to always include specific _thinking_ sections (enclosed between `<think>` and `</think>` special tokens). This is not just a prompting technique like ReAct, but a training method where the model learns to generate these sections after analyzing thousands of examples that show what we expect it to do.
-</Tip>
+>We have recently seen a lot of interest for reasoning strategies. This is what's behind models like Deepseek R1 or OpenAI's o1, which have been fine-tuned to "think before answering".
+
+>These models have been trained to always include specific _thinking_ sections (enclosed between `<think>` and `</think>` special tokens). This is not just a prompting technique like ReAct, but a training method where the model learns to generate these sections after analyzing thousands of examples that show what we expect it to do.
+
 
 --- 
 Now that we better understand the Thought process, let's go deeper on the second part of the process: Act.
 
 # Actions:  Enabling the Agent to Engage with Its Environment
 
-<Tip>
- In this section, we explore the concrete steps an AI agent takes to interact with its environment. 
+> In this section, we explore the concrete steps an AI agent takes to interact with its environment. 
 
- We’ll cover how actions are represented (using JSON or code), the importance of the stop and parse approach, and introduce different types of agents.
-</Tip>
+> We’ll cover how actions are represented (using JSON or code), the importance of the stop and parse approach, and introduce different types of agents.
 
 Actions are the concrete steps an **AI agent takes to interact with its environment**. 
 
