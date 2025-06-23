@@ -426,7 +426,7 @@ Let’s now dive deeper into the Thought, Action, Observation as the individual 
 
 # Thought: Internal Reasoning and the ReAct Approach
  
->In this section, we dive into the inner workings of an AI agent—its ability to reason and plan. We’ll explore how the agent leverages its internal dialogue to analyze information, break down complex problems into manageable steps, and decide what action to take next. Additionally, we introduce the ReAct approach, a prompting technique that encourages the model to think “step by step” before acting. 
+> In this section, we dive into the inner workings of an AI agent—its ability to reason and plan. We’ll explore how the agent leverages its internal dialogue to analyze information, break down complex problems into manageable steps, and decide what action to take next. Additionally, we introduce the ReAct approach, a prompting technique that encourages the model to think “step by step” before acting. 
 
 
 Thoughts represent the **Agent's internal reasoning and planning processes** to solve the task.
@@ -525,7 +525,6 @@ Once the text defining the action has been emitted, **the LLM stops generating a
 An external parser reads the formatted action, determines which Tool to call, and extracts the required parameters.
 
 For example, an agent needing to check the weather might output:
-
 
 ```json
 Thought: I need to check the current weather for New York.
