@@ -105,6 +105,8 @@ The Tool-calling steps are typically not shown to the user: the Agent appends th
 
 The complete answer may seem overwhelming, but we essentially use the system prompt to provide textual descriptions of available tools to the model:
 
+<img src="/images/Agent_system_prompt.png" alt="System prompt for tools"/>
+
 For this to work, we have to be very precise and accurate about:
 
 1. **What the tool does**
@@ -260,11 +262,10 @@ calculator_tool = Tool(
 
 But we can also use Python's `inspect` module to retrieve all the information for us! This is what the `@tool` decorator does.
 
-> If you are interested, you can disclose the following section to look at the decorator implementation.
+> If you are interested, you can look at the decorator implementation in the following section.
 
-<details>
-<summary> decorator code</summary>
-     
+decorator code   
+
 ```python
 import inspect
 
@@ -312,8 +313,6 @@ def tool(func):
         outputs=outputs
     )
 ```
-  
-</details>
 
 Just to reiterate, with this decorator in place we can implement our tool like this:
 
@@ -334,6 +333,9 @@ Tool Name: calculator, Description: Multiply two integers., Arguments: a: int, b
 
 The description is **injected** in the system prompt. Taking the example with which we started this section, here is how it would look like after replacing the `tools_description`:
 
+<img src="/images/Agent_system_prompt_tools.png" alt="System prompt for tools"/>
+
+In the Actions section, we will learn more about how an Agent can **Call** this tool we just created.
 
 ### Model Context Protocol (MCP): a unified tool interface
 
