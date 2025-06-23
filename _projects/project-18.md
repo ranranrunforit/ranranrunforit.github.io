@@ -1,9 +1,9 @@
 ---
-title: "Interview Preparations - Agent Cheatsheet1"
+title: "Interview Preparations - Agent Cheatsheet 1"
 excerpt: "If I have only 1 hour right before the interview...😅 <br/><img src='/images/AgentCycle.gif'>"
 collection: projects
 date: 2025-06-23
-category: pythons
+category: LLM
 description: "Notes from HuggingFace🤗 Agent Course."
 tags:
   - Agent
