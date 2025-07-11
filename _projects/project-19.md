@@ -1,15 +1,15 @@
 ---
 title: "Interview Preparations - Agent Cheatsheet 3"
-excerpt: "When I have only 1 hour right before the interview...😅 <br/><img src='/images/Autonomous_agent.png'>"
+excerpt: "When I have only 1 hour right before the interview...😅 <br/><img src='/images/anthropic_build.png'>"
 collection: projects
 date: 2025-06-25
 category: LLM
 description: "Notes from online materials."
 tags:
-  - Anthropic
   - Workflow
   - Agents 
   - MCP
+  - Anthropic
 ---
 
 
