@@ -398,16 +398,16 @@ async def main():
 
 The Agents SDK treats guardrails as first-class concepts, relying on optimistic execution by default. Under this approach, the primary agent proactively generates outputs while guardrails run concurrently, triggering exceptions if constraints are breached. Guardrails can be implemented as functions or agents that enforce policies such as jailbreak prevention, relevance validation, keyword filtering, blocklist enforcement, or safety classification. For example, the agent above processes a math question input optimistically until the `math_homework_tripwire` guardrail identifies a violation and raises an exception.
 
-### Plan for Human Intervention 
+>### Plan for Human Intervention 
 
-Human intervention is a critical safeguard, enabling you to improve an agent’s real-world performance without compromising user experience. It’s especially important early in deployment, helping identify failures, uncover edge cases, and establish a robust evaluation cycle.
+>Human intervention is a critical safeguard, enabling you to improve an agent’s real-world performance without compromising user experience. It’s especially important early in deployment, helping identify failures, uncover edge cases, and establish a robust evaluation cycle.
 
-Implementing a human intervention mechanism allows the agent to gracefully transfer control when it can’t complete a task. In customer service, this means escalating the issue to a human agent. For a coding agent, this means handing control back to the user.
+>Implementing a human intervention mechanism allows the agent to gracefully transfer control when it can’t complete a task. In customer service, this means escalating the issue to a human agent. For a coding agent, this means handing control back to the user.
 
-Two primary triggers typically warrant human intervention:
+>Two primary triggers typically warrant human intervention:
 
-  * **Exceeding failure thresholds:** Set limits on agent retries or actions. If the agent exceeds these limits (e.g., fails to understand customer intent after multiple attempts), escalate to human intervention.
-  * **High-risk actions:** Actions that are sensitive, irreversible, or have high stakes should trigger human oversight until confidence in the agent’s reliability grows. Examples include canceling user orders, authorizing large refunds, or making payments.
+>  * **Exceeding failure thresholds:** Set limits on agent retries or actions. If the agent exceeds these limits (e.g., fails to understand customer intent after multiple attempts), escalate to human intervention.
+>  * **High-risk actions:** Actions that are sensitive, irreversible, or have high stakes should trigger human oversight until confidence in the agent’s reliability grows. Examples include canceling user orders, authorizing large refunds, or making payments.
 
 -----
 
