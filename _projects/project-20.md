@@ -166,6 +166,8 @@ Let’s explore each pattern in detail.
 
 A single agent can handle many tasks by incrementally adding tools, keeping complexity manageable and simplifying evaluation and maintenance. Each new tool expands its capabilities without prematurely forcing you to orchestrate multiple agents.
 
+![Image0](/images/single_agent_systems.png)
+
 Every orchestration approach needs the concept of a ‘run’, typically implemented as a loop that lets agents operate until an exit condition is reached. Common exit conditions include tool calls, a certain structured output, errors, or reaching a maximum number of turns.
 
 For example, in the Agents SDK, agents are started using the `Runner.run()` method, which loops over the LLM until either:
