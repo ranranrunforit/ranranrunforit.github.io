@@ -1,5 +1,5 @@
 ---
-title: "Interview Preparations - Agent Cheatsheet 3"
+title: "Interview Preparations - Agent Cheatsheet 2"
 excerpt: "When I have only 1 hour right before the interview...😅 <br/><img src='/images/multi-agent.png'>"
 collection: projects
 date: 2025-06-24
