@@ -33,9 +33,9 @@ A **workflow** is a sequence of steps executed to meet a user's goal, such as re
 
 More concretely, an agent possesses core characteristics that allow it to act reliably and consistently on behalf of a user:
 
-**01** It leverages an LLM to manage workflow execution and make decisions.
-**02** It recognizes when a workflow is complete and can proactively correct its actions if needed. In case of failure, it can halt execution and transfer control back to the user.
-**03** It has access to various tools to interact with external systems—both to gather context and to take actions—and dynamically selects the appropriate tools depending on the workflow's current state, always operating within clearly defined guardrails.
+**01** It leverages an LLM to manage workflow execution and make decisions. It recognizes when a workflow is complete and can proactively correct its actions if needed. In case of failure, it can halt execution and transfer control back to the user.
+
+**02** It has access to various tools to interact with external systems—both to gather context and to take actions—and dynamically selects the appropriate tools depending on the workflow's current state, always operating within clearly defined guardrails.
 
 -----
 
@@ -48,7 +48,9 @@ Consider the example of payment fraud analysis. A traditional rules engine funct
 As you evaluate where agents can add value, prioritize workflows that have previously resisted automation, especially where traditional methods encounter friction:
 
 **01 Complex decision-making:** Workflows involving nuanced judgment, exceptions, or context-sensitive decisions, for example, refund approval in customer service workflows.
+
 **02 Difficult-to-maintain rules:** Systems that have become unwieldy due to extensive and intricate rulesets, making updates costly or error-prone, for example, performing vendor security reviews.
+
 **03 Heavy reliance on unstructured data:** Scenarios that involve interpreting natural language, extracting meaning from documents, or interacting with users conversationally, for example, processing a home insurance claim.
 
 Before committing to building an agent, validate that your use case can clearly meet these criteria. Otherwise, a deterministic solution may suffice.
@@ -60,7 +62,9 @@ Before committing to building an agent, validate that your use case can clearly 
 In its most fundamental form, an agent consists of three core components:
 
 **01 Model:** The LLM powering the agent's reasoning and decision-making.
+
 **02 Tools:** External functions or APIs the agent can use to take action.
+
 **03 Instructions:** Explicit guidelines and guardrails defining how the agent behaves.
 
 Here's what this looks like in code when using OpenAI's Agents SDK. You can also implement the same concepts using your preferred library or by building directly from scratch.
@@ -83,7 +87,9 @@ An approach that works well is to build your agent prototype with the most capab
 In summary, the principles for choosing a model are simple:
 
 **01** Set up evals to establish a performance baseline.
+
 **02** Focus on meeting your accuracy target with the best models available.
+
 **03** Optimize for cost and latency by replacing larger models with smaller ones where possible.
 
 You can find a comprehensive guide to selecting OpenAI models here.
@@ -163,6 +169,7 @@ Every orchestration approach needs the concept of a ‘run’, typically impleme
 For example, in the Agents SDK, agents are started using the `Runner.run()` method, which loops over the LLM until either:
 
 **01** A final-output tool is invoked, defined by a specific output type.
+
 **02** The model returns a response without any tool calls (e.g., a direct user message).
 
 Example usage:
@@ -323,7 +330,9 @@ Think of guardrails as a layered defense mechanism. While a single one is unlike
 Set up guardrails that address the risks you’ve already identified for your use case and layer in additional ones as you uncover new vulnerabilities. We’ve found the following heuristic to be effective:
 
 **01** Focus on data privacy and content safety.
+
 **02** Add new guardrails based on real-world edge cases and failures you encounter.
+
 **03** Optimize for both security and user experience, tweaking your guardrails as your agent evolves.
 
 For example, here’s how you would set up guardrails when using the Agents SDK:
