@@ -28,7 +28,7 @@ This guide is designed for product and engineering teams exploring how to build 
 
 While conventional software allows users to streamline and automate workflows, **agents** can perform the same workflows on users' behalf with a high degree of independence. 
 
->Agents are systems that independently accomplish tasks for you.
+>Agents are systems that **independently** accomplish tasks for you.
 
 A **workflow** is a sequence of steps executed to meet a user's goal, such as resolving a customer service issue, booking a restaurant reservation, committing a code change, or generating a report. Applications that integrate LLMs but do not use them to control workflow execution—like simple chatbots, single-turn LLMs, or sentiment classifiers—are not agents.
 
