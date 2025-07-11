@@ -4,7 +4,7 @@ excerpt: "When I have only 1 hour right before the interview...😅 <br/><img sr
 collection: projects
 date: 2025-06-25
 category: LLM
-description: "Notes from online material."
+description: "Notes from online materials."
 tags:
   - Anthropic
   - Workflow
