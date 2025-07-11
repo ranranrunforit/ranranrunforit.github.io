@@ -208,7 +208,7 @@ The software development space has shown remarkable potential for LLM features, 
 * The problem space is well-defined and structured; and
 * Output quality can be measured objectively.
 
-In our own implementation, agents can now solve real GitHub issues in the SWE-bench Verified benchmark based on the pull request description alone. However, whereas automated testing helps verify functionality, human review remains crucial for ensuring solutions align with broader system requirements.
+In our own implementation, agents can now solve real GitHub issues in the **SWE-bench Verified** benchmark based on the pull request description alone. However, whereas automated testing helps verify functionality, human review remains crucial for ensuring solutions align with broader system requirements.
 
 ---
 
