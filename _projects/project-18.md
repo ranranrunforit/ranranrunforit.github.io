@@ -4,7 +4,7 @@ excerpt: "When I have only 1 hour right before the interview...😅 <br/><img sr
 collection: projects
 date: 2025-06-24
 category: LLM
-description: "Notes from online material."
+description: "Notes from online materials."
 tags: 
   - Multi-Agent
 ---
@@ -105,4 +105,4 @@ Despite their differences, common principles apply for building serious Agentic 
 
 This overview was created with the help of deep and manual research, drawing inspiration and information from the excellent resource:
 
-- [Philschmid blog](https://www.philschmid.de/single-vs-multi-agents)
+[Philschmid blog](https://www.philschmid.de/single-vs-multi-agents)
