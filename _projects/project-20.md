@@ -9,7 +9,8 @@ tags:
   - Agent
   - Workflow
   - Guardrails 
-  - Orchestration 
+  - Orchestration
+  - OpenAI
 ---
 
 
@@ -156,6 +157,7 @@ With the foundational components in place, you can consider orchestration patter
 In general, orchestration patterns fall into two categories:
 
 **01 Single-agent systems**, where a single model equipped with appropriate tools and instructions executes workflows in a loop.
+
 **02 Multi-agent systems**, where workflow execution is distributed across multiple coordinated agents.
 
 Let’s explore each pattern in detail.
