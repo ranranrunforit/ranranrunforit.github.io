@@ -1,14 +1,15 @@
 ---
 title: "Interview Preparations - Agent Cheatsheet 4"
-excerpt: "When I have only 1 hour right before the interview...😅 This is getting longer and longer 😓 <br/><img src='/images/LLM.png'>"
+excerpt: "When I have only 1 hour right before the interview...😅 It's getting longer and longer 😓 <br/><img src='/images/guide.png'>"
 collection: projects
 date: 2025-06-26
 category: LLM
 description: "Notes from online materials."
 tags:
   - Agent
+  - Workflow
   - Guardrails 
-  - Attention
+  - Orchestration 
 ---
 
 
