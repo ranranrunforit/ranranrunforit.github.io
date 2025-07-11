@@ -24,7 +24,7 @@ Before diving deeper, let's define an **AI agent**:
 A **single-agent system** operates as a "single process." Imagine it as one highly focused worker tackling a task from start to finish. It maintains a continuous thread of thought (memory) and action (tools) to ensure that every step is informed by everything that came before it.
 
 ![single_agent](/images/cognition.png)
-<a target="_blank" rel="noopener noreferrer" href="https://cognition.ai/blog/dont-build-multi-agents">Cognition Don’t Build Multi-Agents</a>
+[Credits: Cognition Don’t Build Multi-Agents](https://cognition.ai/blog/dont-build-multi-agents)
 
 ### Key Characteristics:
 * **Sequential**: Actions are performed one after another. The agent completes step A before moving to step B.
