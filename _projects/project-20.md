@@ -263,7 +263,7 @@ In a decentralized pattern, agents can ‘handoff’ workflow execution to one a
 
 This pattern involves using many agents on equal footing, where one agent can directly hand off control of the workflow to another agent. This is optimal when you don’t need a single agent maintaining central control or synthesis—instead allowing each agent to take over execution and interact with the user as needed.
 
-![Image1](/images/manager_pattern.png)
+![Image2](/images/decentralized_pattern.png)
 
 For example, here’s how you’d implement the decentralized pattern using the Agents SDK for a customer service workflow that handles both sales and support:
 
@@ -317,7 +317,7 @@ Well-designed guardrails help you manage data privacy risks (for example, preven
 
 Think of guardrails as a layered defense mechanism. While a single one is unlikely to provide sufficient protection, using multiple, specialized guardrails together creates more resilient agents. In the diagram below, we combine LLM-based guardrails, rules-based guardrails such as regex, and the OpenAI moderation API to vet our user inputs.
 
-[Image showing a layered defense mechanism with LLM, Moderation API, and rules-based protections vetting user input, leading to a response or function call.]
+![Image3](/images/guardrails.png)
 
 ### Types of Guardrails 
 
