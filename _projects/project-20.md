@@ -214,7 +214,7 @@ Multi-agent systems can be modeled as graphs, with agents represented as nodes. 
 
 The manager pattern empowers a central LLM—the “manager”—to orchestrate a network of specialized agents seamlessly through tool calls. Instead of losing context or control, the manager intelligently delegates tasks to the right agent at the right time, effortlessly synthesizing the results into a cohesive interaction. This ensures a smooth, unified user experience, with specialized capabilities always available on-demand. This pattern is ideal for workflows where you only want one agent to control workflow execution and have access to the user.
 
-[Image showing a Manager agent delegating translation tasks to Spanish, French, and Italian agents.] 
+![Image1](/images/manager_pattern.png)
 
 For example, here’s how you could implement this pattern in the Agents SDK:
 
@@ -253,7 +253,9 @@ async def main():
         print(f" - {message.content}") 
 ```
 
-**Declarative vs. Non-Declarative Graphs:** Some frameworks are declarative, requiring developers to explicitly define every branch, loop, and conditional in the workflow upfront through graphs consisting of nodes (agents) and edges (deterministic or dynamic handoffs). While beneficial for visual clarity, this approach can quickly become cumbersome and challenging as workflows grow more dynamic and complex, often necessitating the learning of specialized domain-specific languages. In contrast, the Agents SDK adopts a more flexible, code-first approach. Developers can directly express workflow logic using familiar programming constructs without needing to pre-define the entire graph upfront, enabling more dynamic and adaptable agent orchestration.
+>**Declarative vs. Non-Declarative Graphs:**
+>Some frameworks are declarative, requiring developers to explicitly define every branch, loop, and conditional in the workflow upfront through graphs consisting of nodes (agents) and edges (deterministic or dynamic handoffs). While beneficial for visual clarity, this approach can quickly become cumbersome and challenging as workflows grow more dynamic and complex, often necessitating the learning of specialized domain-specific languages.
+>In contrast, the Agents SDK adopts a more flexible, code-first approach. Developers can directly express workflow logic using familiar programming constructs without needing to pre-define the entire graph upfront, enabling more dynamic and adaptable agent orchestration.
 
 #### Decentralized Pattern 
 
@@ -261,7 +263,7 @@ In a decentralized pattern, agents can ‘handoff’ workflow execution to one a
 
 This pattern involves using many agents on equal footing, where one agent can directly hand off control of the workflow to another agent. This is optimal when you don’t need a single agent maintaining central control or synthesis—instead allowing each agent to take over execution and interact with the user as needed.
 
-[Image showing a user query being triaged and handed off between Triage, Issues and Repairs, Sales, and Orders agents.] 
+![Image1](/images/manager_pattern.png)
 
 For example, here’s how you’d implement the decentralized pattern using the Agents SDK for a customer service workflow that handles both sales and support:
 
