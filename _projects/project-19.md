@@ -239,4 +239,4 @@ While building our agent for SWE-bench, we actually spent more time optimizing o
 
 This overview was created with the help of deep and manual research, drawing inspiration and information from the excellent resource:
 
-- [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
+[Anthropic: Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
