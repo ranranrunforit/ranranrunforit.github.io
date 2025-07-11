@@ -1,20 +1,21 @@
 ---
 title: "Interview Preparations - Agent Cheatsheet 2"
-excerpt: "When I have only 1 hour right before the interview...😅 <br/><img src='/images/LLM.png'>"
+excerpt: "When I have only 1 hour right before the interview...😅 <br/><img src='/images/multi-agent.png'>"
 collection: projects
 date: 2025-06-24
 category: LLM
-description: "Notes from online materials."
+description: "Notes from online material."
 tags: 
   - Multi-Agent
 ---
 
 
-# Single vs. Multi-Agent System: Choosing the Right Tool 
+# Single vs. Multi-Agent System
 
- The choice between a single-agent and a multi-agent system isn't about ideology; it's about **picking the right tool for the right job**.
+The choice between a single-agent and a multi-agent system isn't about ideology; it's about **picking the right tool for the right job**.
 
-Before diving deeper, let's define an **AI agent**: A system that uses a Large Language Model (LLM) as its reasoning engine to decide the control flow of an application.
+Before diving deeper, let's define an **AI agent**: 
+>A system that uses a Large Language Model (LLM) as its reasoning engine to decide the control flow of an application.
 
 ---
 
@@ -103,4 +104,4 @@ Despite their differences, common principles apply for building serious Agentic 
 
 This overview was created with the help of deep and manual research, drawing inspiration and information from the excellent resource:
 
-[Philschmid blog](https://www.philschmid.de/single-vs-multi-agents)
+- [Philschmid blog](https://www.philschmid.de/single-vs-multi-agents)
