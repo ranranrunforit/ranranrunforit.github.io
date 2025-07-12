@@ -69,4 +69,4 @@ It’s modular, and it’s built to go deep into documents, not wide.
 
 This overview was created with the help of deep and manual research, drawing inspiration and information from the excellent resource:
 
-[Nina Duran](https://x.com/HeyNina101)
+[Nina Duran tweet](https://x.com/HeyNina101)
