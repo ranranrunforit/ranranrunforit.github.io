@@ -23,41 +23,41 @@ If you're building anything beyond a demo, the tool you choose matters early.
 
 Here’s a clear breakdown, depending on what you’re building.
 
-If you need to chain tools and memory across steps → LangChain
+- **If you need to chain tools and memory across steps → LangChain**
 
 Still the most flexible for logic-first workflows.
 But the learning curve is real if you’re not used to designing agent state.
 
-If you’re building teams of agents that pass tasks → CrewAI
+- **If you’re building teams of agents that pass tasks → CrewAI**
 
 Roles, memory and handoff logic baked in.
 It works when you need structure, not just clever prompts.
 
-If your agent needs to ask, refine, repeat → AutoGen
+- **If your agent needs to ask, refine, repeat → AutoGen**
 
 Great for tasks that evolve through feedback.
 The agent learns more by asking than assuming.
 
-If you want agents to behave like real dev teams → MetaGPT
+- **If you want agents to behave like real dev teams → MetaGPT**
 
 You define a spec, and the PM, Dev, QA agents execute.
 Useful when you need product thinking, not just code output.
 
-If your task needs retries, state or conditional flows → LangGraph
+- **If your task needs retries, state or conditional flows → LangGraph**
 
 This saved us time debugging long workflows.
 Visual graphs help you spot logic loops fast.
 
-If your agent is in production and failing silently → AgentOps
+- **If your agent is in production and failing silently → AgentOps**
 
 Dashboards, logs, alerts.
  
-If you’re prototyping fast with your own APIs → Superagent
+- **If you’re prototyping fast with your own APIs → Superagent**
 
 Open-source, vector DB, memory-ready.
 Easy to fork and test something new in under an hour.
  
-If you’re doing RAG with large docs or search flows → Haystack Agents
+- **If you’re doing RAG with large docs or search flows → Haystack Agents**
 
 Dev-centric, tuned for retrieval pipelines.
 It’s modular, and it’s built to go deep into documents, not wide.
