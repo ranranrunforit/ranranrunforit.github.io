@@ -1,6 +1,6 @@
 ---
 title: "Interview Preparations - Agent Cheatsheet 5"
-excerpt: "When I have only 1 hour right before the interview...😅 about AI Agent Frameworks<br/><img src='/images/AI_agent_framework.jpg'>"
+excerpt: "When I have only 1 hour right before the interview...😅 This is about AI Agent Frameworks<br/><img src='/images/AI_agent_framework.jpg'>"
 collection: projects
 date: 2025-06-27
 category: LLM
