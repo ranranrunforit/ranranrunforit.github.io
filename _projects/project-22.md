@@ -55,13 +55,11 @@ Each AI application implements the client side of MCP once, and each tool/data s
 
 Now that we understand the problem that MCP solves, let's dive into the core terminology and concepts that make up the MCP protocol.
 
-<Tip>
 
-MCP is a standard like HTTP or USB-C, and is a protocol for connecting AI applications to external tools and data sources. Therefore, using standard terminology is crucial to making the MCP work effectively. 
+>MCP is a standard like HTTP or USB-C, and is a protocol for connecting AI applications to external tools and data sources. Therefore, using standard terminology is crucial to making the MCP work effectively. 
+>
+>When documenting our applications and communicating with the community, we should use the following terminology.
 
-When documenting our applications and communicating with the community, we should use the following terminology.
-
-</Tip>
 
 ### Components
 
@@ -75,11 +73,9 @@ Just like client server relationships in HTTP, MCP has a client and a server.
 
 - **Server**: An external program or service that exposes capabilities (Tools, Resources, Prompts) via the MCP protocol.
 
-<Tip warning={true}>
 
-A lot of content uses 'Client' and 'Host' interchangeably. Technically speaking, the host is the user-facing application, and the client is the component within the host application that manages communication with a specific MCP Server.
+>A lot of content uses 'Client' and 'Host' interchangeably. Technically speaking, the host is the user-facing application, and the client is the component within the host application that manages communication with a specific MCP Server.
 
-</Tip>
 
 ### Capabilities
 
@@ -160,11 +156,9 @@ The **Server** is an external program or service that exposes capabilities to AI
 
 Let's examine how these components interact in a typical MCP workflow:
 
-<Tip>
 
-In the next section, we'll dive deeper into the communication protocol that enables these components with practical examples.
+>In the next section, we'll dive deeper into the communication protocol that enables these components with practical examples.
 
-</Tip>
 
 1. **User Interaction**: The user interacts with the **Host** application, expressing an intent or query.
 
@@ -182,11 +176,9 @@ In the next section, we'll dive deeper into the communication protocol that enab
 
 A key advantage of this architecture is its modularity. A single **Host** can connect to multiple **Servers** simultaneously via different **Clients**. New **Servers** can be added to the ecosystem without requiring changes to existing **Hosts**. Capabilities can be easily composed across different **Servers**.
 
-<Tip>
 
-As we discussed in the previous section, this modularity transforms the traditional M×N integration problem (M AI applications connecting to N tools/services) into a more manageable M+N problem, where each Host and Server needs to implement the MCP standard only once.
+>As we discussed in the previous section, this modularity transforms the traditional M×N integration problem (M AI applications connecting to N tools/services) into a more manageable M+N problem, where each Host and Server needs to implement the MCP standard only once.
 
-</Tip>
 
 The architecture might appear simple, but its power lies in the standardization of the communication protocol and the clear separation of responsibilities between components. This design allows for a cohesive ecosystem where AI models can seamlessly connect with an ever-growing array of external tools and data sources.
 
@@ -294,11 +286,9 @@ The stdio transport is used for local communication, where the Client and Server
 
 The Host application launches the Server as a subprocess and communicates with it by writing to its standard input (stdin) and reading from its standard output (stdout).
 
-<Tip>
 
-**Use cases** for this transport are local tools like file system access or running local scripts.
+>**Use cases** for this transport are local tools like file system access or running local scripts.
 
-</Tip>
 
 The main **Advantages** of this transport are that it's simple, no network configuration required, and securely sandboxed by the operating system.
 
@@ -308,11 +298,9 @@ The HTTP+SSE transport is used for remote communication, where the Client and Se
 
 Communication happens over HTTP, with the Server using Server-Sent Events (SSE) to push updates to the Client over a persistent connection.
 
-<Tip>
 
-**Use cases** for this transport are connecting to remote APIs, cloud services, or shared resources.
+>**Use cases** for this transport are connecting to remote APIs, cloud services, or shared resources.
 
-</Tip>
 
 The main **Advantages** of this transport are that it works across networks, enables integration with web services, and is compatible with serverless environments.
 
