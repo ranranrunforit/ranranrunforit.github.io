@@ -20,7 +20,9 @@ tags:
 
 Before diving deeper into the Model Context Protocol, it's important to understand the key concepts and terminology that form the foundation of MCP. This section will introduce the fundamental ideas that underpin the protocol and provide a common vocabulary for discussing MCP implementations throughout the course.
 
-MCP is often described as the "USB-C for AI applications." Just as USB-C provides a standardized physical and logical interface for connecting various peripherals to computing devices, MCP offers a consistent protocol for linking AI models to external capabilities. This standardization benefits the entire ecosystem:
+MCP is often described as the "USB-C for AI applications." Just as USB-C provides a standardized physical and logical interface for connecting various peripherals to computing devices, MCP offers a consistent protocol for linking AI models to external capabilities. 
+
+This standardization benefits the entire ecosystem:
 
 - **users** enjoy simpler and more consistent experiences across AI applications
 - **AI application developers** gain easy integration with a growing ecosystem of tools and data sources
@@ -137,7 +139,9 @@ In most cases, users will select their host application based on their needs and
 
 ### Client
 
-The **Client** is a component within the Host application that manages communication with a specific MCP Server. Key characteristics include:
+The **Client** is a component within the Host application that manages communication with a specific MCP Server. 
+
+Key characteristics include:
 
 - Each Client maintains a 1:1 connection with a single Server
 - Handles the protocol-level details of MCP communication
@@ -145,7 +149,9 @@ The **Client** is a component within the Host application that manages communica
 
 ### Server
 
-The **Server** is an external program or service that exposes capabilities to AI models via the MCP protocol. Servers:
+The **Server** is an external program or service that exposes capabilities to AI models via the MCP protocol. 
+
+Servers:
 
 - Provide access to specific external tools, data sources, or services
 - Act as lightweight wrappers around existing functionality
@@ -197,7 +203,9 @@ MCP defines a standardized communication protocol that enables Clients and Serve
 
 ## JSON-RPC: The Foundation
 
-At its core, MCP uses **JSON-RPC 2.0** as the message format for all communication between Clients and Servers. JSON-RPC is a lightweight remote procedure call protocol encoded in JSON, which makes it:
+At its core, MCP uses **JSON-RPC 2.0** as the message format for all communication between Clients and Servers. 
+
+JSON-RPC is a lightweight remote procedure call protocol encoded in JSON, which makes it:
 
 - Human-readable and easy to debug
 - Language-agnostic, supporting implementation in any programming environment
@@ -209,7 +217,10 @@ The protocol defines three types of messages:
 
 ### 1. Requests
 
-Sent from Client to Server to initiate an operation. A Request message includes:
+Sent from Client to Server to initiate an operation. 
+
+A Request message includes:
+
 - A unique identifier (`id`)
 - The method name to invoke (e.g., `tools/call`)
 - Parameters for the method (if any)
@@ -232,7 +243,10 @@ Example Request:
 
 ### 2. Responses
 
-Sent from Server to Client in reply to a Request. A Response message includes:
+Sent from Server to Client in reply to a Request. 
+
+A Response message includes:
+
 - The same `id` as the corresponding Request
 - Either a `result` (for success) or an `error` (for failure)
 
