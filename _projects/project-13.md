@@ -23,7 +23,7 @@ tags:
 ---
 
 
-**[RAG System (Live Preview)](https://github.com/ranranrunforit/End-to-End-Retrieval-Augmented-Generation-system)**
+**[RAG System (Live Preview)](https://github.com/ranranrunforit/RAG/tree/main/End-to-End%20RAG%20system)**
 
 
 ## Project Specification
