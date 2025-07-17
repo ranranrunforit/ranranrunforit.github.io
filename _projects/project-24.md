@@ -1,6 +1,6 @@
 ---
 title: "RAG Agents with LLMs"
-excerpt: "Develops and evaluates Retrieval-Augmented Generation (RAG) systems powered by large language models (LLMs). <br/><img src='/images/RAG.png'>"
+excerpt: "Develops and evaluates Retrieval-Augmented Generation (RAG) systems powered by large language models (LLMs). <br/><img src='/images/RAG_LLM_2.png'>"
 collection: projects
 date: 2025-06-18
 category: python
