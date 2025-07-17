@@ -1,6 +1,6 @@
 ---
 title: "RAG with Langchain NVIDIA NIM"
-excerpt: "Retrieval-Augmented Generation (RAG) applications using NVIDIA NIM microservices and LangChain. <br/><img src='/images/RAG.png'>"
+excerpt: "Retrieval-Augmented Generation (RAG) applications using NVIDIA NIM microservices and LangChain. <br/><img src='/images/RAG_NIM_1.png'>"
 collection: projects
 date: 2025-06-08
 category: python
