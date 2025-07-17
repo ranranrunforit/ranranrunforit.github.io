@@ -15,13 +15,15 @@ tags:
 
 [RAG with Langchain NVIDIA NIM (Code Preview)](https://github.com/ranranrunforit/RAG/tree/main/RAG%20with%20Langchain%20NVIDIA%20NIM)
 
+
+This project developes Retrieval-Augmented Generation (RAG) applications utilizing NVIDIA NIM microservices and LangChain. The project highlight the use of NVIDIA AI Endpoints for tasks such as document retrieval, embedding generation, and conversational AI, with practical workflows for both cloud-hosted and locally deployed NIM models. 
+
+
 ![image](/images/RAG_NIM_1.png)
 ![image](/images/RAG_NIM_2.png)
 ![image](/images/RAG_NIM_3.png)
 ![image](/images/RAG_NIM_4.png)
 
-
-This project developes Retrieval-Augmented Generation (RAG) applications utilizing NVIDIA NIM microservices and LangChain. The project highlight the use of NVIDIA AI Endpoints for tasks such as document retrieval, embedding generation, and conversational AI, with practical workflows for both cloud-hosted and locally deployed NIM models. 
 
 Two primary notebooks are included: 
 
