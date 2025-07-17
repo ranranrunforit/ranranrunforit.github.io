@@ -20,6 +20,22 @@ tags:
 
 [RAG Agents with LLMs (Code Preview)](https://github.com/ranranrunforit/RAG/tree/main/RAG%20Agents%20with%20LLMs)
 
+![image](/images/RAG_LLM_1.png)
+![image](/images/RAG_LLM_2.png)
+![image](/images/RAG_LLM_3.png)
+![image](/images/RAG_LLM_4.png)
+![image](/images/RAG_LLM_5.png)
+![image](/images/RAG_LLM_6.png)
+![image](/images/RAG_LLM_7.png)
+![image](/images/RAG_LLM_8.png)
+![image](/images/RAG_LLM_9.png)
+![image](/images/RAG_LLM_10.png)
+![image](/images/RAG_LLM_11.png)
+![image](/images/RAG_LLM_12.png)
+![image](/images/RAG_LLM_13.png)
+![image](/images/RAG_LLM_14.png)
+
+
 This project developes and evaluates of Retrieval-Augmented Generation (RAG) systems powered by large language models (LLMs). 
 
 Key areas covered include:
