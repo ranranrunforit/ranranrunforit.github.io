@@ -19,7 +19,7 @@ tags:
 ---
 
 
-**[GAIA Agent (Live Preview)](https://github.com/ranranrunforit/GAIA-Agent/tree/main)**
+**[GAIA Agent (Live Preview)](https://github.com/ranranrunforit/Agents/tree/main/GAIA_agent)**
 
 Ranked #26 on the Hugging Face Student Scores Leaderboard 😅
 
