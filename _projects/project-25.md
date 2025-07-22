@@ -23,7 +23,6 @@ tags:
 ![image](/images/Agent_Course_8.png)
 ![image](/images/Agent_Course_9.png)
 ![image](/images/Agent_Course_10.png)
-![image](/images/Agent_Course_11.png)
 ![image](/images/Agent_Course_12.png)
 ![image](/images/Agent_Course_13.png)
 ![image](/images/Agent_Course_14.png)
