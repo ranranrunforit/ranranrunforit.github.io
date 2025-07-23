@@ -1,6 +1,6 @@
 ---
-title: "Interview Preparations - Agent and MCP Cheatsheet"
-excerpt: "When I have only 1 hour right before the interview...😅 Probably would need a day to review the whole series now <br/><img src='/images/Agent_Course_1.png'>"
+title: "Interview Preparations - Agent and MCP Cheatsheet 1"
+excerpt: "When I have only 1 hour right before the interview...😅 Probably would need a day or two to review the whole series now <br/><img src='/images/Agent_Course_1.png'>"
 collection: projects
 date: 2025-06-29
 category: LLM
@@ -13,35 +13,35 @@ tags:
   - LangGraph
 ---
 
-Asyncio:
+**Asyncio**
 
 ![image](/images/Agent_Course_2.png)
 ![image](/images/Agent_Course_3.png)
 ![image](/images/Agent_Course_4.png)
 ![image](/images/Agent_Course_5.png)
 
-OpenAI Agents SDK:
+**OpenAI Agents SDK**
 
 ![image](/images/Agent_Course_6.png)
 
-Agents:
+**Agents**
 
 ![image](/images/Agent_Course_8.png)
 ![image](/images/Agent_Course_9.png)
 
-Vibe Coding:
+**Vibe Coding**
 
 ![image](/images/Agent_Course_10.png)
 
-Agents:
+**Agents**
 
 ![image](/images/Agent_Course_12.png)
 
-Agentic Systems:
+**Agentic Systems**
 
 ![image](/images/Agent_Course_13.png)
 
-Workflow Design Pattern:
+**Workflow Design Pattern**
 
 ![image](/images/Agent_Course_14.png)
 ![image](/images/Agent_Course_15.png)
@@ -49,12 +49,12 @@ Workflow Design Pattern:
 ![image](/images/Agent_Course_17.png)
 ![image](/images/Agent_Course_18.png)
 
-Agents:
+**Agents**
 
 ![image](/images/Agent_Course_19.png)
 ![image](/images/Agent_Course_20.png)
 
-MCP:
+**MCP**
 
 ![image](/images/Agent_Course_21.png)
 ![image](/images/Agent_Course_22.png)
@@ -62,7 +62,7 @@ MCP:
 ![image](/images/Agent_Course_24.png)
 ![image](/images/Agent_Course_25.png)
 
-LangChain:
+**LangChain**
 
 ![image](/images/Agent_Course_26.png)
 ![image](/images/Agent_Course_27.png)
@@ -75,7 +75,7 @@ LangChain:
 ![image](/images/Agent_Course_34.png)
 ![image](/images/Agent_Course_35.png)
 
-AutoGen:
+**AutoGen**
 
 ![image](/images/Agent_Course_36.png)
 ![image](/images/Agent_Course_37.png)
