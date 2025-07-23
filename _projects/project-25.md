@@ -13,14 +13,12 @@ tags:
   - LangGraph
 ---
 
-**Asyncio**
+# Async Python
 
 ![image](/images/Agent_Course_2.png)
 ![image](/images/Agent_Course_3.png)
 ![image](/images/Agent_Course_4.png)
 ![image](/images/Agent_Course_5.png)
-
-# Async Python
 
 ## A briefing on asynchronous python coding, essential in Agent engineering
 
