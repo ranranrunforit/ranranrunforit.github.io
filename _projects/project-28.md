@@ -2,7 +2,7 @@
 title: "Interview Preparations - Agent and MCP Cheatsheet 3"
 excerpt: "When I have only 1 day before the interview...😅 <br/><img src='/images/Agent_Course_6.png'>"
 collection: projects
-date: 2025-07-10
+date: 2025-07-15
 category: LLM
 description: "Notes from online materials."
 tags:
