@@ -17,6 +17,8 @@ tags:
 **Agents**
 
 ![image](/images/Agent_Course_8.png)
+![image](/images/Agent_Course_12.png)
+
 
 **OpenAI Agents SDK**
 
@@ -48,32 +50,6 @@ tags:
 ![image](/images/Agent_Course_23.png)
 ![image](/images/Agent_Course_24.png)
 ![image](/images/Agent_Course_25.png)
-
-**LangChain**
-
-![image](/images/Agent_Course_26.png)
-![image](/images/Agent_Course_27.png)
-![image](/images/Agent_Course_28.png)
-![image](/images/Agent_Course_29.png)
-![image](/images/Agent_Course_30.png)
-![image](/images/Agent_Course_31.png)
-![image](/images/Agent_Course_32.png)
-![image](/images/Agent_Course_33.png)
-![image](/images/Agent_Course_34.png)
-![image](/images/Agent_Course_35.png)
-
-**AutoGen**
-
-![image](/images/Agent_Course_36.png)
-![image](/images/Agent_Course_37.png)
-![image](/images/Agent_Course_38.png)
-![image](/images/Agent_Course_39.png)
-![image](/images/Agent_Course_40.png)
-![image](/images/Agent_Course_41.png)
-![image](/images/Agent_Course_42.png)
-![image](/images/Agent_Course_43.png)
-![image](/images/Agent_Course_44.png)
-
 
 
 
