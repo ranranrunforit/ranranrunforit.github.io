@@ -1,28 +1,38 @@
 ---
-title: "Interview Preparations - Agent and MCP Cheatsheet 2"
-excerpt: "When I have only 1 day before the interview...😅 <br/><img src='/images/Agent_Course_6.png'>"
+title: "Deep Research"
+excerpt: "An application that automates the process of conducting in-depth web research, generating detailed reports, and emailing the final output<br/><img src='/images/Agent_Course_6.png'>"
 collection: projects
 date: 2025-07-05
 category: LLM
-description: "Notes from online materials."
+description: "A Research Agent workflow using the OpenAI Agents SDK"
 tags:
-  - LangChain
-  - CrewAI
-  - AutoGen
-  - OpenAI
-  - LangGraph
+  - OpenAI Agent SDK
+  - SendGrid
+  - Asyncio
+  - Workflow
+  - Agent
+  - WebSearchTool
+  - Runner
+  - trace
+  - function_tool
 ---
 
-# OpenAI Agents SDK
+Project Notes 
 
 ![image](/images/Agent_Course_6.png)
 ![image](/images/Agent_Course_9.png)
 
+**[Deep Research (Code Preview)](https://github.com/ranranrunforit/Agents/tree/main/deep_research)**
 
+This project demonstrates a Research Agent workflow using the OpenAI Agents SDK. The agent automates the process of planning, executing, and synthesizing web research, then delivers the results via email.
 
+- Uses a `PlannerAgent` (based on the `Agent` class) to generate relevant search queries for a given research topic.  
+- Employs the `WebSearchTool` to perform web searches for each planned query.
+- A `WriterAgent` creates a detailed markdown report from the search results.
+- Integrates SendGrid via the `send_email` function (decorated with `@function_tool`) to send the final report as a formatted HTML email.
 
-# Acknowledgements
+**Key Libraries Used:**
+- `OpenAI Agents SDK`: `Agent`, `WebSearchTool`, `Runner`, `trace`, `function_tool`
+- `SendGrid`: For sending emails (`sendgrid.SendGridAPIClient`, `Mail`, `Email`, `To`, `Content`)
+- `Asyncio`: For asynchronous execution of search and report tasks
 
-This overview was created with the help of deep and manual research, drawing inspiration and information from the excellent resource:
-
-[The Complete Agentic AI Engineering Course (2025)](https://www.udemy.com/course/the-complete-agentic-ai-engineering-course/)
