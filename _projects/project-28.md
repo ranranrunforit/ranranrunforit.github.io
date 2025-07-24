@@ -1,20 +1,24 @@
 ---
-title: "Interview Preparations - Agent and MCP Cheatsheet 3"
-excerpt: "When I have only 1 day before the interview...😅 <br/><img src='/images/Agent_Course_6.png'>"
+title: "Sidekick Personal Coworker"
+excerpt: "An AI-powered assistant designed to help users complete tasks interactively using Gradio Chat <br/><img src='/images/Agent_Course_26.png'>"
 collection: projects
 date: 2025-07-10
 category: LLM
-description: "Notes from online materials."
+description: "An agentic assistant using LangGraph and LangChain."
 tags:
   - LangChain
-  - CrewAI
-  - AutoGen
-  - OpenAI
   - LangGraph
+  - Gradio
+  - Playwright
+  - lxml
+  - nest_asyncio
+  - beautifulsoup4
+  - uuid
+  - asyncio
 ---
 
 
-# LangChain
+Project Notes about LangChain
 
 ![image](/images/Agent_Course_26.png)
 ![image](/images/Agent_Course_27.png)
@@ -27,14 +31,17 @@ tags:
 ![image](/images/Agent_Course_34.png)
 ![image](/images/Agent_Course_35.png)
 
+**[Sidekick Personal Coworker](./sidekick_personal_coworker)**
 
+These files implement an agentic assistant using LangGraph and LangChain. The assistant can autonomously complete tasks, use external tools (like web browsing and Python code execution), and iteratively improve its work based on evaluator feedback and user-defined success criteria.
 
+- **`sidekick.py`** defines the agent's workflow, state management, and evaluation logic. It builds a stateful graph with nodes for working, tool usage, and evaluation, allowing the assistant to loop until the task is complete or more user input is needed.
+- **`sidekick_tools.py`** provides tool definitions (such as Playwright-based web browsing and other custom tools) that the agent can invoke during its workflow.
 
+**Libraries:**
+- `langgraph`: For building stateful agent graphs (`StateGraph`, `ToolNode`, etc.).
+- `langchain_openai`: For LLM access (`ChatOpenAI`) and tool binding.
+- `langchain_core.messages`: For structured message handling (`SystemMessage`, `HumanMessage`, `AIMessage`).
+- `playwright`: web searching tool definitions for agent actions.
+- `asyncio`, `uuid`: For async operations, unique IDs.
 
-
-
-# Acknowledgements
-
-This overview was created with the help of deep and manual research, drawing inspiration and information from the excellent resource:
-
-[The Complete Agentic AI Engineering Course (2025)](https://www.udemy.com/course/the-complete-agentic-ai-engineering-course/)
