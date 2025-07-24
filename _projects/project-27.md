@@ -1,6 +1,6 @@
 ---
 title: "Interview Preparations - Agent and MCP Cheatsheet 2"
-excerpt: "When I have only 1 hour right before the interview...😅 Probably would need a day or two to review the whole series now <br/><img src='/images/Agent_Course_6.png'>"
+excerpt: "When I have only 1 day before the interview...😅 <br/><img src='/images/Agent_Course_6.png'>"
 collection: projects
 date: 2025-06-29
 category: LLM
