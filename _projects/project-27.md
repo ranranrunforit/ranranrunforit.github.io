@@ -13,7 +13,7 @@ tags:
   - LangGraph
 ---
 
-**OpenAI Agents SDK**
+# OpenAI Agents SDK
 
 ![image](/images/Agent_Course_6.png)
 ![image](/images/Agent_Course_9.png)
