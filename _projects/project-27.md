@@ -31,7 +31,7 @@ This project demonstrates a Research Agent workflow using the OpenAI Agents SDK.
 - A `WriterAgent` creates a detailed markdown report from the search results.
 - Integrates SendGrid via the `send_email` function (decorated with `@function_tool`) to send the final report as a formatted HTML email.
 
-**Key Libraries Used:**
+**Libraries:**
 - `OpenAI Agents SDK`: `Agent`, `WebSearchTool`, `Runner`, `trace`, `function_tool`
 - `SendGrid`: For sending emails (`sendgrid.SendGridAPIClient`, `Mail`, `Email`, `To`, `Content`)
 - `Asyncio`: For asynchronous execution of search and report tasks
