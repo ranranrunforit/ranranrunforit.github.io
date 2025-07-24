@@ -27,19 +27,6 @@ tags:
 ![image](/images/Agent_Course_34.png)
 ![image](/images/Agent_Course_35.png)
 
-**AutoGen**
-
-![image](/images/Agent_Course_36.png)
-![image](/images/Agent_Course_37.png)
-![image](/images/Agent_Course_38.png)
-![image](/images/Agent_Course_39.png)
-![image](/images/Agent_Course_40.png)
-![image](/images/Agent_Course_41.png)
-![image](/images/Agent_Course_42.png)
-![image](/images/Agent_Course_43.png)
-![image](/images/Agent_Course_44.png)
-
-
 
 
 
