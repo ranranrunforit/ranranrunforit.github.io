@@ -1,6 +1,6 @@
 ---
 title: "Sidekick Personal Coworker"
-excerpt: "An AI-powered assistant designed to help users complete tasks interactively using Gradio Chat <br/><img src='/images/Agent_Course_26.png'>"
+excerpt: "An AI-powered assistant designed to help users complete tasks interactively using Gradio Chat <br/><img src='/images/Agent_Course_29.png'>"
 collection: projects
 date: 2025-07-10
 category: LLM
