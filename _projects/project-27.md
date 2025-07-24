@@ -17,7 +17,6 @@ tags:
 
 ![image](/images/Agent_Course_6.png)
 ![image](/images/Agent_Course_9.png)
-![image](/images/Agent_Course_12.png)
 
 
 
