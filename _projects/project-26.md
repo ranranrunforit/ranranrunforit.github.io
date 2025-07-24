@@ -19,11 +19,11 @@ tags:
 ![image](/images/Agent_Course_8.png)
 ![image](/images/Agent_Course_12.png)
 
-**Agentic Systems**
+# Agentic Systems
 
 ![image](/images/Agent_Course_13.png)
 
-**Workflow Design Pattern**
+# Workflow Design Pattern
 
 ![image](/images/Agent_Course_14.png)
 ![image](/images/Agent_Course_15.png)
@@ -31,12 +31,12 @@ tags:
 ![image](/images/Agent_Course_17.png)
 ![image](/images/Agent_Course_18.png)
 
-**Agents**
+# Agents
 
 ![image](/images/Agent_Course_19.png)
 ![image](/images/Agent_Course_20.png)
 
-**MCP**
+# MCP
 
 ![image](/images/Agent_Course_21.png)
 ![image](/images/Agent_Course_22.png)
