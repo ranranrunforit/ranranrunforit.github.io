@@ -13,19 +13,11 @@ tags:
   - LangGraph
 ---
 
+**OpenAI Agents SDK**
 
-**LangChain**
-
-![image](/images/Agent_Course_26.png)
-![image](/images/Agent_Course_27.png)
-![image](/images/Agent_Course_28.png)
-![image](/images/Agent_Course_29.png)
-![image](/images/Agent_Course_30.png)
-![image](/images/Agent_Course_31.png)
-![image](/images/Agent_Course_32.png)
-![image](/images/Agent_Course_33.png)
-![image](/images/Agent_Course_34.png)
-![image](/images/Agent_Course_35.png)
+![image](/images/Agent_Course_6.png)
+![image](/images/Agent_Course_9.png)
+![image](/images/Agent_Course_12.png)
 
 
 
