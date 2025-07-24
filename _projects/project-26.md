@@ -19,13 +19,6 @@ tags:
 ![image](/images/Agent_Course_8.png)
 ![image](/images/Agent_Course_12.png)
 
-
-**OpenAI Agents SDK**
-
-![image](/images/Agent_Course_6.png)
-![image](/images/Agent_Course_9.png)
-![image](/images/Agent_Course_12.png)
-
 **Agentic Systems**
 
 ![image](/images/Agent_Course_13.png)
