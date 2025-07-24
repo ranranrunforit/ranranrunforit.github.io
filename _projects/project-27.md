@@ -17,7 +17,7 @@ tags:
   - function_tool
 ---
 
-Project Notes 
+Project Notes about OpenAI Agents SDK
 
 ![image](/images/Agent_Course_6.png)
 ![image](/images/Agent_Course_9.png)
