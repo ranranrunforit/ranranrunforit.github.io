@@ -1,6 +1,6 @@
 ---
-title: "Interview Preparations - Agent and MCP Cheatsheet 4"
-excerpt: "When I have only 1 day before the interview...😅 <br/><img src='/images/Agent_Course_6.png'>"
+title: "Interview Preparations - Agent and MCP Cheatsheet 2"
+excerpt: "When I have only 1 day before the interview...😅 <br/><img src='/images/Agent_Course_36.png'>"
 collection: projects
 date: 2025-07-15
 category: LLM
@@ -25,6 +25,25 @@ tags:
 ![image](/images/Agent_Course_42.png)
 ![image](/images/Agent_Course_43.png)
 ![image](/images/Agent_Course_44.png)
+
+## AutoGen Core
+
+Something a little different.
+
+This is agnostic to the underlying Agent framework
+
+You can use AutoGen AgentChat, or you can use something else; it's an Agent interaction framework.
+
+From that point of view, it's positioned similarly to LangGraph.
+
+### The fundamental principle
+
+Autogen Core decouples an agent's logic from how messages are delivered.  
+The framework provides a communication infrastructure, along with agent lifecycle, and the agents are responsible for their own work.
+
+The communication infrastructure is called a Runtime.
+
+There are 2 types: **Standalone** and **Distributed**.
 
 
 
